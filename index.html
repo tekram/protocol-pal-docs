@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocol Pal — Score Methodology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-code: #f1f5f9;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --text-muted: #64748b;
+    --accent: #16a34a;
+    --accent-bg: #f0fdf4;
+    --accent-border: #bbf7d0;
+    --warn: #b45309;
+    --warn-bg: #fffbeb;
+    --warn-border: #fde68a;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'Inter', system-ui, sans-serif;
+    --radius: 8px;
+    --nav-w: 220px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d1117;
+      --bg-card: #161b22;
+      --bg-code: #1e2430;
+      --border: #21262d;
+      --text: #e6edf3;
+      --text-muted: #7d8590;
+      --accent: #3fb950;
+      --accent-bg: #0d2818;
+      --accent-border: #1a4731;
+      --warn: #d29922;
+      --warn-bg: #1c1500;
+      --warn-border: #3d2e00;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1117;
+    --bg-card: #161b22;
+    --bg-code: #1e2430;
+    --border: #21262d;
+    --text: #e6edf3;
+    --text-muted: #7d8590;
+    --accent: #3fb950;
+    --accent-bg: #0d2818;
+    --accent-border: #1a4731;
+    --warn: #d29922;
+    --warn-bg: #1c1500;
+    --warn-border: #3d2e00;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    padding: 0 16px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: var(--mono); font-size: 0.875em; }
+
+  /* Layout */
+  .layout { max-width: 960px; margin: 0 auto; }
+
+  /* Nav */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg); border-bottom: 1px solid var(--border);
+    padding: 12px 0; margin: 0 -16px; padding-inline: 16px;
+  }
+  .header-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .wordmark { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
+  .wordmark span { color: var(--accent); }
+  .header-links { display: flex; gap: 20px; }
+  .header-links a { font-size: 13px; color: var(--text-muted); }
+
+  /* Hero */
+  .hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 600; letter-spacing: -0.03em;
+    line-height: 1.15; margin-bottom: 16px;
+    text-wrap: balance;
+  }
+  .hero p { color: var(--text-muted); max-width: 580px; font-size: 16px; }
+
+  /* Chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 10px; border-radius: 99px; font-size: 12px; font-weight: 500;
+    border: 1px solid;
+  }
+  .chip-green { background: var(--accent-bg); border-color: var(--accent-border); color: var(--accent); }
+  .chip-warn { background: var(--warn-bg); border-color: var(--warn-border); color: var(--warn); }
+  .chip-muted { background: var(--bg-code); border-color: var(--border); color: var(--text-muted); }
+
+  /* Two-col */
+  .two-col { display: grid; grid-template-columns: var(--nav-w) 1fr; gap: 48px; align-items: start; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* Side nav */
+  .side-nav { position: sticky; top: 57px; }
+  .side-nav ul { list-style: none; }
+  .side-nav li + li { margin-top: 2px; }
+  .side-nav a {
+    display: block; padding: 5px 10px; border-radius: 5px;
+    font-size: 13px; color: var(--text-muted);
+    border-left: 2px solid transparent;
+    transition: color 0.1s;
+  }
+  .side-nav a:hover { color: var(--text); text-decoration: none; }
+  .side-nav a.active { color: var(--accent); border-color: var(--accent); background: var(--accent-bg); }
+  .side-nav .nav-section { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); padding: 10px 10px 4px; margin-top: 8px; }
+  @media (max-width: 700px) { .side-nav { display: none; } }
+
+  /* Content */
+  .content section { margin-bottom: 56px; }
+  .section-label {
+    font-family: var(--mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 8px;
+  }
+  h2 { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px; text-wrap: balance; }
+  h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; margin-top: 24px; }
+  p + p { margin-top: 10px; }
+  p { color: var(--text-muted); }
+  p strong { color: var(--text); }
+
+  /* Score card */
+  .score-section {
+    border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden; margin-top: 12px;
+  }
+  .score-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 18px; background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+  }
+  .score-title { font-weight: 600; font-size: 15px; }
+  .score-meta { display: flex; gap: 12px; align-items: center; }
+  .score-mae {
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    padding: 3px 8px; border-radius: 4px;
+    background: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border);
+  }
+  .contrib-table { width: 100%; border-collapse: collapse; }
+  .contrib-table th {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted); padding: 8px 18px; text-align: left;
+    background: var(--bg-code); border-bottom: 1px solid var(--border);
+  }
+  .contrib-table td { padding: 10px 18px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .contrib-table tr:last-child td { border-bottom: none; }
+  .contrib-table .name { font-weight: 500; color: var(--text); }
+  .contrib-table .formula { color: var(--text-muted); font-size: 12px; }
+  .weight-cell { white-space: nowrap; }
+  .weight-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .weight-bar-bg { height: 6px; width: 80px; background: var(--bg-code); border-radius: 99px; flex-shrink: 0; overflow: hidden; }
+  .weight-bar-fill { height: 100%; background: var(--accent); border-radius: 99px; }
+  .weight-pct { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--text); width: 30px; }
+
+  /* Accuracy table */
+  .accuracy-table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .accuracy-table th {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted); padding: 8px 16px; text-align: left; background: var(--bg-code);
+    border-bottom: 1px solid var(--border);
+  }
+  .accuracy-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-muted); }
+  .accuracy-table tr:last-child td { border-bottom: none; }
+  .accuracy-table .good { color: var(--accent); font-family: var(--mono); font-weight: 500; }
+  .accuracy-table .warn-text { color: var(--warn); font-family: var(--mono); font-weight: 500; }
+
+  /* Tier table */
+  .tier-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 12px; }
+  @media (max-width: 600px) { .tier-grid { grid-template-columns: 1fr; } }
+  .tier-card {
+    border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px; background: var(--bg-card);
+  }
+  .tier-label { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+  .tier-1 .tier-label { color: var(--accent); }
+  .tier-2 .tier-label { color: #a855f7; }
+  .tier-3 .tier-label { color: var(--text-muted); }
+  .tier-card h3 { font-size: 14px; font-weight: 600; margin: 0 0 6px; }
+  .tier-card p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+  .tier-card ul { font-size: 12px; color: var(--text-muted); padding-left: 14px; margin-top: 6px; line-height: 1.7; }
+
+  /* Notice */
+  .notice {
+    border: 1px solid var(--warn-border); background: var(--warn-bg);
+    border-radius: var(--radius); padding: 14px 16px;
+    display: flex; gap: 10px; margin-top: 12px;
+  }
+  .notice-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .notice p { color: var(--warn); font-size: 13px; line-height: 1.6; }
+  .notice p strong { color: var(--warn); }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border); padding: 32px 0 48px;
+    margin-top: 48px; color: var(--text-muted); font-size: 13px;
+  }
+  .footer-inner { max-width: 960px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; }
+  .footer-col h4 { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 10px; color: var(--text); }
+  .footer-col ul { list-style: none; }
+  .footer-col li + li { margin-top: 6px; }
+  .footer-col a { color: var(--text-muted); font-size: 13px; }
+  .footer-col a:hover { color: var(--text); }
+  .footer-bottom { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="wordmark">Protocol <span>Pal</span></div>
+    <nav class="header-links">
+      <a href="#scores">Scores</a>
+      <a href="#accuracy">Accuracy</a>
+      <a href="#gaps">Gaps</a>
+      <a href="https://github.com/tekram/protopal">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <section class="hero">
+    <div class="hero-eyebrow">Open methodology</div>
+    <h1>How Protocol Pal computes your ring scores</h1>
+    <p>Protocol Pal reads your Oura ring directly over Bluetooth and computes sleep, readiness, and activity scores locally on your device — no cloud, no membership required. This page documents every formula so you can verify the math.</p>
+    <div class="chips">
+      <span class="chip chip-green">✓ Computed on-device</span>
+      <span class="chip chip-warn">⚠ Approximation — not Oura's official model</span>
+      <span class="chip chip-muted">Open source · MIT</span>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <nav class="side-nav">
+      <div class="nav-section">Overview</div>
+      <ul>
+        <li><a href="#tiers">Data tiers</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+      </ul>
+      <div class="nav-section">Scores</div>
+      <ul>
+        <li><a href="#sleep">Sleep score</a></li>
+        <li><a href="#readiness">Readiness score</a></li>
+        <li><a href="#activity">Activity score</a></li>
+      </ul>
+      <div class="nav-section">Validation</div>
+      <ul>
+        <li><a href="#accuracy">Accuracy</a></li>
+        <li><a href="#gaps">Known gaps</a></li>
+        <li><a href="#refs">References</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <section id="tiers">
+        <div class="section-label">Overview</div>
+        <h2>Data tiers</h2>
+        <p>Not all Oura features can be replicated from raw BLE data. We sort them into three tiers.</p>
+        <div class="tier-grid">
+          <div class="tier-card tier-1">
+            <div class="tier-label">Tier 1 — Exact</div>
+            <h3>Ring-computed metrics</h3>
+            <p>The ring's firmware computes these; we decode the BLE packets.</p>
+            <ul>
+              <li>Sleep hypnogram (5-min bins)</li>
+              <li>HRV (nightly avg + intervals)</li>
+              <li>Resting heart rate</li>
+              <li>SpO2, respiratory rate</li>
+              <li>Body temperature deviation</li>
+              <li>Steps, active calories</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-2">
+            <div class="tier-label">Tier 2 — Approximate</div>
+            <h3>Locally computed 0–100 scores</h3>
+            <p>Formula-based. ~±3–8 pts vs official after 14-day baseline. Labeled <code>~78</code> to distinguish from cloud scores.</p>
+            <ul>
+              <li>Sleep Score</li>
+              <li>Readiness Score</li>
+              <li>Activity Score</li>
+              <li>Sleep debt</li>
+              <li>VO₂ max estimate</li>
+            </ul>
+          </div>
+          <div class="tier-card tier-3">
+            <div class="tier-label">Tier 3 — Unavailable</div>
+            <h3>Cloud ML models</h3>
+            <p>These require Oura's proprietary PyTorch models or clinical data not in the BLE stream.</p>
+            <ul>
+              <li>Resilience Score</li>
+              <li>Cardiovascular Age</li>
+              <li>Workout auto-detection</li>
+              <li>Cycle prediction</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="pipeline">
+        <div class="section-label">Overview</div>
+        <h2>Data pipeline</h2>
+        <p>BLE data flows through a typed pipeline before reaching the UI. All scoring happens in TypeScript and Rust on-device — nothing is sent to a server.</p>
+        <pre style="background:var(--bg-code);border:1px solid var(--border);border-radius:var(--radius);padding:16px;overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.7;color:var(--text);margin-top:12px;">Oura Ring (Bluetooth)
+  ↓  AES-128-ECB auth · TLV packet framing (open_oura, MIT)
+OuraBlePlugin.java  ← Android GATT transport
+  ↓  JNI bridge (Rust)
+native/oura-jni     ← oura-protocol · oura-analysis
+  ↓
+bleEventMapper.ts   ← RingEventEntry[] → typed records
+bleBaseline.ts      ← 30-day rolling HRV / RHR / sleep baseline
+bleScoring.ts       ← formula-based 0–100 scores
+  ↓
+ouraDataStore.ts    ← same schema as cloud API path
+  ↓
+UI hooks (useReadiness / useSleepSessions …)</pre>
+      </section>
+
+      <!-- ─── SLEEP ─────────────────────────────────────────────── -->
+      <section id="sleep">
+        <div class="section-label">Score</div>
+        <h2>Sleep Score</h2>
+        <p>Seven contributors, each mapped to 0–100, combined as a weighted average. Calibration on 20 days of real Oura data: <strong>±2.7 pts MAE</strong> vs official.</p>
+
+        <div class="notice">
+          <div class="notice-icon">⚠</div>
+          <p>Oura's official Sleep Score is produced by a cloud ML model trained on population data. Our formula uses the same inputs and documented contributor weights but will not be identical to the official number.</p>
+        </div>
+
+        <div class="score-section" style="margin-top:16px;">
+          <div class="score-header">
+            <span class="score-title">Sleep Score</span>
+            <div class="score-meta">
+              <span class="score-mae">±2.7 pts MAE</span>
+              <span style="font-family:var(--mono);font-size:12px;color:var(--text-muted)">20-day sample</span>
+            </div>
+          </div>
+          <table class="contrib-table">
+            <thead>
+              <tr>
+                <th>Contributor</th>
+                <th>Weight</th>
+                <th>Formula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">Total sleep</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:75%"></div></div><span class="weight-pct">15%</span></div></td>
+                <td class="formula">7 h = 100, linear from 5 min = 0</td>
+              </tr>
+              <tr>
+                <td class="name">Efficiency</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:75%"></div></div><span class="weight-pct">15%</span></div></td>
+                <td class="formula">% of time in bed spent asleep (ring-computed)</td>
+              </tr>
+              <tr>
+                <td class="name">Restfulness</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:100%"></div></div><span class="weight-pct">20%</span></div></td>
+                <td class="formula">0 disruptions = 100; −10 per restless period</td>
+              </tr>
+              <tr>
+                <td class="name">REM sleep</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:50%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">90 min = 100, linear from 0</td>
+              </tr>
+              <tr>
+                <td class="name">Deep sleep</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:50%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">60 min = 100, linear from 0</td>
+              </tr>
+              <tr>
+                <td class="name">Latency</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:50%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">≤5 min = 100; ≥60 min = 0; inverted linear</td>
+              </tr>
+              <tr>
+                <td class="name">Timing</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:100%"></div></div><span class="weight-pct">20%</span></div></td>
+                <td class="formula">Sleep midpoint within 1 h of 2 AM = 100; ≥3 h away = 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ─── READINESS ─────────────────────────────────────────── -->
+      <section id="readiness">
+        <div class="section-label">Score</div>
+        <h2>Readiness Score</h2>
+        <p>Seven contributors. HRV and RHR sub-scores require a 30-day personal baseline — the score confidence increases over the first 14 days. Calibration: <strong>±5.3 pts MAE</strong> vs official.</p>
+
+        <div class="score-section" style="margin-top:12px;">
+          <div class="score-header">
+            <span class="score-title">Readiness Score</span>
+            <div class="score-meta">
+              <span class="score-mae">±5.3 pts MAE</span>
+              <span style="font-family:var(--mono);font-size:12px;color:var(--text-muted)">20-day sample</span>
+            </div>
+          </div>
+          <table class="contrib-table">
+            <thead><tr><th>Contributor</th><th>Weight</th><th>Formula</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="name">Previous night</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:100%"></div></div><span class="weight-pct">35%</span></div></td>
+                <td class="formula">Last night's sleep score (above)</td>
+              </tr>
+              <tr>
+                <td class="name">HRV balance</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:71%"></div></div><span class="weight-pct">25%</span></div></td>
+                <td class="formula">recent_HRV ÷ 30-day baseline × 100</td>
+              </tr>
+              <tr>
+                <td class="name">Body temperature</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:29%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">Nightly deviation from ring (exact, Tier 1)</td>
+              </tr>
+              <tr>
+                <td class="name">Sleep balance</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:29%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">last night ÷ 14-day sleep avg × 100</td>
+              </tr>
+              <tr>
+                <td class="name">Resting HR</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:29%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">(baseline_RHR − recent + 10) ÷ 20 × 100</td>
+              </tr>
+              <tr>
+                <td class="name">Recovery index</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:14%"></div></div><span class="weight-pct">5%</span></div></td>
+                <td class="formula">From sleep stage transition quality (ring delta)</td>
+              </tr>
+              <tr>
+                <td class="name">Activity balance</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:14%"></div></div><span class="weight-pct">5%</span></div></td>
+                <td class="formula">vs 7-day activity average</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ─── ACTIVITY ────────────────────────────────────────────── -->
+      <section id="activity">
+        <div class="section-label">Score</div>
+        <h2>Activity Score</h2>
+        <p>Five contributors. Note: Oura's <em>move every hour</em> contributor tracks per-hour inactivity alerts — this data is not in the BLE stream, so that sub-score defaults to a neutral 70. This is the largest source of activity score error.</p>
+
+        <div class="score-section" style="margin-top:12px;">
+          <div class="score-header">
+            <span class="score-title">Activity Score</span>
+            <div class="score-meta">
+              <span class="score-mae" style="background:var(--warn-bg);border-color:var(--warn-border);color:var(--warn);">±32 pts MAE</span>
+              <span style="font-family:var(--mono);font-size:12px;color:var(--text-muted)">move_every_hour fixed</span>
+            </div>
+          </div>
+          <table class="contrib-table">
+            <thead><tr><th>Contributor</th><th>Weight</th><th>Formula</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="name">Meet daily targets</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:100%"></div></div><span class="weight-pct">35%</span></div></td>
+                <td class="formula">meters completed ÷ meters target; calorie fallback</td>
+              </tr>
+              <tr>
+                <td class="name">Stay active</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:71%"></div></div><span class="weight-pct">25%</span></div></td>
+                <td class="formula">non-sedentary time ÷ waking time × 143</td>
+              </tr>
+              <tr>
+                <td class="name">Move every hour</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:57%"></div></div><span class="weight-pct">20%</span></div></td>
+                <td class="formula"><strong>Fixed at 70</strong> — per-hour data not in BLE stream</td>
+              </tr>
+              <tr>
+                <td class="name">Training frequency</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:29%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">high-intensity time ÷ 2700 s (45 min target)</td>
+              </tr>
+              <tr>
+                <td class="name">Training volume</td>
+                <td class="weight-cell"><div class="weight-bar-wrap"><div class="weight-bar-bg"><div class="weight-bar-fill" style="width:29%"></div></div><span class="weight-pct">10%</span></div></td>
+                <td class="formula">distance ÷ 8 km, or steps ÷ 10 000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ─── ACCURACY ─────────────────────────────────────────────── -->
+      <section id="accuracy">
+        <div class="section-label">Validation</div>
+        <h2>Accuracy</h2>
+        <p>Calibrated against 20 days of real Oura cloud data from a Gen3 ring. MAE = mean absolute error in score points (0–100 scale).</p>
+        <p style="margin-top:8px;">Weight optimization requires ≥70 data points per dimension (10× the number of free parameters). The calibration script re-runs automatically when this threshold is met.</p>
+
+        <table class="accuracy-table" style="margin-top:16px;">
+          <thead><tr><th>Dimension</th><th>MAE</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Sleep Score</td>
+              <td class="good">±2.7 pts</td>
+              <td>Within Oura's own test-retest variance (~3 pts)</td>
+            </tr>
+            <tr>
+              <td>Readiness Score</td>
+              <td class="good">±5.3 pts</td>
+              <td>Higher variance due to body_temperature approximation in first 14 days</td>
+            </tr>
+            <tr>
+              <td>Activity Score</td>
+              <td class="warn-text">±32 pts</td>
+              <td>move_every_hour sub-score fixed at 70 (no per-hour BLE data)</td>
+            </tr>
+            <tr>
+              <td>HRV (nightly avg)</td>
+              <td class="good">Exact</td>
+              <td>Decoded directly from ring firmware (Tier 1)</td>
+            </tr>
+            <tr>
+              <td>SpO2</td>
+              <td class="warn-text">±2%</td>
+              <td>Ring-computed but calibration coefficients are ring-specific and not in open_oura</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ─── GAPS ─────────────────────────────────────────────────── -->
+      <section id="gaps">
+        <div class="section-label">Validation</div>
+        <h2>Known gaps vs Oura cloud</h2>
+
+        <div class="notice">
+          <div class="notice-icon">⚠</div>
+          <p><strong>Scores labeled <code>~</code> are approximations.</strong> They are never presented as Oura's official numbers. Oura's 0–100 scores are produced by proprietary PyTorch models trained on population data — we cannot replicate these without Oura's model weights.</p>
+        </div>
+
+        <h3>Features unavailable without cloud</h3>
+        <table class="accuracy-table" style="margin-top:12px;">
+          <thead><tr><th>Feature</th><th>Why unavailable</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Resilience Score</td>
+              <td>Requires daytime HRV context + cloud ecore + 14-day PyTorch accumulation</td>
+            </tr>
+            <tr>
+              <td>Cardiovascular / Vascular Age</td>
+              <td>PPG pulse wave velocity via deep learning (NUS-validated model); ring-specific PPG calibration also needed</td>
+            </tr>
+            <tr>
+              <td>Workout auto-detection</td>
+              <td>Cloud endpoint POST /api/activity-tagging/v2 — not available offline</td>
+            </tr>
+            <tr>
+              <td>Cycle prediction</td>
+              <td>Proprietary hormonal cycle model; temperature inputs available but predictive model is not</td>
+            </tr>
+            <tr>
+              <td>Move every hour</td>
+              <td>Per-hour inactivity alert data is not in the BLE history stream</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Proxy implementations shown in-app</h3>
+        <p>For Resilience and Cardiovascular Age, Protocol Pal shows clearly-labeled proxy cards based on published science — not Oura's model. These are opt-in and only shown when the data source is BLE.</p>
+        <ul style="margin-top:8px;padding-left:20px;font-size:13px;color:var(--text-muted);line-height:1.9;">
+          <li><strong>Resilience proxy:</strong> HRV z-score vs 30-day personal baseline → 0–100</li>
+          <li><strong>HRV Age proxy:</strong> rMSSD vs age-group norms (Shaffer &amp; Ginsberg 2017)</li>
+        </ul>
+      </section>
+
+      <!-- ─── REFS ──────────────────────────────────────────────────── -->
+      <section id="refs">
+        <div class="section-label">References</div>
+        <h2>Open-source &amp; scientific references</h2>
+
+        <h3>Protocol &amp; software</h3>
+        <ul style="padding-left:20px;font-size:13px;color:var(--text-muted);line-height:2;">
+          <li><a href="https://github.com/Th0rgal/open_oura">open_oura</a> (MIT) — Oura BLE protocol reverse-engineering, AES-128-ECB auth, packet framing</li>
+          <li>open_ring (GPL-3, reference only) — Control-plane BLE commands; not shipped in Protocol Pal</li>
+        </ul>
+
+        <h3>Science</h3>
+        <ul style="padding-left:20px;font-size:13px;color:var(--text-muted);line-height:2;">
+          <li>OSSA 2.0 sleep staging validation, 91.7% 2-stage accuracy — <a href="https://doi.org/10.1016/j.sleep.2024.01.023">doi:10.1016/j.sleep.2024.01.023</a></li>
+          <li>Shaffer &amp; Ginsberg 2017 — age-group rMSSD norms used in HRV Age proxy</li>
+          <li>Jackson-Blair equation — VO₂ max demographic estimate</li>
+          <li>Oura Resilience Score inputs — <a href="https://ouraring.com/blog/inside-the-ring-resilience-feature/">ouraring.com/blog</a></li>
+          <li>NUS Vascular Age validation — <a href="https://ouraring.com/blog/new-nus-research-validates-ouras-vascular-age-estimation/">ouraring.com/blog</a></li>
+        </ul>
+      </section>
+
+    </div><!-- /.content -->
+  </div><!-- /.two-col -->
+</div><!-- /.layout -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Protocol Pal</h4>
+      <ul>
+        <li><a href="https://github.com/tekram/protopal">Source code</a></li>
+        <li><a href="https://github.com/tekram/protocol-pal-docs">This page</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Scoring</h4>
+      <ul>
+        <li><a href="#sleep">Sleep formula</a></li>
+        <li><a href="#readiness">Readiness formula</a></li>
+        <li><a href="#activity">Activity formula</a></li>
+        <li><a href="#accuracy">Accuracy data</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Disclaimer</h4>
+      <p style="font-size:12px;max-width:260px;">Protocol Pal is not affiliated with Oura. Scores labeled <code>~</code> are locally computed approximations and are not Oura's official scores. Not medical advice.</p>
+    </div>
+  </div>
+  <div class="footer-bottom layout">
+    © 2026 Protocol Pal · <a href="https://github.com/tekram/protopal/blob/main/LICENSE">MIT License</a>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav highlight
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.side-nav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
