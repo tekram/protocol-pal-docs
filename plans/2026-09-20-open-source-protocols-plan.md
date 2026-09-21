@@ -1,6 +1,6 @@
 # Implementation Plan: Open Source Protocol Layer
 
-**Status:** ⏸️ PAUSED — session 1 complete, session 2 picks up here  
+**Status:** ⏸️ PAUSED — session 2 complete through Phase 2, session 3 picks up at Phase 3 (npm publish)  
 **Design spec:** `specs/2026-09-20-open-source-protocols-design.md`  
 **App repo (local):** `C:\Users\avrfa\huberman-protocol-pal`
 
@@ -20,7 +20,7 @@
 | App validation | Zod at startup |
 
 ### Cleanup needed
-- **Delete `tekram/huberman-protocols`** — empty repo created in session 1, no longer needed. Delete via GitHub Settings > Danger Zone, or run: `gh repo delete tekram/huberman-protocols --yes`
+- ~~Delete `tekram/huberman-protocols`~~ — done, session 2.
 
 ---
 
@@ -37,6 +37,24 @@
 | Protocol JSON migration | ❌ not started |
 | npm publish | ❌ not started |
 | App updated | ❌ not started |
+
+## Session 2 Progress
+
+| Task | Status |
+|------|--------|
+| Deleted `tekram/huberman-protocols` | ✅ done |
+| Scaffolding (8 files) pushed to `protocol-pal-docs` main | ✅ commit `23a962a` |
+| Protocol JSON migration | ✅ **40 protocols** migrated (grew from ~30 since plan was written — app added 10 more in the interim), commit `4161622` |
+| `npm run validate` (ajv) | ✅ all 40 pass |
+| `dist/index.json` built and committed | ✅ done |
+| npm publish | ❌ not started — needs `NPM_TOKEN` repo secret (session 3) |
+| App updated to consume `@protocol-pal/protocols` | ❌ not started (session 3, Phase 4) |
+
+### Notes for session 3
+- Migration script stripped two app-only fields not in the public schema: `completedBy`, `isCompleted` (present on most/all protocols), and one stray duplicate field `conditional_question` found only on `creatine_poor_sleep_001` (superseded by the correct `conditional` object already on that record).
+- `learning_resources[].duration: null` values were dropped (field is optional in the schema; ajv rejects `null` for a `string` type).
+- Full protocol id list now includes 10 new ones not in the original plan's ~30-id list: `foundational_fitness_001`, `neuroplasticity_super_001`, `sugar_craving_control_001`, `alcohol_harm_reduction_001`, `optic_flow_walking_001`, `red_light_photobiomodulation_001`, `stress_inoculation_001`, `creativity_enhancement_001`, `alpha_gpc_acetylcholine_001`, plus `worry_journal_protocol_001` (already implied but omitted from the plan's list).
+- Next: Phase 3 (npm publish) and Phase 4 (update app to consume the package).
 
 ---
 
