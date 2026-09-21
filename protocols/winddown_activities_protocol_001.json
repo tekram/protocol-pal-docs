@@ -1,0 +1,99 @@
+{
+  "id": "winddown_activities_protocol_001",
+  "title": "Pre-Bed Wind-Down Activities Protocol",
+  "description": "Science-backed wind-down routine to prepare your body and mind for sleep by establishing consistent pre-bedtime activities that signal the transition to rest.",
+  "category": "sleep",
+  "duration": "30-60 minutes before bedtime",
+  "difficulty": "beginner",
+  "priority": 4,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab AI - Matt Walker & Andrew Huberman",
+  "last_updated": "2025-01-27",
+  "actions": [
+    {
+      "action": "Meditation practice",
+      "duration": "10-15 minutes",
+      "frequency": "Daily",
+      "timing": "30-60 minutes before bed",
+      "details": "Spend 10-15 minutes meditating to calm your mind. Focus on deep breathing, body scan, or mindfulness techniques. This helps activate the parasympathetic nervous system and reduce mental chatter."
+    },
+    {
+      "action": "Light stretching routine",
+      "duration": "10-15 minutes",
+      "frequency": "Daily",
+      "timing": "After meditation or as standalone activity",
+      "details": "Engage in gentle stretching to release tension in your body. Focus on areas that hold stress like neck, shoulders, and lower back. Avoid vigorous stretching that might be too stimulating."
+    },
+    {
+      "action": "Reading (non-screen)",
+      "duration": "15-30 minutes",
+      "frequency": "Daily",
+      "timing": "As part of wind-down routine",
+      "details": "Choose a book or material that isn't too stimulating. Avoid screens to reduce blue light exposure. Select calming, non-thrilling content that won't activate your nervous system."
+    },
+    {
+      "action": "Listening to relaxing audio",
+      "duration": "10-20 minutes",
+      "frequency": "Daily",
+      "timing": "During stretching or reading",
+      "details": "Listen to calming podcasts, nature sounds, or soft music. Avoid video content which can be too activating. Choose audio that promotes relaxation and mental calm."
+    },
+    {
+      "action": "Warm bath or shower",
+      "duration": "10-20 minutes",
+      "frequency": "3-4 times per week",
+      "timing": "Early in wind-down routine",
+      "details": "A warm bath or shower helps relax muscles and signals to your body that it's time to wind down. The temperature change can also help with the natural drop in body temperature needed for sleep."
+    },
+    {
+      "action": "Mental visualization practice",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "Just before getting into bed",
+      "details": "Instead of counting sheep, imagine a familiar walk in intricate detail. Visualize every step, sound, and sensation to distract your mind and ease you into sleep. This technique helps quiet mental chatter."
+    }
+  ],
+  "benefits": [
+    "Signals to your body that it's time to prepare for sleep",
+    "Activates parasympathetic nervous system for relaxation",
+    "Reduces mental chatter and racing thoughts",
+    "Helps establish consistent sleep-wake rhythm",
+    "Releases physical tension and muscle stress",
+    "Creates psychological association between activities and sleep",
+    "Reduces blue light exposure before bed"
+  ],
+  "science": "Wind-down routines help signal to your body that it's time to prepare for sleep, making the transition smoother - akin to decelerating a vehicle before stopping. Consistent activities create psychological associations that prime the nervous system for rest. Meditation activates the parasympathetic nervous system, while gentle stretching releases physical tension. Avoiding stimulating content prevents activation of the sympathetic nervous system that would interfere with sleep onset.",
+  "contraindications": [
+    "Avoid vigorous exercise or stimulating activities",
+    "Don't engage in work-related or stressful conversations",
+    "Avoid bright screens and blue light exposure",
+    "Skip caffeine or other stimulants during wind-down time",
+    "Don't choose reading material that's too exciting or anxiety-provoking"
+  ],
+  "estimated_impact": {
+    "sleep_onset": "High improvement",
+    "sleep_quality": "Moderate improvement",
+    "stress_reduction": "High improvement",
+    "sleep_consistency": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Sleep Wind Down - Huberman Lab AI",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ"
+    },
+    {
+      "title": "Sleep Strategies Unveiled - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ",
+      "duration": "2 hours 51 minutes"
+    },
+    {
+      "title": "Sleep Wind Down - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ",
+      "duration": "1 hour 32 minutes"
+    }
+  ]
+}

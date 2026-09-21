@@ -1,0 +1,2775 @@
+[
+  {
+    "id": "morning_sunlight_exposure_001",
+    "title": "Morning Sunlight Exposure",
+    "description": "Expose your eyes to natural sunlight within the first 30 minutes of waking up to align your circadian rhythm, enhance mood, and improve alertness.",
+    "category": "sleep",
+    "priority": 1,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab, Business Insider, official Huberman YouTube",
+    "last_updated": "2025-09-14",
+    "actions": [
+      {
+        "action": "Get at least 1000 lux of natural light exposure (ideally sunlight)",
+        "duration": "5–10 minutes on sunny days; 10–20 minutes on cloudy days",
+        "frequency": "Daily",
+        "timing": "Within the first 30–60 minutes of waking",
+        "details": "Go outside without sunglasses (contact lenses or prescription glasses are fine). Light through windows is not sufficient unless exceptionally bright. Avoid direct sunlight into the eyes—look toward the direction of sunlight, not at it."
+      }
+    ],
+    "benefits": [
+      "Improves sleep quality by anchoring circadian rhythm",
+      "Boosts mood by increasing dopamine and serotonin levels",
+      "Enhances alertness and wakefulness in the morning",
+      "Supports healthy cortisol rhythm",
+      "May reduce risk of depression and seasonal affective disorder"
+    ],
+    "science": "Morning sunlight exposure stimulates intrinsically photosensitive retinal ganglion cells (ipRGCs), which signal the brain's circadian clock (SCN) to regulate sleep, mood, and alertness. Exposure to 1000+ lux light in the morning leads to earlier melatonin offset and improved nighttime sleep (Huberman Lab Podcast).",
+    "contraindications": [],
+    "estimated_impact": {
+      "sleep_quality": "High",
+      "mood": "High",
+      "alertness": "High",
+      "circadian_health": "High"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Feel Energized & Sleep Better With One Morning Activity — Huberman Lab Video",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=WDv4AWk0J3U",
+        "duration": "6 minutes"
+      },
+      {
+        "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab Podcast",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health"
+      },
+      {
+        "title": "Andrew Huberman Swears by Morning Sunlight — Business Insider Profile",
+        "type": "article",
+        "url": "https://www.businessinsider.com/andrew-huberman-swears-by-morning-sunlight-healthy-circadian-clock-2023-11"
+      }
+    ]
+  },
+  {
+    "id": "caffeine_delay_001",
+    "title": "Caffeine Delay (90-120 Min After Waking)",
+    "description": "Delay your first caffeine intake to 90-120 minutes after waking to allow natural cortisol-driven alertness to peak, then use caffeine to extend focus without an afternoon crash.",
+    "category": "energy",
+    "duration": "N/A — timing adjustment",
+    "difficulty": "beginner",
+    "priority": 2,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Delay caffeine 90-120 minutes after waking",
+        "duration": "N/A",
+        "frequency": "Daily",
+        "timing": "90-120 minutes after waking up",
+        "details": "Resist coffee or tea immediately upon waking. Allow your natural cortisol awakening response (CAR) to peak first. Drink water and get morning sunlight instead. Then have your first caffeine at the 90-120 minute mark."
+      },
+      {
+        "action": "Stop caffeine intake by early afternoon",
+        "duration": "N/A",
+        "frequency": "Daily",
+        "timing": "No caffeine after ~2 PM (8-10 hours before bed)",
+        "details": "Caffeine has a half-life of 5-6 hours. To protect sleep architecture, avoid caffeine in the second half of the day. This pairs with the delay to give you a focused caffeine window."
+      }
+    ],
+    "benefits": [
+      "Eliminates the mid-morning energy crash",
+      "Leverages natural cortisol for initial wakefulness",
+      "Extends afternoon focus and productivity",
+      "Improves sleep quality by reducing residual caffeine at night",
+      "Reduces caffeine dependency over time"
+    ],
+    "science": "Cortisol peaks naturally 30-45 minutes after waking (the Cortisol Awakening Response). Consuming caffeine during this peak blocks adenosine receptors while cortisol is already handling alertness, leading to a crash when cortisol drops. Delaying caffeine allows cortisol to do its job, then caffeine extends alertness afterward.",
+    "contraindications": [
+      "May be difficult for those with strong caffeine habits — taper gradually",
+      "Not applicable if you don't consume caffeine"
+    ],
+    "estimated_impact": {
+      "morning_alertness": "High improvement",
+      "afternoon_energy": "High improvement",
+      "sleep_quality": "Moderate improvement",
+      "caffeine_dependency": "Moderate reduction"
+    },
+    "learning_resources": [
+      {
+        "title": "Optimize Your Morning Routine — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/optimize-your-morning-routine",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Using Caffeine to Optimize Mental & Physical Performance — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/using-caffeine-to-optimize-mental-and-physical-performance",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "huberman-breathing-daily",
+    "title": "Daily Breathwork Protocol by Dr. Andrew Huberman",
+    "description": "A science-backed breathing routine to optimize mental and physical health, reduce stress, and improve focus.",
+    "category": "breathing",
+    "duration": "5 minutes",
+    "difficulty": "beginner",
+    "priority": 2,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab",
+    "last_updated": "2025-09-18",
+    "actions": [
+      {
+        "action": "Cyclic Sighing",
+        "duration": "5 minutes",
+        "frequency": "daily",
+        "timing": "as needed",
+        "details": "Inhale deeply through the nose, then perform a second quick inhale followed by a long exhale through the mouth. Repeat this cycle for five minutes to activate the parasympathetic nervous system and reduce stress."
+      }
+    ],
+    "benefits": [
+      "Reduces anxiety",
+      "Improves mood",
+      "Enhances sleep quality",
+      "Regulates autonomic nervous system"
+    ],
+    "science": "Cyclic sighing has been shown to be highly effective for reducing stress and improving sleep quality. It involves performing a series of physiological sighs continuously for a set period, which has been reported to improve mood, reduce anxiety, and enhance autonomic functions related to sleep and heart rate variability.",
+    "contraindications": [
+      "Individuals with respiratory conditions should consult a healthcare provider before starting any new breathing exercises."
+    ],
+    "estimated_impact": {
+      "stress_reduction": "high",
+      "mood_improvement": "moderate",
+      "sleep_quality": "moderate"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance",
+        "duration": "90 minutes"
+      }
+    ]
+  },
+  {
+    "id": "evening_light_minimization_001",
+    "title": "Evening Light Minimization",
+    "description": "Minimize bright artificial light exposure between 10 PM and 4 AM to protect melatonin secretion, support circadian health, and improve sleep quality.",
+    "category": "sleep",
+    "duration": "Ongoing evening practice",
+    "difficulty": "beginner",
+    "priority": 3,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast & Newsletter",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Dim overhead lights and use low-positioned lamps after sunset",
+        "duration": "Evening hours",
+        "frequency": "Daily",
+        "timing": "From sunset until bedtime",
+        "details": "Switch from overhead/ceiling lights to desk lamps, candles, or floor-level lighting. Light from above (like ceiling fixtures) more closely mimics sunlight and suppresses melatonin more than light from below eye level. Use warm-toned (amber/red) bulbs."
+      },
+      {
+        "action": "Use blue-light blocking or night mode on screens",
+        "duration": "Evening hours",
+        "frequency": "Daily",
+        "timing": "After sunset, especially 10 PM - 4 AM",
+        "details": "Enable Night Shift/Night Light on devices or use blue-light blocking glasses. Reduce screen brightness. Better yet, minimize screen time in the last 1-2 hours before bed entirely."
+      }
+    ],
+    "benefits": [
+      "Protects melatonin production for healthy sleep onset",
+      "Reduces cortisol dysregulation from nighttime light",
+      "Improves sleep latency (time to fall asleep)",
+      "Supports overall circadian rhythm health",
+      "Reduces risk of mood disruption from late-night light"
+    ],
+    "science": "Huberman emphasizes that bright light exposure between 10 PM and 4 AM suppresses dopamine, disrupts cortisol rhythm, and inhibits melatonin release via the habenula pathway. Even brief bright light at night can shift the circadian clock. The position of light matters — overhead light is more suppressive than light at or below eye level.",
+    "contraindications": [
+      "None — universally safe and beneficial",
+      "Those with night-shift jobs should consult specialized circadian protocols"
+    ],
+    "estimated_impact": {
+      "sleep_quality": "High improvement",
+      "melatonin_production": "High improvement",
+      "mood": "Moderate improvement",
+      "circadian_health": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+        "duration": "1.5 hours"
+      },
+      {
+        "title": "Toolkit for Sleep — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+      }
+    ]
+  },
+  {
+    "id": "hydration_electrolytes_001",
+    "title": "Hydration & Electrolyte Protocol",
+    "description": "Optimize daily hydration with water and electrolytes (sodium, potassium, magnesium) to support brain function, physical performance, and energy levels throughout the day.",
+    "category": "nutrition",
+    "duration": "Throughout the day",
+    "difficulty": "beginner",
+    "priority": 3,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Drink water with electrolytes upon waking",
+        "duration": "First 30 minutes of the day",
+        "frequency": "Daily",
+        "timing": "Immediately upon waking",
+        "details": "Drink 16-32 oz (500-1000ml) of water with a pinch of sea salt (or electrolyte mix) first thing in the morning. You lose significant water during sleep through respiration and perspiration. Rehydrating quickly improves alertness and cognitive function."
+      },
+      {
+        "action": "Maintain hydration throughout the day",
+        "duration": "All day",
+        "frequency": "Daily",
+        "timing": "Spread evenly across waking hours",
+        "details": "Aim for roughly half your body weight in ounces of water per day (e.g., 160 lbs = ~80 oz). Ensure adequate electrolytes: sodium, potassium, and magnesium. Low-sugar electrolyte mixes or simply adding a pinch of salt and squeeze of lemon to water works well."
+      }
+    ],
+    "benefits": [
+      "Improves cognitive function and focus",
+      "Supports physical performance and endurance",
+      "Prevents headaches and fatigue from dehydration",
+      "Supports kidney function and detoxification",
+      "Improves mood and energy levels",
+      "Essential for thermoregulation"
+    ],
+    "science": "Even mild dehydration (1-2% body water loss) impairs cognitive function, mood, and physical performance. Huberman emphasizes that water alone without electrolytes can dilute blood sodium, reducing the effectiveness of hydration. Sodium, potassium, and magnesium are essential for neuronal firing, muscle contraction, and fluid balance.",
+    "contraindications": [
+      "Those with kidney disease should consult a physician about fluid and electrolyte intake",
+      "Excessive water without electrolytes can cause hyponatremia",
+      "Adjust intake based on activity level, climate, and body size"
+    ],
+    "estimated_impact": {
+      "cognitive_function": "Moderate improvement",
+      "physical_performance": "Moderate improvement",
+      "energy_levels": "Moderate improvement",
+      "mood": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Optimize Your Water Quality & Intake for Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/optimize-your-water-quality-and-intake-for-health",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "winddown_activities_protocol_001",
+    "title": "Pre-Bed Wind-Down Activities Protocol",
+    "description": "Science-backed wind-down routine to prepare your body and mind for sleep by establishing consistent pre-bedtime activities that signal the transition to rest.",
+    "category": "sleep",
+    "duration": "30-60 minutes before bedtime",
+    "difficulty": "beginner",
+    "priority": 4,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab AI - Matt Walker & Andrew Huberman",
+    "last_updated": "2025-01-27",
+    "actions": [
+      {
+        "action": "Meditation practice",
+        "duration": "10-15 minutes",
+        "frequency": "Daily",
+        "timing": "30-60 minutes before bed",
+        "details": "Spend 10-15 minutes meditating to calm your mind. Focus on deep breathing, body scan, or mindfulness techniques. This helps activate the parasympathetic nervous system and reduce mental chatter."
+      },
+      {
+        "action": "Light stretching routine",
+        "duration": "10-15 minutes",
+        "frequency": "Daily",
+        "timing": "After meditation or as standalone activity",
+        "details": "Engage in gentle stretching to release tension in your body. Focus on areas that hold stress like neck, shoulders, and lower back. Avoid vigorous stretching that might be too stimulating."
+      },
+      {
+        "action": "Reading (non-screen)",
+        "duration": "15-30 minutes",
+        "frequency": "Daily",
+        "timing": "As part of wind-down routine",
+        "details": "Choose a book or material that isn't too stimulating. Avoid screens to reduce blue light exposure. Select calming, non-thrilling content that won't activate your nervous system."
+      },
+      {
+        "action": "Listening to relaxing audio",
+        "duration": "10-20 minutes",
+        "frequency": "Daily",
+        "timing": "During stretching or reading",
+        "details": "Listen to calming podcasts, nature sounds, or soft music. Avoid video content which can be too activating. Choose audio that promotes relaxation and mental calm."
+      },
+      {
+        "action": "Warm bath or shower",
+        "duration": "10-20 minutes",
+        "frequency": "3-4 times per week",
+        "timing": "Early in wind-down routine",
+        "details": "A warm bath or shower helps relax muscles and signals to your body that it's time to wind down. The temperature change can also help with the natural drop in body temperature needed for sleep."
+      },
+      {
+        "action": "Mental visualization practice",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "Just before getting into bed",
+        "details": "Instead of counting sheep, imagine a familiar walk in intricate detail. Visualize every step, sound, and sensation to distract your mind and ease you into sleep. This technique helps quiet mental chatter."
+      }
+    ],
+    "benefits": [
+      "Signals to your body that it's time to prepare for sleep",
+      "Activates parasympathetic nervous system for relaxation",
+      "Reduces mental chatter and racing thoughts",
+      "Helps establish consistent sleep-wake rhythm",
+      "Releases physical tension and muscle stress",
+      "Creates psychological association between activities and sleep",
+      "Reduces blue light exposure before bed"
+    ],
+    "science": "Wind-down routines help signal to your body that it's time to prepare for sleep, making the transition smoother - akin to decelerating a vehicle before stopping. Consistent activities create psychological associations that prime the nervous system for rest. Meditation activates the parasympathetic nervous system, while gentle stretching releases physical tension. Avoiding stimulating content prevents activation of the sympathetic nervous system that would interfere with sleep onset.",
+    "contraindications": [
+      "Avoid vigorous exercise or stimulating activities",
+      "Don't engage in work-related or stressful conversations",
+      "Avoid bright screens and blue light exposure",
+      "Skip caffeine or other stimulants during wind-down time",
+      "Don't choose reading material that's too exciting or anxiety-provoking"
+    ],
+    "estimated_impact": {
+      "sleep_onset": "High improvement",
+      "sleep_quality": "Moderate improvement",
+      "stress_reduction": "High improvement",
+      "sleep_consistency": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Sleep Wind Down - Huberman Lab AI",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ"
+      },
+      {
+        "title": "Sleep Strategies Unveiled - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ",
+        "duration": "2 hours 51 minutes"
+      },
+      {
+        "title": "Sleep Wind Down - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/LM28_upJ",
+        "duration": "1 hour 32 minutes"
+      }
+    ]
+  },
+  {
+    "id": "optic_flow_walking_001",
+    "title": "Optic Flow Walking",
+    "description": "Deliberate forward walking outdoors — without headphones — to generate optic flow, which suppresses amygdala activity and reduces anxiety and stress at a neurological level.",
+    "category": "mood",
+    "duration": "10-30 minutes",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-09-12",
+    "actions": [
+      {
+        "action": "Outdoor forward walk without headphones",
+        "duration": "10-30 minutes",
+        "frequency": "Daily",
+        "timing": "Any time of day — morning or post-work ideal",
+        "details": "Walk outdoors at a comfortable pace in a forward direction. The key is self-generated forward motion — not a treadmill, bike, or car. Leave headphones behind. Allow your eyes to naturally take in the passing visual environment (optic flow). This is not an exercise protocol — the goal is visual stimulation suppressing the amygdala, not cardiovascular output."
+      },
+      {
+        "action": "Allow panoramic gaze while walking",
+        "duration": "Throughout walk",
+        "frequency": "Daily",
+        "timing": "During the walk",
+        "details": "Soften your gaze and allow your visual field to expand to peripheral vision. Don't fix your eyes on a single point — let the environment pass. This wide-angle, forward-motion visual input is the active ingredient in optic flow's anxiety-reducing effect."
+      }
+    ],
+    "benefits": [
+      "Reduces amygdala activity and acute anxiety",
+      "Lowers cortisol and sympathetic nervous system tone",
+      "Improves mood through visual stimulation of brainstem circuits",
+      "Accessible — requires no equipment or cost",
+      "Stacks with morning sunlight and outdoor distance viewing",
+      "Supports processing of stressful events"
+    ],
+    "science": "Forward self-generated locomotion creates optic flow — the visual impression of the environment streaming past. Research shows this specific visual pattern suppresses activity in the amygdala (the brain's threat-detection center), reducing fear and anxiety states. The mechanism is distinct from exercise-induced mood effects. Huberman cites this as one of the most underused and accessible mental health tools available.",
+    "contraindications": [
+      "Treadmill walking does not produce the same optic flow effect",
+      "Headphone use (especially audio that demands attention) blunts the visual engagement"
+    ],
+    "estimated_impact": {
+      "anxiety": "High reduction",
+      "stress": "High reduction",
+      "mood": "Moderate improvement",
+      "amygdala_tone": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Understanding & Conquering Depression — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/understanding-and-conquering-depression",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/controlling-your-dopamine-for-motivation-focus-and-satisfaction",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+      }
+    ]
+  },
+  {
+    "id": "ultradian_work_cycles_001",
+    "title": "Ultradian Work Cycles (90-Minute Focus Blocks)",
+    "description": "Structure deep work into 90-minute blocks aligned with the brain's natural ultradian rhythm, followed by genuine rest, to maximize focus and prevent cognitive fatigue.",
+    "category": "focus",
+    "duration": "90 minutes of focused work + 10-20 min break",
+    "difficulty": "intermediate",
+    "priority": 5,
+    "importance": "foundation",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Work in 90-minute focused blocks",
+        "duration": "90 minutes",
+        "frequency": "1-3 blocks per day",
+        "timing": "During your peak alertness hours",
+        "details": "Set a timer for 90 minutes and work on a single task or project with minimal distractions. It's normal for the first 5-10 minutes to feel unfocused — this is the ramp-up phase. True deep focus typically engages around 10-20 minutes in. Resist checking phone or email during the block."
+      },
+      {
+        "action": "Take a genuine rest break between blocks",
+        "duration": "10-20 minutes",
+        "frequency": "After each 90-minute block",
+        "timing": "Between work blocks",
+        "details": "Step away from screens. Walk, look at a distance, do light stretching, or practice NSDR. Avoid switching to another cognitively demanding task or scrolling social media, which does not constitute rest for the prefrontal cortex."
+      }
+    ],
+    "benefits": [
+      "Aligns work with the brain's natural 90-minute attention cycles",
+      "Maximizes depth and quality of focus",
+      "Prevents cognitive fatigue and burnout",
+      "Improves output per hour of work",
+      "Creates clear boundaries between work and rest"
+    ],
+    "science": "The brain operates in ~90-minute ultradian cycles of higher and lower alertness throughout the day (the same rhythm seen in sleep cycles). Huberman explains that working in alignment with these cycles allows for deeper engagement of prefrontal cortex circuits. Forcing focus beyond 90 minutes yields diminishing returns and increases errors.",
+    "contraindications": [
+      "May not be practical for jobs requiring constant reactivity (e.g., customer support)",
+      "Not every task requires a full 90-minute block — adapt as needed"
+    ],
+    "estimated_impact": {
+      "deep_focus": "High improvement",
+      "productivity": "High improvement",
+      "cognitive_fatigue": "High reduction",
+      "work_quality": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Optimal Protocols for Studying & Learning — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/optimal-protocols-for-studying-and-learning",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "huberman-cardio-exercise",
+    "title": "Cardiovascular Exercise Protocol",
+    "description": "A science-backed aerobic exercise routine to enhance cardiovascular health, improve endurance, and support overall physical performance.",
+    "category": "fitness",
+    "duration": "20–45 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 11,
+    "importance": "foundation",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab",
+    "last_updated": "2025-09-18",
+    "weekly_frequency": {
+      "times_per_week": 4,
+      "preferred_days": [
+        "monday",
+        "tuesday",
+        "thursday",
+        "friday"
+      ],
+      "min_rest_days": 0
+    },
+    "actions": [
+      {
+        "action": "Moderate Intensity Cardio",
+        "duration": "20–45 minutes",
+        "frequency": "3–5 times per week",
+        "timing": "any time of day",
+        "details": "Engage in moderate-intensity aerobic exercise such as brisk walking, jogging, cycling, or swimming. Maintain a heart rate within 50–70% of your maximum heart rate."
+      },
+      {
+        "action": "High-Intensity Intervals (Optional)",
+        "duration": "10–15 minutes",
+        "frequency": "1–2 times per week",
+        "timing": "after moderate-intensity sessions or on separate days",
+        "details": "Incorporate intervals of high-intensity cardio (e.g., sprints or fast cycling) followed by rest periods to improve cardiovascular capacity and VO2 max."
+      }
+    ],
+    "benefits": [
+      "Improves heart health and circulation",
+      "Increases endurance and aerobic capacity",
+      "Supports weight management",
+      "Enhances mood and reduces stress"
+    ],
+    "science": "Aerobic exercise has been extensively studied and shown to improve cardiovascular function, enhance mitochondrial efficiency, reduce blood pressure, and support overall longevity. High-intensity interval training can further boost VO2 max and cardiovascular performance.",
+    "contraindications": [
+      "Individuals with cardiovascular or respiratory conditions should consult a healthcare provider before starting this protocol.",
+      "Not recommended for those with acute injuries without clearance from a professional."
+    ],
+    "estimated_impact": {
+      "cardiovascular_health": "high",
+      "endurance": "high",
+      "weight_management": "moderate",
+      "mood": "moderate"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Optimize Cardiovascular Exercise",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/how-to-optimize-cardiovascular-exercise",
+        "duration": "90 minutes"
+      }
+    ]
+  },
+  {
+    "id": "huberman-strength-training",
+    "title": "Strength Training Protocol",
+    "description": "A science-backed resistance training routine to build muscle strength, size, and overall physical performance.",
+    "category": "fitness",
+    "duration": "45–60 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 12,
+    "importance": "foundation",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab",
+    "last_updated": "2025-09-18",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Full-Body Resistance Training",
+        "duration": "45–60 minutes",
+        "frequency": "3 times per week",
+        "timing": "any time of day",
+        "details": "Perform compound lifts such as squats, deadlifts, bench press, rows, and overhead presses. Include 3–4 sets of 6–12 reps for each major muscle group. Rest 60–90 seconds between sets."
+      },
+      {
+        "action": "Accessory Work",
+        "duration": "10–15 minutes",
+        "frequency": "2–3 times per week",
+        "timing": "after main lifts",
+        "details": "Add isolation exercises for smaller muscle groups (biceps, triceps, calves, abs) to support balanced muscle development."
+      }
+    ],
+    "benefits": [
+      "Increases muscular strength and endurance",
+      "Promotes hypertrophy and muscle mass growth",
+      "Improves bone density",
+      "Enhances overall functional fitness"
+    ],
+    "science": "Strength training stimulates muscle protein synthesis and promotes neuromuscular adaptations. Regular resistance training improves muscle strength, endurance, bone health, and metabolic efficiency.",
+    "contraindications": [
+      "Individuals with acute injuries or musculoskeletal limitations should consult a healthcare provider before starting.",
+      "Improper technique can lead to injury; proper form and progression are essential."
+    ],
+    "estimated_impact": {
+      "muscle_strength": "high",
+      "muscle_mass": "high",
+      "bone_density": "moderate",
+      "functional_fitness": "high"
+    },
+    "learning_resources": [
+      {
+        "title": "Strength Training and Hypertrophy: Science-Based Guide",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/strength-training-and-hypertrophy-science-based-guide",
+        "duration": "90 minutes"
+      }
+    ]
+  },
+  {
+    "id": "vision_breaks_001",
+    "title": "Vision Breaks for Eye Health",
+    "description": "Regular breaks from close-up work to prevent eye strain, reduce fatigue, and maintain visual health through the 20-20-20 rule and deliberate blinking.",
+    "category": "focus",
+    "duration": "20 seconds every 20 minutes",
+    "difficulty": "beginner",
+    "priority": 3,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab, Healthline, Huberman Lab Newsletter",
+    "last_updated": "2025-09-14",
+    "actions": [
+      {
+        "action": "Follow the 20-20-20 rule",
+        "duration": "20 seconds",
+        "frequency": "Every 20 minutes of close work",
+        "timing": "During any close-up visual tasks",
+        "details": "Every 20 minutes, look at something 20 feet away for at least 20 seconds. Set a timer or use an app reminder to maintain consistency."
+      },
+      {
+        "action": "Practice deliberate blinking",
+        "duration": "5-10 blinks",
+        "frequency": "Every few minutes during screen time",
+        "timing": "Throughout the day",
+        "details": "Slow, deliberate blinks help rewet the eyes. Close your eyes completely for a full second with each blink."
+      }
+    ],
+    "benefits": [
+      "Reduces digital eye strain and computer vision syndrome",
+      "Prevents dry eyes and maintains natural tear film",
+      "Reduces risk of myopia progression",
+      "Improves focus flexibility and accommodation",
+      "Decreases headaches and eye fatigue",
+      "Maintains healthy blinking patterns"
+    ],
+    "science": "The 20-20-20 rule helps relax the ciliary muscles responsible for focusing, preventing accommodative spasm. Regular distance viewing stimulates parasympathetic nervous system activity, promoting eye muscle relaxation. Deliberate blinking maintains the tear film layer essential for eye health and clear vision.",
+    "contraindications": [
+      "None - safe for all ages and visual conditions"
+    ],
+    "estimated_impact": {
+      "eye_strain": "High reduction",
+      "focus_quality": "Moderate improvement",
+      "visual_comfort": "High improvement",
+      "productivity": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science of Vision, Eye Health & Seeing Better — Huberman Lab Episode",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=ssmwxKPFMFU",
+        "duration": "1 hour 10 minutes"
+      },
+      {
+        "title": "Exercises & Nutrition to Support Eye Health — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/exercises-and-nutrition-to-support-eye-health"
+      },
+      {
+        "title": "20-20-20 Rule: Does It Help Prevent Digital Eyestrain? — Healthline Article",
+        "type": "webpage",
+        "url": "https://www.healthline.com/health/eye-health/20-20-20-rule"
+      }
+    ]
+  },
+  {
+    "id": "afternoon_sunlight_001",
+    "title": "Afternoon Sunlight Viewing",
+    "description": "View sunlight in the late afternoon to signal your circadian clock that evening is approaching, which helps protect against the negative effects of artificial light at night on melatonin production.",
+    "category": "sleep",
+    "duration": "5-10 minutes",
+    "difficulty": "beginner",
+    "priority": 4,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast & Newsletter",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "View low solar angle sunlight in the late afternoon",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "Late afternoon, ideally in the last 1-2 hours before sunset",
+        "details": "Go outside and look toward the sun (not directly at it) as it descends. The yellow-orange light at low solar angles activates a different set of retinal neurons that signal 'evening' to your circadian clock. This provides a second anchor point for your internal clock."
+      }
+    ],
+    "benefits": [
+      "Provides a second circadian anchor point (complementing morning light)",
+      "Reduces sensitivity to artificial light at night",
+      "Protects melatonin onset from being delayed by evening screen use",
+      "Supports consistent sleep-wake timing",
+      "Free and requires no equipment"
+    ],
+    "science": "Afternoon/evening sunlight exposure at low solar angles activates melanopsin-containing retinal ganglion cells in a pattern that signals 'dusk' to the suprachiasmatic nucleus (SCN). Huberman explains this acts as a protective buffer — it reduces the melatonin-suppressing effect of artificial light exposure later in the evening by up to 50%.",
+    "contraindications": [
+      "Do not stare directly at the sun",
+      "Use UV protection if extended exposure in bright conditions"
+    ],
+    "estimated_impact": {
+      "sleep_quality": "Moderate improvement",
+      "circadian_health": "High improvement",
+      "melatonin_protection": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake",
+        "duration": "1.5 hours"
+      },
+      {
+        "title": "Toolkit for Sleep — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+      }
+    ]
+  },
+  {
+    "id": "cold_exposure_001",
+    "title": "Deliberate Cold Exposure",
+    "description": "Deliberate cold water immersion to boost dopamine, norepinephrine, and resilience. Huberman recommends 11 minutes total per week across 2-4 sessions for lasting neurochemical benefits.",
+    "category": "recovery",
+    "duration": "2-5 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 5,
+    "importance": "high-impact",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast & Newsletter",
+    "last_updated": "2026-02-20",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Cold water immersion (cold shower, ice bath, or cold plunge)",
+        "duration": "1-5 minutes",
+        "frequency": "2-4 sessions per week (11 min total/week)",
+        "timing": "Morning preferred for maximum dopamine & alertness benefit",
+        "details": "Enter water cold enough to make you want to get out but safe to stay in (typically 45-60°F / 7-15°C). Submerge up to the neck. Control your breathing with slow exhales. End the session on cold — do not warm up with a hot shower immediately, as shivering extends the metabolic benefit."
+      },
+      {
+        "action": "Post-cold natural rewarming",
+        "duration": "10-15 minutes",
+        "frequency": "After each cold session",
+        "timing": "Immediately after cold exposure",
+        "details": "Allow your body to rewarm naturally through shivering and movement. This extends the dopamine and norepinephrine elevation. Avoid jumping into a hot shower right away."
+      }
+    ],
+    "benefits": [
+      "Increases dopamine by 200-300% for several hours",
+      "Boosts norepinephrine for alertness and focus",
+      "Builds mental resilience and stress tolerance",
+      "Improves mood and reduces symptoms of depression",
+      "Enhances brown fat thermogenesis and metabolism",
+      "Reduces inflammation and supports recovery"
+    ],
+    "science": "Cold exposure triggers a massive release of norepinephrine (200-300%) and dopamine (250%) from the locus coeruleus and adrenal glands. Unlike stimulant-based dopamine spikes, cold-induced dopamine elevation is long-lasting (hours). The practice also increases brown adipose tissue activity, improving metabolic health over time.",
+    "contraindications": [
+      "Individuals with cardiovascular conditions (Raynaud's, heart disease) should consult a physician",
+      "Never do cold water immersion alone — drowning risk exists",
+      "Avoid immediately after strength training if hypertrophy is the goal (blunts adaptation)",
+      "Start conservatively — hypothermia is a real risk at extreme temperatures"
+    ],
+    "estimated_impact": {
+      "dopamine_levels": "Very high increase (250%)",
+      "mental_resilience": "High improvement",
+      "mood": "High improvement",
+      "metabolism": "Moderate improvement",
+      "inflammation": "Moderate reduction"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science & Use of Cold Exposure for Health & Performance — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/the-science-and-use-of-cold-exposure-for-health-and-performance",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Deliberate Cold Exposure Protocols — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/deliberate-cold-exposure"
+      }
+    ]
+  },
+  {
+    "id": "nasal_breathing_001",
+    "title": "Nasal Breathing Practice",
+    "description": "Deliberately practice nasal breathing during the day and especially during low-to-moderate exercise to improve oxygen delivery, filter air, and activate the parasympathetic nervous system.",
+    "category": "breathing",
+    "duration": "Ongoing daily practice",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Breathe through your nose during daily activities and exercise",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "Throughout the day, especially during low-moderate intensity exercise",
+        "details": "Consciously close your mouth and breathe through your nose during walking, working, and exercising at low to moderate intensity. Nasal breathing produces nitric oxide, which dilates blood vessels and improves oxygen delivery. During high-intensity exercise, mouth breathing is acceptable when needed."
+      },
+      {
+        "action": "Mouth-tape during sleep (optional)",
+        "duration": "During sleep",
+        "frequency": "Nightly",
+        "timing": "At bedtime",
+        "details": "Use medical-grade mouth tape to encourage nasal breathing during sleep. Start with a small strip and ensure you can breathe freely through your nose before attempting. This reduces snoring and improves sleep quality. Discontinue if uncomfortable."
+      }
+    ],
+    "benefits": [
+      "Increases nitric oxide production for better oxygen delivery",
+      "Filters, warms, and humidifies incoming air",
+      "Activates parasympathetic nervous system (calming)",
+      "Reduces over-breathing and CO2 loss",
+      "Improves exercise efficiency at submaximal intensities",
+      "May reduce snoring and improve sleep quality"
+    ],
+    "science": "Nasal breathing produces nitric oxide in the paranasal sinuses, which acts as a vasodilator improving oxygen uptake by 10-15%. Huberman discusses how nasal breathing preferentially activates the parasympathetic nervous system compared to mouth breathing, which tends to activate sympathetic (stress) pathways. The nasal passages also filter pathogens and warm incoming air.",
+    "contraindications": [
+      "Nasal congestion or deviated septum may require medical treatment first",
+      "Do not force nasal breathing during high-intensity exercise if it causes distress",
+      "Mouth taping is not suitable for those with nasal obstruction, sleep apnea, or nasal polyps"
+    ],
+    "estimated_impact": {
+      "oxygen_delivery": "Moderate improvement",
+      "stress_reduction": "Moderate improvement",
+      "sleep_quality": "Moderate improvement",
+      "exercise_efficiency": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "focus_meditation_001",
+    "title": "Focus Meditation (13-Minute Daily)",
+    "description": "A daily 13-minute meditation practice focused on sustained attention to a single point (breath, visual target, or body sensation) to improve focus, attention span, and memory.",
+    "category": "focus",
+    "duration": "13 minutes",
+    "difficulty": "beginner",
+    "priority": 6,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "13-minute focused attention meditation",
+        "duration": "13 minutes",
+        "frequency": "Daily",
+        "timing": "Any consistent time of day (morning recommended)",
+        "details": "Sit comfortably and focus your attention on a single point — your breath, a visual target (like a candle flame or spot on the wall), or an internal body sensation. When your mind wanders, gently return focus to the target. The act of refocusing IS the exercise that builds attentional circuits. Don't aim for perfect focus; aim for consistent refocusing."
+      }
+    ],
+    "benefits": [
+      "Improves sustained attention and focus within 8 weeks",
+      "Enhances working memory capacity",
+      "Reduces default mode network activity (mind wandering)",
+      "Increases prefrontal cortex function",
+      "Supports emotional regulation",
+      "Accessible to beginners with no prior meditation experience"
+    ],
+    "science": "A study from Wendy Suzuki's lab (discussed on Huberman Lab) found that 13 minutes of daily focused attention meditation for 8 weeks significantly improved attention, mood, and memory. The key mechanism is the repeated act of refocusing attention, which strengthens prefrontal cortex circuits involved in top-down attentional control.",
+    "contraindications": [
+      "None for most people",
+      "If meditation increases anxiety, start with shorter sessions (5 minutes) and build up"
+    ],
+    "estimated_impact": {
+      "focus": "High improvement",
+      "memory": "Moderate improvement",
+      "emotional_regulation": "Moderate improvement",
+      "stress_reduction": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How Meditation Works & Science-Based Effective Meditations — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-meditation-works-and-science-based-effective-meditations",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "nsdr_for_poor_sleep_001",
+    "title": "NSDR After Poor Sleep",
+    "description": "Non-Sleep Deep Rest (NSDR) protocols to restore alertness and cognitive function after poor sleep, using guided relaxation techniques to reset the nervous system.",
+    "category": "sleep",
+    "duration": "10-30 minutes",
+    "difficulty": "beginner",
+    "priority": 6,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab Podcast, Sleep Foundation research",
+    "last_updated": "2025-07-16",
+    "oura_triggers": [
+      {
+        "metric": "sleep_score",
+        "operator": "<",
+        "threshold": 75,
+        "label": "sleep < 75"
+      }
+    ],
+    "conditional": {
+      "question": "Did you sleep poorly last night?",
+      "yesLabel": "Yes, add to today's tasks",
+      "noLabel": "No, I slept well"
+    },
+    "actions": [
+      {
+        "action": "Yoga Nidra or guided NSDR",
+        "duration": "10-30 minutes",
+        "frequency": "Once after poor sleep",
+        "timing": "Morning or early afternoon",
+        "details": "Use a guided Yoga Nidra or NSDR protocol. Lie down comfortably and follow breathing and body scan instructions to achieve deep relaxation without sleep."
+      },
+      {
+        "action": "Progressive muscle relaxation",
+        "duration": "10-20 minutes",
+        "frequency": "As needed",
+        "timing": "Any time during the day",
+        "details": "Systematically tense and release muscle groups throughout the body while focusing on the contrast between tension and relaxation."
+      }
+    ],
+    "benefits": [
+      "Restores alertness and cognitive function after poor sleep",
+      "Reduces stress and anxiety from sleep deprivation",
+      "Activates parasympathetic nervous system for recovery",
+      "Improves mood and emotional regulation",
+      "Can partially compensate for lost REM sleep benefits",
+      "Reduces cortisol levels and stress response"
+    ],
+    "science": "NSDR protocols activate the parasympathetic nervous system and can restore dopamine levels in the brain. Studies show that Yoga Nidra increases dopamine in the basal forebrain by up to 65%, helping compensate for the dopamine depletion that occurs after poor sleep.",
+    "contraindications": [
+      "Should not replace regular sleep",
+      "Avoid if experiencing severe insomnia without medical consultation"
+    ],
+    "estimated_impact": {
+      "alertness": "High improvement",
+      "cognitive_function": "Moderate improvement",
+      "stress_reduction": "High improvement",
+      "energy_levels": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      },
+      {
+        "title": "NSDR & Yoga Nidra Protocol - Huberman Lab",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=example2",
+        "duration": "15 minutes"
+      },
+      {
+        "title": "Free Yoga Nidra Audio Guide",
+        "type": "webpage",
+        "url": "https://www.sleepfoundation.org/yoga-nidra"
+      }
+    ]
+  },
+  {
+    "id": "dopamine_management_001",
+    "title": "Dopamine Management Protocol",
+    "description": "Manage dopamine peaks and troughs deliberately to sustain motivation, avoid burnout, and maintain a healthy baseline. Avoid layering too many dopamine-triggering behaviors simultaneously.",
+    "category": "mood",
+    "duration": "Ongoing lifestyle practice",
+    "difficulty": "intermediate",
+    "priority": 7,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Avoid stacking dopamine triggers",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "Throughout the day",
+        "details": "Do not combine multiple high-dopamine activities simultaneously (e.g., music + pre-workout + caffeine + phone scrolling before a workout). Stacking amplifies the peak but deepens the subsequent trough, reducing baseline dopamine over time."
+      },
+      {
+        "action": "Intermittently reward effort-based activities",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "During work or exercise",
+        "details": "Randomly celebrate wins rather than rewarding every accomplishment. This mimics a variable reinforcement schedule, which sustains dopamine release and motivation better than constant rewards."
+      },
+      {
+        "action": "Practice 'dopamine fasting' from phone/social media",
+        "duration": "1-4 hours",
+        "frequency": "Daily",
+        "timing": "Morning and/or evening",
+        "details": "Avoid high-stimulation, low-effort dopamine sources (social media, news scrolling, video games) during focused work blocks and the first/last hour of the day."
+      }
+    ],
+    "benefits": [
+      "Maintains healthy dopamine baseline for sustained motivation",
+      "Prevents burnout and anhedonia from dopamine depletion",
+      "Improves ability to find satisfaction in effort-based activities",
+      "Reduces phone/social media dependency",
+      "Enhances focus and goal-directed behavior"
+    ],
+    "science": "Dopamine operates on a trough-peak system: large peaks are followed by proportional troughs below baseline. Repeated high-dopamine stimulation without recovery lowers the baseline, leading to reduced motivation and pleasure (anhedonia). Intermittent reinforcement and avoiding dopamine stacking help maintain a healthy set point.",
+    "contraindications": [
+      "Not a substitute for treatment of clinical depression or ADHD",
+      "Excessive restriction of all pleasurable activities is not the goal"
+    ],
+    "estimated_impact": {
+      "motivation": "High improvement",
+      "mood_stability": "High improvement",
+      "focus": "Moderate improvement",
+      "phone_dependency": "High reduction"
+    },
+    "learning_resources": [
+      {
+        "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/controlling-your-dopamine-for-motivation-focus-and-satisfaction",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Leverage Dopamine to Overcome Procrastination & Optimize Effort — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/leverage-dopamine-to-overcome-procrastination-and-optimize-effort",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "hrv_improvement_protocol_001",
+    "title": "Heart Rate Variability (HRV) Improvement Protocol",
+    "description": "Science-backed protocol to enhance Heart Rate Variability (HRV) through breathing techniques, music therapy, and nutrition to improve autonomic nervous system balance and recovery.",
+    "category": "recovery",
+    "duration": "10-30 minutes daily",
+    "difficulty": "beginner",
+    "priority": 8,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab AI - Andy Galpin & Andrew Huberman",
+    "last_updated": "2025-01-27",
+    "oura_triggers": [
+      {
+        "metric": "hrv",
+        "operator": "<",
+        "threshold": 40,
+        "label": "HRV < 40 ms"
+      }
+    ],
+    "actions": [
+      {
+        "action": "Extended exhale breathing practice",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "Morning or evening",
+        "details": "Practice breathing techniques emphasizing extended exhales. Inhale for 4 counts, exhale for 6-8 counts. This helps lower heart rate and promotes calmness by activating the parasympathetic nervous system."
+      },
+      {
+        "action": "Box breathing technique",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "During stress or as daily practice",
+        "details": "Inhale for 4 counts, hold for 4 counts, exhale for 4 counts, hold for 4 counts. Repeat this cycle to enhance HRV and manage stress effectively."
+      },
+      {
+        "action": "Physiological sighing",
+        "duration": "3-5 minutes",
+        "frequency": "As needed throughout the day",
+        "timing": "During moments of stress or anxiety",
+        "details": "Perform double inhales through the nose followed by a long exhale through the mouth. This technique is highly effective for managing stress and improving HRV."
+      },
+      {
+        "action": "Daily music therapy",
+        "duration": "10-30 minutes",
+        "frequency": "Daily",
+        "timing": "Any time of day",
+        "details": "Listen to calming music for 10-30 minutes daily. Choose music that promotes relaxation and engages the parasympathetic nervous system to boost HRV and physiological resilience."
+      },
+      {
+        "action": "Omega-3 fatty acid supplementation",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "With meals",
+        "details": "Ensure adequate omega-3 fatty acid intake through diet or supplementation. Omega-3s are associated with improved HRV, enhanced mood, and reduced anxiety symptoms."
+      },
+      {
+        "action": "HRV monitoring and tracking",
+        "duration": "2-5 minutes",
+        "frequency": "Daily",
+        "timing": "Morning upon waking",
+        "details": "Use a reliable HRV monitoring device to track your progress. Note that device accuracy varies, so focus on trends rather than absolute values. Higher HRV indicates better autonomic nervous system balance."
+      }
+    ],
+    "benefits": [
+      "Improves autonomic nervous system balance",
+      "Enhances recovery from stress and exercise",
+      "Increases vagal tone and parasympathetic activity",
+      "Reduces overall stress and anxiety levels",
+      "Promotes better emotional regulation",
+      "Supports cardiovascular health",
+      "Enhances physiological resilience and adaptability"
+    ],
+    "science": "HRV refers to the variation in time between heartbeats, serving as an indicator of autonomic nervous system function. Higher HRV indicates healthy balance between sympathetic (fight or flight) and parasympathetic (rest and digest) states. Irregular heartbeats (greater HRV) correlate with states of rest and recovery, while rhythmic patterns (lower HRV) suggest stress. Vagal tone, associated with the vagus nerve, influences HRV and plays a role in regulating heart rate and emotional states. Breathing techniques with extended exhales help lower heart rate and promote calmness by activating the parasympathetic nervous system.",
+    "contraindications": [
+      "Be cautious with HRV devices - not all are reliable and comparisons between individuals can be misleading",
+      "If you have cardiovascular conditions, consult a healthcare provider before starting breathing exercises",
+      "Start slowly with breathing techniques if you're new to them",
+      "Omega-3 supplements may interact with blood-thinning medications - consult your doctor"
+    ],
+    "estimated_impact": {
+      "hrv_improvement": "High improvement",
+      "stress_reduction": "High improvement",
+      "recovery_enhancement": "Moderate improvement",
+      "autonomic_balance": "High improvement",
+      "emotional_regulation": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Heart Rate Variability - Huberman Lab AI",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs"
+      },
+      {
+        "title": "Heart Rate Variability - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+        "duration": "2 hours 7 minutes"
+      },
+      {
+        "title": "Vagal Tone Insights - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+        "duration": "1 hour 14 minutes"
+      },
+      {
+        "title": "Breathing for Control - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+        "duration": "1 hour 43 minutes"
+      },
+      {
+        "title": "Breathing and Heart Rate - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+        "duration": "1 hour 41 minutes"
+      }
+    ]
+  },
+  {
+    "id": "omega3_epa_001",
+    "title": "Omega-3 / EPA Supplementation",
+    "description": "Daily supplementation with omega-3 fatty acids (targeting 1-2g EPA) to support mood, cardiovascular health, brain function, and reduce inflammation.",
+    "category": "nutrition",
+    "duration": "Ongoing daily supplementation",
+    "difficulty": "beginner",
+    "priority": 8,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Take omega-3 supplement with at least 1g EPA",
+        "duration": "Immediate",
+        "frequency": "Daily",
+        "timing": "With a meal containing fat for better absorption",
+        "details": "Take a high-quality fish oil, krill oil, or algae-based omega-3 supplement. The key metric is EPA content — aim for at least 1000mg (1g) EPA per day. EPA (not DHA) is the primary driver of the mood and anti-inflammatory benefits. Check the label for EPA specifically."
+      }
+    ],
+    "benefits": [
+      "Significant antidepressant effects at 1g+ EPA/day",
+      "Reduces systemic inflammation",
+      "Supports cardiovascular health",
+      "Improves brain function and neuronal membrane fluidity",
+      "May improve HRV (heart rate variability)",
+      "Supports joint health and recovery"
+    ],
+    "science": "Huberman cites meta-analyses showing that EPA at doses of 1-2g/day has antidepressant effects comparable to some prescription medications. EPA modulates the inflammatory pathway by competing with arachidonic acid, reducing pro-inflammatory eicosanoid production. The mood effect is primarily from EPA, not DHA, though DHA supports brain structure.",
+    "contraindications": [
+      "May interact with blood-thinning medications — consult physician",
+      "Some people experience fish burps — taking with meals or using enteric-coated capsules helps",
+      "High doses (>3g/day) may increase bleeding risk"
+    ],
+    "estimated_impact": {
+      "mood": "High improvement (at 1g+ EPA)",
+      "inflammation": "High reduction",
+      "cardiovascular_health": "Moderate improvement",
+      "brain_function": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-enhance-your-gut-microbiome-for-brain-and-overall-health",
+        "duration": "2 hours"
+      },
+      {
+        "title": "The Science of Emotions & Relationships — Huberman Lab (omega-3 discussion)",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/the-science-of-emotions-and-relationships",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "time_restricted_eating_001",
+    "title": "Time-Restricted Eating (Intermittent Fasting)",
+    "description": "Confine food intake to an 8-10 hour window each day, aligned with your circadian rhythm, to support metabolic health, reduce inflammation, and improve body composition.",
+    "category": "nutrition",
+    "duration": "8-10 hour eating window",
+    "difficulty": "intermediate",
+    "priority": 8,
+    "importance": "high-impact",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Eat within an 8-10 hour window",
+        "duration": "8-10 hours",
+        "frequency": "Daily",
+        "timing": "Ideally starting 1-2 hours after waking, ending 2-3 hours before bed",
+        "details": "Choose a consistent eating window (e.g., 10 AM - 6 PM). Consume all meals and caloric beverages within this window. Water, black coffee, and plain tea are fine outside the window. Consistency of timing matters more than exact window length."
+      },
+      {
+        "action": "Avoid eating close to bedtime",
+        "duration": "N/A",
+        "frequency": "Daily",
+        "timing": "Stop eating 2-3 hours before sleep",
+        "details": "Late-night eating disrupts sleep architecture and shifts circadian clock gene expression in the liver. Finish your last meal at least 2-3 hours before bedtime."
+      }
+    ],
+    "benefits": [
+      "Improves insulin sensitivity and blood glucose regulation",
+      "Supports healthy body composition and fat loss",
+      "Reduces systemic inflammation",
+      "Aligns peripheral clocks with circadian rhythm",
+      "May support longevity through autophagy activation",
+      "Improves digestive health"
+    ],
+    "science": "Time-restricted eating (TRE) aligns food intake with circadian biology. Satchin Panda's research (discussed extensively on Huberman Lab) shows TRE improves metabolic markers even without calorie reduction. Eating within a consistent window synchronizes liver, gut, and muscle clocks with the master clock in the SCN.",
+    "contraindications": [
+      "Not recommended for individuals with eating disorders or history of disordered eating",
+      "Pregnant or breastfeeding women should not fast without medical supervision",
+      "Those on blood sugar medications should consult a physician",
+      "May not be suitable for high-performance athletes requiring frequent fueling"
+    ],
+    "estimated_impact": {
+      "metabolic_health": "High improvement",
+      "body_composition": "Moderate improvement",
+      "inflammation": "Moderate reduction",
+      "sleep_quality": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/effects-of-fasting-and-time-restricted-eating-on-fat-loss-and-health",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Dr. Satchin Panda: Intermittent Fasting to Improve Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/dr-satchin-panda-intermittent-fasting-to-improve-health-cognition-and-longevity",
+        "duration": "2.5 hours"
+      }
+    ]
+  },
+  {
+    "id": "gratitude_story_001",
+    "title": "Gratitude Practice (Story-Based)",
+    "description": "A neuroscience-backed gratitude practice that involves receiving or reading a genuine story of gratitude (not just listing things you're grateful for), which activates pro-social brain circuits and serotonin pathways.",
+    "category": "mood",
+    "duration": "5 minutes per session",
+    "difficulty": "beginner",
+    "priority": 10,
+    "importance": "high-impact",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Read or recall a genuine story of gratitude",
+        "duration": "5 minutes",
+        "frequency": "3 times per week",
+        "timing": "Any time of day",
+        "details": "Find or write a brief story about someone genuinely receiving help or expressing gratitude. It doesn't have to be YOUR story — observing genuine gratitude activates the same neural circuits. Re-read the same story if it still moves you. The key is emotional resonance, not novelty."
+      }
+    ],
+    "benefits": [
+      "Activates pro-social prefrontal circuits",
+      "Increases serotonin and shifts autonomic tone toward calm",
+      "More effective than gratitude lists (which often feel performative)",
+      "Takes only 5 minutes for measurable neural effects",
+      "Improves resilience and subjective well-being",
+      "Effects are cumulative over weeks"
+    ],
+    "science": "Huberman explains that traditional gratitude lists are less effective because they can feel forced. The neuroscience shows that the most potent gratitude effect comes from the narrative experience of receiving or witnessing genuine gratitude. This activates the medial prefrontal cortex and anterior cingulate cortex — areas associated with empathy, reward, and pro-social behavior — and shifts autonomic nervous system function.",
+    "contraindications": [
+      "None — safe for everyone",
+      "Those experiencing grief or loss should choose timing that feels appropriate"
+    ],
+    "estimated_impact": {
+      "mood": "High improvement",
+      "resilience": "Moderate improvement",
+      "social_connection": "Moderate improvement",
+      "stress_reduction": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science of Gratitude & How to Build a Gratitude Practice — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/the-science-of-gratitude-and-how-to-build-a-gratitude-practice",
+        "duration": "1.5 hours"
+      }
+    ]
+  },
+  {
+    "id": "huberman-journaling-mental-health",
+    "title": "Expressive Journaling Protocol for Mental Health",
+    "description": "A science-backed journaling method developed by Dr. James Pennebaker, shown to enhance emotional processing, reduce stress, and improve overall well-being.",
+    "category": "mood",
+    "duration": "15–30 minutes per session",
+    "difficulty": "beginner",
+    "priority": 10,
+    "importance": "high-impact",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab",
+    "last_updated": "2025-09-18",
+    "weekly_frequency": {
+      "times_per_week": 4,
+      "preferred_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday"
+      ],
+      "min_rest_days": 0
+    },
+    "actions": [
+      {
+        "action": "Expressive Writing Session",
+        "duration": "15–30 minutes",
+        "frequency": "4 consecutive days",
+        "timing": "any time of day",
+        "details": "Write continuously about a significant emotional experience or trauma. Focus on expressing your deepest thoughts and feelings without concern for grammar or spelling."
+      },
+      {
+        "action": "Post-Writing Reflection",
+        "duration": "5–15 minutes",
+        "frequency": "after each writing session",
+        "timing": "immediately after writing",
+        "details": "Engage in calming activities such as deep breathing, meditation, or a short walk to help process emotions and stabilize mood."
+      }
+    ],
+    "benefits": [
+      "Improves emotional processing",
+      "Reduces symptoms of anxiety and depression",
+      "Enhances immune function",
+      "Promotes neuroplasticity and brain rewiring"
+    ],
+    "science": "This protocol is supported by over 200 peer-reviewed studies demonstrating its effectiveness in improving mental and physical health by engaging the prefrontal cortex and reducing amygdala activity.",
+    "contraindications": [
+      "Individuals with severe trauma or PTSD should consult a mental health professional before starting this protocol.",
+      "Not recommended for those currently in crisis without professional support."
+    ],
+    "estimated_impact": {
+      "mental_health": "high",
+      "immune_function": "moderate",
+      "neuroplasticity": "moderate"
+    },
+    "learning_resources": [
+      {
+        "title": "A Science-Supported Journaling Protocol to Improve Mental & Physical Health",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/a-science-supported-journaling-protocol-to-improve-mental-physical-health",
+        "duration": "90 minutes"
+      }
+    ]
+  },
+  {
+    "id": "foundational_fitness_001",
+    "title": "Foundational Fitness (Weekly Schedule)",
+    "description": "Huberman's complete weekly fitness template combining cardiovascular training, resistance training, and flexibility work across a structured 5-6 day schedule for comprehensive fitness.",
+    "category": "fitness",
+    "duration": "45-75 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 11,
+    "importance": "high-impact",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast & Newsletter",
+    "last_updated": "2026-02-20",
+    "weekly_frequency": {
+      "times_per_week": 5,
+      "preferred_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Day 1 — Long endurance (Zone 2 cardio)",
+        "duration": "60-75 minutes",
+        "frequency": "Once per week",
+        "timing": "Any day",
+        "details": "Sustained low-to-moderate intensity cardio: jogging, cycling, rowing, or brisk hiking. Heart rate in Zone 2 (can hold a conversation but slightly breathless). Builds mitochondrial density and aerobic base."
+      },
+      {
+        "action": "Day 2 — Legs resistance training",
+        "duration": "45-60 minutes",
+        "frequency": "Once per week",
+        "timing": "Any day",
+        "details": "Focus on quads, hamstrings, glutes, and calves. Exercises: squats, leg press, RDLs, lunges, calf raises. 3-4 sets of 5-8 reps for strength or 8-15 for hypertrophy."
+      },
+      {
+        "action": "Day 3 — Heat/cold or active recovery",
+        "duration": "30-60 minutes",
+        "frequency": "Once per week",
+        "timing": "Any day",
+        "details": "Sauna, cold plunge, yoga, or light walking. Focus on recovery and mobility. This day supports the training days around it."
+      },
+      {
+        "action": "Day 4 — Torso/upper body (push/pull)",
+        "duration": "45-60 minutes",
+        "frequency": "Once per week",
+        "timing": "Any day",
+        "details": "Chest, back, shoulders, and arms. Exercises: bench press, rows, overhead press, pull-ups, curls. Alternate push and pull movements. 3-4 sets of 6-12 reps."
+      },
+      {
+        "action": "Day 5 — High-intensity cardio (intervals or sprints)",
+        "duration": "20-35 minutes",
+        "frequency": "Once per week",
+        "timing": "Any day",
+        "details": "Sprint intervals, rowing intervals, or cycling intervals. 30-60 seconds work, 30-90 seconds rest. This builds VO2 max and anaerobic capacity."
+      }
+    ],
+    "benefits": [
+      "Addresses all components of fitness: endurance, strength, and flexibility",
+      "Structured for sustainable long-term adherence",
+      "Balances training stimulus with recovery",
+      "Adaptable to different fitness levels",
+      "Based on Huberman's personal training schedule",
+      "Combines cardiovascular and resistance training optimally"
+    ],
+    "science": "Huberman's foundational fitness protocol is based on the principle that optimal fitness requires training all major energy systems: the phosphagen system (strength/power), glycolytic system (HIIT/anaerobic), and oxidative system (Zone 2/endurance). The weekly split allows adequate recovery between sessions while maintaining training frequency.",
+    "contraindications": [
+      "Beginners should start with reduced volume and build up over 4-6 weeks",
+      "Those with injuries should modify exercises — consult a physical therapist",
+      "Avoid training through acute pain"
+    ],
+    "estimated_impact": {
+      "overall_fitness": "High improvement",
+      "cardiovascular_health": "High improvement",
+      "muscular_strength": "High improvement",
+      "body_composition": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Foundational Fitness Protocol — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
+      },
+      {
+        "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/dr-andy-galpin-optimize-your-training-program-for-fitness-and-longevity",
+        "duration": "3 hours"
+      }
+    ]
+  },
+  {
+    "id": "distance_viewing_outdoors_001",
+    "title": "Daily Outdoor Distance Viewing",
+    "description": "Spend time outdoors looking at distant objects to support healthy eye development, reduce myopia risk, and provide natural light exposure for circadian health.",
+    "category": "focus",
+    "duration": "30-60 minutes daily",
+    "difficulty": "beginner",
+    "priority": 4,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab; FoundMyFitness/Dexa.ai; Healthline",
+    "last_updated": "2025-09-14",
+    "actions": [
+      {
+        "action": "Outdoor distance viewing",
+        "duration": "At least 30 minutes",
+        "frequency": "Daily",
+        "timing": "Any time during daylight hours",
+        "details": "Spend time outdoors looking at objects at least 20 feet away. Walk, sit in a park, or engage in outdoor activities while consciously viewing distant landscapes, trees, or horizon."
+      },
+      {
+        "action": "Active outdoor pursuits",
+        "duration": "15-30 minutes",
+        "frequency": "Daily",
+        "timing": "Morning or afternoon preferred",
+        "details": "Engage in outdoor sports, hiking, or activities that naturally require distance viewing like tennis, golf, or nature walks."
+      }
+    ],
+    "benefits": [
+      "Reduces risk of myopia development and progression",
+      "Provides natural bright light exposure (2000+ lux)",
+      "Supports healthy circadian rhythm regulation",
+      "Improves overall eye health and visual development",
+      "Enhances depth perception and spatial awareness",
+      "Reduces indoor air pollution exposure for eyes"
+    ],
+    "science": "Outdoor light exposure of 1000-10000+ lux stimulates dopamine release in the retina, which inhibits axial eye growth and myopia development. Time spent outdoors is strongly protective against myopia regardless of near work activity levels.",
+    "contraindications": [
+      "Use UV protection in very bright conditions",
+      "Avoid during extreme weather conditions"
+    ],
+    "estimated_impact": {
+      "myopia_risk": "High reduction",
+      "eye_development": "High support",
+      "circadian_health": "Moderate improvement",
+      "overall_wellness": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Optics & Eye Growth: Huberman Lab on Myopia Prevention by Outdoor Light Exposure",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/light-exposure-outdoors-myopia-and-eye-health"
+      },
+      {
+        "title": "Why Outdoor Time Helps Prevent Myopia — FoundMyFitness / Dexa.ai Article",
+        "type": "article",
+        "url": "https://dexa.ai/foundmyfitness/outdoor-time-myopia-prevention"
+      },
+      {
+        "title": "Natural Light Exposure & Eye Health — Healthline Article",
+        "type": "webpage",
+        "url": "https://www.healthline.com/health/eye-health/natural-light-and-eyes"
+      }
+    ]
+  },
+  {
+    "id": "sleep_supplements_protocol_001",
+    "title": "Sleep Support Supplements Protocol",
+    "description": "Science-backed supplement stack to enhance sleep quality, reduce sleep latency, and support deeper restorative sleep through targeted neurotransmitter and mineral support.",
+    "category": "sleep",
+    "duration": "30-60 minutes before bedtime",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Newsletter - Toolkit for Sleep",
+    "last_updated": "2025-01-27",
+    "actions": [
+      {
+        "action": "Take core sleep supplements",
+        "duration": "Immediate",
+        "frequency": "Daily, 30-60 minutes before bed",
+        "timing": "30-60 minutes before bedtime",
+        "details": "Take 145mg Magnesium Threonate OR 200mg Magnesium Bisglycinate, 50mg Apigenin, and 100-400mg Theanine. Start with one supplement and add others gradually as needed."
+      },
+      {
+        "action": "Optional additional supplements (3-4 nights per week)",
+        "duration": "Immediate",
+        "frequency": "3-4 nights per week",
+        "timing": "Alongside core supplements",
+        "details": "Add 2g Glycine and 100mg GABA to the core stack. These can enhance sleep depth and reduce nighttime awakenings."
+      },
+      {
+        "action": "Monitor and adjust",
+        "duration": "Ongoing",
+        "frequency": "Weekly assessment",
+        "timing": "Throughout the week",
+        "details": "Track sleep quality and adjust dosages or combinations based on individual response. Some people may not need all supplements."
+      }
+    ],
+    "benefits": [
+      "Reduces time to fall asleep (sleep latency)",
+      "Improves sleep quality and depth",
+      "Reduces nighttime awakenings",
+      "Supports natural melatonin production",
+      "Enhances GABA activity for relaxation",
+      "Provides magnesium for muscle relaxation and nervous system support"
+    ],
+    "science": "Magnesium supports GABA receptor function and muscle relaxation. Apigenin is a flavonoid that binds to GABA-A receptors, promoting sleepiness. Theanine increases GABA, serotonin, and dopamine while reducing cortisol. Glycine acts as an inhibitory neurotransmitter that lowers core body temperature for sleep onset. GABA directly activates inhibitory pathways in the brain.",
+    "contraindications": [
+      "Avoid theanine if you have intense dreams, sleep-walk, or night terrors",
+      "Approximately 5% of people experience stomach agitation from magnesium - discontinue if this occurs",
+      "Consult healthcare provider if taking other medications or supplements",
+      "Start with one supplement at a time to assess individual tolerance"
+    ],
+    "estimated_impact": {
+      "sleep_latency": "High reduction",
+      "sleep_quality": "High improvement",
+      "sleep_depth": "Moderate improvement",
+      "nighttime_awakenings": "Moderate reduction"
+    },
+    "learning_resources": [
+      {
+        "title": "Toolkit for Sleep - Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+      },
+      {
+        "title": "Master Your Sleep - Huberman Lab Podcast Episode 2",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/master-your-sleep",
+        "duration": "90 minutes"
+      },
+      {
+        "title": "Huberman Lab Interview with Dr. Matt Walker on Sleep",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/sleep-expert-matt-walker",
+        "duration": "90 minutes"
+      }
+    ]
+  },
+  {
+    "id": "worry_journal_protocol_001",
+    "title": "Worry Journal Protocol for Better Sleep",
+    "description": "Science-backed journaling technique to reduce nighttime worries and improve sleep quality by writing down concerns earlier in the evening to clear mental clutter before bed.",
+    "category": "sleep",
+    "duration": "10-15 minutes",
+    "difficulty": "beginner",
+    "priority": 6,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab AI - Matt Walker & Andrew Huberman",
+    "last_updated": "2025-01-27",
+    "actions": [
+      {
+        "action": "Evening worry journaling session",
+        "duration": "10-15 minutes",
+        "frequency": "Daily",
+        "timing": "1-2 hours before bedtime",
+        "details": "Write down all your worries, concerns, and thoughts in a dedicated journal. Include both specific problems and general anxieties. The goal is to 'close down all emotional tabs' in your mind, similar to shutting down a computer with too many active tabs."
+      },
+      {
+        "action": "Structured worry documentation",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "During journaling session",
+        "details": "For each worry, write down: 1) What you're worried about, 2) Why it's concerning you, 3) Any potential solutions or next steps, 4) Whether it's within your control. This structured approach helps organize thoughts and reduce mental chaos."
+      },
+      {
+        "action": "Mental closure ritual",
+        "duration": "2-3 minutes",
+        "frequency": "Daily",
+        "timing": "At the end of journaling session",
+        "details": "Close your journal and mentally acknowledge that you've addressed your worries for the day. Take a few deep breaths and consciously decide to set aside these concerns until tomorrow. This creates psychological closure."
+      },
+      {
+        "action": "Morning review (optional)",
+        "duration": "5 minutes",
+        "frequency": "Daily",
+        "timing": "Morning after journaling",
+        "details": "Briefly review the previous night's worries to see which ones still feel important and which may have resolved themselves. This helps you recognize patterns and realize that many nighttime worries are amplified by fatigue."
+      }
+    ],
+    "benefits": [
+      "Reduces time to fall asleep by up to 50%",
+      "Clears mental clutter and racing thoughts",
+      "Provides psychological closure on daily concerns",
+      "Reduces nighttime anxiety and worry amplification",
+      "Improves overall sleep quality and duration",
+      "Helps organize thoughts and prioritize concerns",
+      "Creates healthy separation between day and night mental states"
+    ],
+    "science": "According to Matt Walker, maintaining a worry journal helps 'close down all of the emotional tabs' in your mind, similar to shutting down a computer with too many active tabs that can impede sleep. Writing down worries earlier in the evening (not right before bed) helps clear your mind of nagging thoughts and concerns, making it easier to fall asleep. This practice has been shown to decrease the time it takes to fall asleep by 50%, comparable to some sleep medications. It counteracts the amplified anxiety that often occurs at night, leading to more manageable feelings during the day.",
+    "contraindications": [
+      "Don't journal right before bed - allow 1-2 hours between journaling and sleep",
+      "Avoid dwelling on worries without structure - use the structured approach",
+      "Don't use this as a replacement for professional mental health care if needed",
+      "Avoid re-reading old worries excessively - focus on current concerns"
+    ],
+    "estimated_impact": {
+      "sleep_onset": "High improvement (up to 50% faster)",
+      "sleep_quality": "High improvement",
+      "nighttime_anxiety": "High reduction",
+      "mental_clarity": "High improvement",
+      "worry_management": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Journaling to Reduce Night Time Worries - Huberman Lab AI",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/xUWyoHra"
+      },
+      {
+        "title": "Mental Clarity Before Sleep - Huberman Lab",
+        "type": "video",
+        "url": "https://ai.hubermanlab.com/hubermanlab/s/xUWyoHra",
+        "duration": "2 hours 53 minutes"
+      }
+    ]
+  },
+  {
+    "id": "creatine_poor_sleep_001",
+    "title": "High-Dose Creatine After Poor Sleep",
+    "description": "On days following poor sleep, a significantly higher creatine dose (~0.35 g/kg body weight, or 20–25 g for most adults) can blunt sleep-deprivation-related cognitive decline. This is separate from your regular daily 5 g maintenance dose.",
+    "category": "nutrition",
+    "duration": "Once, morning of a poor-sleep day",
+    "difficulty": "beginner",
+    "priority": 7,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "McMorris et al. 2024 (PMC); Huberman Lab; Dr. Rhonda Patrick",
+    "last_updated": "2026-09-19",
+    "oura_triggers": [
+      {
+        "metric": "sleep_score",
+        "operator": "<",
+        "threshold": 75,
+        "label": "sleep < 75 — rescue dose day"
+      }
+    ],
+    "conditional": {
+      "question": "Did you sleep poorly last night?",
+      "yesLabel": "Yes, take rescue dose today",
+      "noLabel": "No, I slept fine"
+    },
+    "actions": [
+      {
+        "action": "Take a high-dose creatine rescue dose",
+        "duration": "Immediate",
+        "frequency": "Only on poor-sleep days",
+        "timing": "Morning, ideally within 1–2 hours of waking",
+        "details": "Take ~0.35 g per kg of body weight (roughly 20–25 g for a 70 kg person, or 15–20 g for a lighter individual). Mix into water, juice, or a smoothie in divided sips — do not take all at once to reduce GI discomfort. This is IN ADDITION to your regular 5 g daily dose."
+      },
+      {
+        "action": "Ensure extra hydration",
+        "duration": "Throughout the day",
+        "frequency": "On rescue dose days",
+        "timing": "Throughout the day",
+        "details": "Higher creatine doses require more water. Target at least 3 liters on days you take the rescue dose to prevent cramping or GI issues."
+      }
+    ],
+    "benefits": [
+      "Shown to restore cognitive performance after sleep deprivation",
+      "Reduces reaction time slowing caused by poor sleep",
+      "Supports executive function, working memory, and attention",
+      "Addresses neuroenergetic deficit (ATP) in the prefrontal cortex after sleep loss",
+      "Used by Huberman and discussed extensively by Dr. Rhonda Patrick"
+    ],
+    "science": "A 2024 randomized trial (McMorris et al., PMC10902318) found that a single 0.35 g/kg creatine dose significantly improved cognitive performance in sleep-deprived subjects. Creatine raises cerebral phosphocreatine, which replenishes ATP rapidly in the prefrontal cortex — the area most impaired by sleep deprivation. Rhonda Patrick and Huberman Lab both highlight this as a practical acute intervention. Huberman has noted he raises his own intake to 10–15 g on poor-sleep days.",
+    "contraindications": [
+      "Divide doses into 2–3 sips to minimize GI discomfort at high amounts",
+      "Not suitable for those with kidney disease — consult physician first",
+      "Do not exceed 30 g in a single day",
+      "Ensure adequate hydration"
+    ],
+    "estimated_impact": {
+      "cognitive_function": "High improvement (acute)",
+      "reaction_time": "Moderate improvement",
+      "mental_fatigue": "High reduction",
+      "focus": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Single dose creatine improves cognitive performance and induces changes in cerebral high energy phosphates during sleep deprivation — NIH/PMC",
+        "type": "article",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10902318/"
+      },
+      {
+        "title": "How Much Creatine for Sleep Deprivation — Cymbiotika",
+        "type": "webpage",
+        "url": "https://cymbiotika.com/blogs/fitness-and-recovery/how-much-creatine-to-help-with-sleep-deprivation-and-brain-fog"
+      }
+    ]
+  },
+  {
+    "id": "hiit_after_poor_sleep_001",
+    "title": "HIIT After Poor Sleep",
+    "description": "High-Intensity Interval Training to boost alertness, energy, and cognitive function after a night of poor sleep by increasing dopamine and adrenaline.",
+    "category": "energy",
+    "duration": "5-15 minutes",
+    "difficulty": "intermediate",
+    "priority": 7,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab; Dexa.ai / FoundMyFitness",
+    "last_updated": "2025-09-14",
+    "oura_triggers": [
+      {
+        "metric": "sleep_score",
+        "operator": "<",
+        "threshold": 75,
+        "label": "sleep < 75"
+      }
+    ],
+    "conditional": {
+      "question": "Did you sleep poorly last night?",
+      "yesLabel": "Yes, add to today's tasks",
+      "noLabel": "No, I slept well"
+    },
+    "actions": [
+      {
+        "action": "Brief high-intensity exercise",
+        "duration": "5-15 minutes total",
+        "frequency": "Once after poor sleep",
+        "timing": "Morning or early afternoon",
+        "details": "Perform 30 seconds of high-intensity exercise (jumping jacks, burpees, sprint) followed by 30 seconds rest. Repeat 5-15 rounds depending on fitness level."
+      },
+      {
+        "action": "Alternative: Stair climbing",
+        "duration": "5-10 minutes",
+        "frequency": "As needed",
+        "timing": "Any time during the day",
+        "details": "Rapidly climb stairs for 30-60 seconds, rest for 30 seconds, repeat. This provides similar benefits when gym equipment isn't available."
+      }
+    ],
+    "benefits": [
+      "Rapidly increases alertness and energy levels",
+      "Boosts dopamine and adrenaline to combat fatigue",
+      "Improves cognitive function and focus",
+      "Enhances mood through endorphin release",
+      "Increases metabolic rate for sustained energy",
+      "Can partially offset negative effects of sleep loss"
+    ],
+    "science": "High-intensity exercise triggers release of dopamine, adrenaline, and BDNF (brain-derived neurotrophic factor), which help compensate for the neurochemical imbalances caused by sleep deprivation. The stress response from HIIT can temporarily override fatigue signals.",
+    "contraindications": [
+      "Avoid if experiencing heart conditions",
+      "Not recommended with severe sleep deprivation (less than 4 hours)",
+      "Should not replace regular sleep habits",
+      "Consult doctor if new to high-intensity exercise"
+    ],
+    "estimated_impact": {
+      "energy_levels": "High improvement",
+      "alertness": "High improvement",
+      "cognitive_function": "Moderate improvement",
+      "mood": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Exercise After Poor Sleep — Huberman Lab Podcast Segment",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/how-to-defeat-jetlag-shift-work-sleeplessness"
+      },
+      {
+        "title": "HIIT, Sleep Loss, & Recovery — Huberman Lab video or podcast",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=veRbckoCwkc",
+        "duration": "1 hour approx"
+      },
+      {
+        "title": "Effects of Exercise Timing, Intensity on Sleep Deprivation — Dexa.ai / FoundMyFitness article",
+        "type": "article",
+        "url": "https://dexa.ai/foundmyfitness/fitness-recovery-sleep-deprivation-exercise"
+      }
+    ]
+  },
+  {
+    "id": "red_light_photobiomodulation_001",
+    "title": "Red Light / Photobiomodulation",
+    "description": "Brief morning exposure to 670nm red light to recharge retinal mitochondria and slow age-related photoreceptor decline. Supported by research showing significant improvements in visual acuity in adults over 40.",
+    "category": "recovery",
+    "duration": "2-3 minutes per session",
+    "difficulty": "beginner",
+    "priority": 7,
+    "importance": "supplemental",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast; UCL Research",
+    "last_updated": "2026-09-12",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Morning red light viewing (670nm)",
+        "duration": "2-3 minutes",
+        "frequency": "3x per week",
+        "timing": "Within the first 3 hours of waking",
+        "details": "Look toward a 670nm red light source (LED panel or red light device) from a distance of about 1-2 feet. Keep eyes open and relaxed — do not stare fixedly, blink naturally. 2-3 minutes is the studied dose. Do this in the morning only — evening red light exposure does not carry the same benefit and may interfere with sleep timing. Low-cost 670nm LED panels are widely available."
+      },
+      {
+        "action": "Optional: Full-body near-infrared panel (recovery use)",
+        "duration": "10-15 minutes",
+        "frequency": "3-5x per week",
+        "timing": "Post-workout or early morning",
+        "details": "For muscle recovery and skin health, use a 650-850nm red/near-infrared panel at 1-2 feet distance for 10-15 minutes. This is a separate use case from the retinal protocol — different mechanism (skin and muscle mitochondria vs. photoreceptor mitochondria), different devices. Not required for the eye health benefit."
+      }
+    ],
+    "benefits": [
+      "Counteracts age-related mitochondrial decline in retinal photoreceptors",
+      "Studies show 22% improvement in visual acuity in adults over 40",
+      "Reduces photoreceptor fatigue and improves color contrast sensitivity",
+      "Near-infrared wavelengths support muscle recovery and skin repair",
+      "Non-invasive and low-risk when used correctly"
+    ],
+    "science": "Retinal cone cells are among the most metabolically active cells in the body and rely heavily on mitochondrial function. Mitochondrial efficiency declines with age, leading to photoreceptor deterioration. Research published in the Journals of Gerontology (cited by Huberman) found that 3 minutes of 670nm light exposure in the morning 3x/week reversed some age-related visual decline. The mechanism is mitochondrial stimulation — red wavelengths are absorbed by cytochrome c oxidase, boosting ATP production in photoreceptors.",
+    "contraindications": [
+      "Do not stare directly into high-intensity red light devices at close range",
+      "Those with photosensitive conditions (lupus, porphyria) should consult a physician",
+      "Evening use of bright red light panels may interfere with melatonin in some individuals",
+      "Not a replacement for regular eye exams"
+    ],
+    "estimated_impact": {
+      "visual_acuity": "Moderate improvement (significant in 40+ age group)",
+      "photoreceptor_health": "High improvement",
+      "muscle_recovery": "Moderate improvement (full-body panel)",
+      "skin_health": "Moderate improvement (full-body panel)"
+    },
+    "learning_resources": [
+      {
+        "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+        "duration": "1.5 hours"
+      },
+      {
+        "title": "The Science of Vision, Eye Health & Seeing Better — Huberman Lab",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=ssmwxKPFMFU",
+        "duration": "1 hour 10 minutes"
+      },
+      {
+        "title": "Red Light Therapy for Eye Health — Glen Jeffrey Research Summary",
+        "type": "article",
+        "url": "https://www.ucl.ac.uk/news/2020/jun/three-minute-exposure-red-light-once-week-significantly-improves-declining-eyesight"
+      }
+    ]
+  },
+  {
+    "id": "self_testing_learning_001",
+    "title": "Studying & Learning (Self-Testing Protocol)",
+    "description": "Use active recall and self-testing as the primary study method rather than passive re-reading, leveraging the testing effect to dramatically improve long-term retention and understanding.",
+    "category": "focus",
+    "duration": "Integrated into study sessions",
+    "difficulty": "beginner",
+    "priority": 7,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Test yourself on material rather than re-reading",
+        "duration": "Varies with study session",
+        "frequency": "Every study session",
+        "timing": "During and after learning new material",
+        "details": "After reading or watching material, close the source and attempt to recall the key points from memory. Write them down or speak them aloud. The struggle of retrieval is what strengthens memory. Don't look at the material until you've attempted recall. Test yourself immediately after learning and then at spaced intervals."
+      },
+      {
+        "action": "Use spaced repetition for long-term retention",
+        "duration": "10-15 minutes",
+        "frequency": "Daily or every other day",
+        "timing": "Any time, but shortly after sleep is effective",
+        "details": "Review material at increasing intervals: 1 day, 3 days, 7 days, 14 days. Use flashcards (physical or apps like Anki) to automate spacing. Each retrieval attempt strengthens the neural pathway, making the memory more durable."
+      }
+    ],
+    "benefits": [
+      "Dramatically improves long-term retention (testing effect)",
+      "More effective than re-reading or highlighting by 50-100%",
+      "Identifies knowledge gaps early",
+      "Strengthens neural pathways through effortful retrieval",
+      "Builds confidence through demonstrated knowledge",
+      "Works for any subject matter"
+    ],
+    "science": "Huberman discusses extensive research on the 'testing effect' — actively retrieving information strengthens memory far more than passive review. Each retrieval attempt triggers neuroplasticity in hippocampal and cortical circuits. The effort of recall (even when incorrect) signals the brain that this information is important, triggering consolidation during subsequent sleep.",
+    "contraindications": [
+      "None — effective for all ages and subjects",
+      "May feel frustrating initially if accustomed to passive study — this is normal and part of the benefit"
+    ],
+    "estimated_impact": {
+      "long_term_retention": "Very high improvement",
+      "learning_efficiency": "High improvement",
+      "knowledge_gaps_identification": "High improvement",
+      "exam_performance": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Optimal Protocols for Studying & Learning — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/optimal-protocols-for-studying-and-learning",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "creatine_daily_001",
+    "title": "Daily Creatine Supplementation",
+    "description": "Daily intake of creatine monohydrate to support cognitive function, muscle performance, and overall energy metabolism.",
+    "category": "nutrition",
+    "duration": "Ongoing daily supplementation",
+    "difficulty": "beginner",
+    "priority": 8,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab; Yahoo/Health",
+    "last_updated": "2025-09-14",
+    "actions": [
+      {
+        "action": "Take 5 grams of creatine monohydrate",
+        "duration": "Immediate",
+        "frequency": "Daily",
+        "timing": "Any time of day, ideally post-workout or with a meal",
+        "details": "Mix 5 grams of creatine monohydrate in water, juice, or your preferred beverage. Consistency is more important than timing. No loading phase is required for long-term benefits."
+      },
+      {
+        "action": "Ensure adequate hydration",
+        "duration": "Throughout the day",
+        "frequency": "Daily",
+        "timing": "Throughout the day",
+        "details": "Drink at least 2–3 liters of water daily to support kidney function and optimize creatine utilization."
+      },
+      {
+        "action": "Optional: Combine with carbohydrates for better uptake",
+        "duration": "With meal or post-workout",
+        "frequency": "Daily",
+        "timing": "Alongside creatine intake",
+        "details": "Consuming creatine with a source of carbs (like fruit juice) may increase uptake into muscles due to insulin-mediated transport."
+      }
+    ],
+    "benefits": [
+      "Supports cognitive performance, memory, and learning",
+      "Improves strength, power, and muscle endurance",
+      "Enhances recovery after high-intensity exercise",
+      "May reduce mental fatigue under stress or sleep deprivation",
+      "Supports cellular energy metabolism (ATP availability)"
+    ],
+    "science": "Creatine supplementation increases phosphocreatine stores in muscles and the brain, improving rapid ATP regeneration. Huberman Lab notes that daily creatine (3–5 g/day) can enhance memory, attention, and cognitive resilience, especially under sleep deprivation or stress. Muscle strength and recovery are also consistently improved.",
+    "contraindications": [
+      "Individuals with kidney disease or impaired renal function should consult a physician",
+      "Avoid excessive dosages beyond recommended 5 grams/day",
+      "Ensure adequate hydration"
+    ],
+    "estimated_impact": {
+      "cognitive_function": "Moderate to high improvement",
+      "muscle_strength": "High improvement",
+      "recovery": "Moderate improvement",
+      "mental_fatigue": "Moderate reduction",
+      "energy_levels": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Dr. Layne Norton & Dr. Andrew Huberman — Why Creatine Monohydrate Is So Effective",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=s6cozqL2TF8",
+        "duration": "1 hour 8 minutes approx"
+      },
+      {
+        "title": "How Creatine Can Help with Concussion & Traumatic Brain Injury — Huberman Lab",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=cqUBgPMtLSQ",
+        "duration": "≈15 minutes"
+      },
+      {
+        "title": "Andrew Huberman Breaks Down Creatine's Impact on Mood and Cognition — Yahoo/Health article",
+        "type": "webpage",
+        "url": "https://health.yahoo.com/wellness/nutrition/vitamins-supplements/articles/andrew-huberman-breaks-down-creatine-035557797.html"
+      }
+    ]
+  },
+  {
+    "id": "stress_inoculation_001",
+    "title": "Stress Inoculation Protocol",
+    "description": "Deliberately expose yourself to a controlled stressor (cold, HIIT, public speaking) while actively practicing cognitive calm during the adrenaline spike — training your prefrontal cortex to stay online under stress.",
+    "category": "mood",
+    "duration": "5-20 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 8,
+    "importance": "supplemental",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-09-12",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Choose a deliberate stressor",
+        "duration": "1-3 minutes",
+        "frequency": "3x per week",
+        "timing": "Morning or early day (not before bed)",
+        "details": "Select a stressor that reliably spikes adrenaline for you: cold water immersion (1-3 min at 55°F/13°C or colder), 5-10 minutes of high-intensity exercise, a difficult conversation, or brief public speaking. The stressor must feel genuinely uncomfortable — mild discomfort doesn't train the circuit."
+      },
+      {
+        "action": "Maintain cognitive function during the stressor",
+        "duration": "During stressor",
+        "frequency": "Every session",
+        "timing": "Simultaneously with the stressor",
+        "details": "While in the stressor, actively engage your prefrontal cortex: do mental math, recall a list, plan your day out loud, or solve a problem. The goal is NOT to suppress the stress response — let your heart rate and adrenaline spike. The goal is to keep your cognitive self online despite the physiological alarm. This is the exercise."
+      },
+      {
+        "action": "Regulate breathing during and after",
+        "duration": "Throughout session",
+        "frequency": "Every session",
+        "timing": "During and immediately after the stressor",
+        "details": "Use extended-exhale breathing (4 counts in, 8 counts out) during the stressor to modulate heart rate while maintaining cognitive engagement. After the stressor, use physiological sighs (double inhale + long exhale) to actively down-regulate. This teaches rapid recovery — another trainable skill."
+      }
+    ],
+    "benefits": [
+      "Raises your stress 'ceiling' — the adrenaline level at which cognition fails",
+      "Trains prefrontal cortex to stay online during high-arousal states",
+      "Builds genuine psychological resilience (not avoidance)",
+      "Improves performance in high-stakes situations",
+      "Reduces reactivity and emotional hijacking in daily life",
+      "Stacks with cold exposure for compounded benefit"
+    ],
+    "science": "Stress inoculation works by repeatedly exposing the prefrontal cortex to high-norepinephrine/adrenaline states while requiring it to perform. Over weeks, this raises the arousal threshold at which top-down prefrontal control is lost. Huberman distinguishes this from simply habituating to a stressor — the cognitive engagement during stress is the critical training variable. The protocol is used in military and trauma resilience programs and is grounded in research on prefrontal-amygdala regulation.",
+    "contraindications": [
+      "Not recommended for individuals with PTSD — deliberate stress exposure should be done with professional guidance",
+      "Those with cardiovascular conditions should use milder stressors",
+      "Do not perform near bedtime — adrenaline will disrupt sleep",
+      "Start with short durations and mild stressors; progress gradually over weeks"
+    ],
+    "estimated_impact": {
+      "stress_resilience": "High improvement",
+      "cognitive_performance_under_pressure": "High improvement",
+      "emotional_regulation": "High improvement",
+      "baseline_anxiety": "Moderate reduction"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science of Stress, Resilience & How to Manage It — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/the-science-of-stress-resilience-and-how-to-manage-it",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Master Your Stress — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/master-your-stress"
+      },
+      {
+        "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+      }
+    ]
+  },
+  {
+    "id": "creativity_enhancement_001",
+    "title": "Creativity Enhancement Protocol",
+    "description": "A two-phase meditation sequence — open monitoring then focused attention — to prime both divergent and convergent thinking, with mood calibration before creative work sessions.",
+    "category": "focus",
+    "duration": "15-25 minutes",
+    "difficulty": "intermediate",
+    "priority": 9,
+    "importance": "supplemental",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-09-12",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 0
+    },
+    "actions": [
+      {
+        "action": "Phase 1: Open Monitoring Meditation (divergent thinking)",
+        "duration": "5-10 minutes",
+        "frequency": "Each creative session",
+        "timing": "Before creative work",
+        "details": "Sit comfortably with eyes closed. Let your mind roam freely — don't anchor to any single thought, sensation, or object. If a thought arises, observe it without engaging or suppressing it, then let it pass. The goal is wide, defocused awareness that mirrors the unfocused, associative thinking required for generating novel ideas. This activates the default mode network (DMN), which is where creative connections are made."
+      },
+      {
+        "action": "Phase 2: Focused Attention Meditation (convergent thinking)",
+        "duration": "5-10 minutes",
+        "frequency": "Each creative session",
+        "timing": "Immediately after Phase 1",
+        "details": "Transition to single-point focus — breath, a visual target, or a body sensation. Hold attention on that one point. When your mind wanders, return focus. This transitions you from generative (DMN) mode into evaluative (prefrontal/executive) mode, which is needed for selecting the best idea from what the open monitoring phase generated."
+      },
+      {
+        "action": "Mood calibration before creative work",
+        "duration": "5 minutes",
+        "frequency": "As needed",
+        "timing": "Before the meditation sequence if in a low or neutral mood",
+        "details": "Creativity requires adequate dopamine tone. If you feel flat or unmotivated, briefly elevate your mood before the sequence: 5 minutes of upbeat music you enjoy, a short social interaction, or 5-10 minutes of light exercise. Dopamine gates creative output via the nigrostriatal pathway — low dopamine produces narrow, uncreative thinking."
+      }
+    ],
+    "benefits": [
+      "Primes both divergent thinking (idea generation) and convergent thinking (idea selection)",
+      "Leverages the default mode network for associative, creative connections",
+      "Dopamine optimization supports creative flexibility",
+      "Distinct from focus meditation — different goal, different neural circuits",
+      "Applicable before writing, problem-solving, design, or strategic planning sessions"
+    ],
+    "science": "Creativity requires two distinct neural modes. Divergent thinking (generating many novel ideas) relies on the default mode network (DMN) — the same network active during mind-wandering. Convergent thinking (evaluating and selecting ideas) requires prefrontal executive control. Open monitoring meditation activates DMN; focused attention meditation activates prefrontal circuits. Huberman explains that dopamine, particularly via the nigrostriatal pathway, modulates creative flexibility — low dopamine narrows thinking, adequate dopamine enables broad associative ideation.",
+    "contraindications": [
+      "Do not use immediately after high-intensity exercise (elevated norepinephrine narrows cognitive focus, opposing divergent thinking)",
+      "Avoid screens and social media between the two phases — they interrupt the DMN activation"
+    ],
+    "estimated_impact": {
+      "creative_output": "High improvement",
+      "idea_generation": "High improvement",
+      "convergent_thinking": "Moderate improvement",
+      "focus_for_creative_work": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science of Creativity & How to Enhance Creative Innovation — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/the-science-of-creativity-and-how-to-enhance-creative-innovation",
+        "duration": "2 hours"
+      },
+      {
+        "title": "How Meditation Works & Science-Based Effective Meditations — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-meditation-works-and-science-based-effective-meditations",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "gut_microbiome_fermented_001",
+    "title": "Gut Microbiome Support (Fermented Foods)",
+    "description": "Consume 2-4 servings of low-sugar fermented foods daily to increase gut microbiome diversity and reduce inflammatory markers, as demonstrated in the Stanford study discussed by Huberman.",
+    "category": "nutrition",
+    "duration": "Incorporated into meals",
+    "difficulty": "beginner",
+    "priority": 9,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Eat 2-4 servings of fermented foods daily",
+        "duration": "With meals",
+        "frequency": "Daily",
+        "timing": "Spread across meals throughout the day",
+        "details": "Include low-sugar fermented foods such as: plain yogurt, kefir, sauerkraut, kimchi, kombucha (low sugar), natto, or miso. The key is variety and consistency. Start with 1 serving and increase gradually to avoid GI discomfort. Fermented foods outperformed high-fiber diets for microbiome diversity in the Stanford study."
+      }
+    ],
+    "benefits": [
+      "Increases gut microbiome diversity (most important metric)",
+      "Reduces 19 inflammatory markers (Stanford study finding)",
+      "Supports immune system function",
+      "May improve mood via gut-brain axis",
+      "Better than high-fiber diet alone for microbiome diversity",
+      "Easy to incorporate into existing diet"
+    ],
+    "science": "A Stanford study by Justin Sonnenburg (discussed extensively on Huberman Lab) compared high-fiber vs. high-fermented-food diets over 10 weeks. The fermented food group showed significantly increased microbiome diversity and reduced 19 inflammatory markers. The fiber group did not show the same diversity improvements, though fiber remains important for existing microbe nourishment.",
+    "contraindications": [
+      "Start slowly to avoid bloating and GI discomfort",
+      "Those with histamine intolerance may react to fermented foods",
+      "Immunocompromised individuals should consult a physician",
+      "Choose low-sugar options (many commercial kombuchas are high in sugar)"
+    ],
+    "estimated_impact": {
+      "microbiome_diversity": "High improvement",
+      "inflammation": "High reduction",
+      "immune_function": "Moderate improvement",
+      "mood": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-enhance-your-gut-microbiome-for-brain-and-overall-health",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "huberman-heat-daily",
+    "title": "Deliberate Heat Exposure Protocol by Dr. Andrew Huberman",
+    "description": "A science-backed sauna protocol to enhance cardiovascular health, hormone production, and overall well-being.",
+    "category": "fitness",
+    "duration": "5–20 minutes per session",
+    "difficulty": "intermediate",
+    "priority": 9,
+    "importance": "supplemental",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab",
+    "last_updated": "2025-09-18",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 1
+    },
+    "actions": [
+      {
+        "action": "Sauna Session",
+        "duration": "5–20 minutes",
+        "frequency": "2–7 times per week",
+        "timing": "post-exercise or as standalone session",
+        "details": "Use a dry sauna heated to 80–100°C (176–212°F). Start with 5 minutes and gradually increase duration. Aim for 2–3 sessions per week, or up to 7 times per week for optimal cardiovascular benefits."
+      }
+    ],
+    "benefits": [
+      "Enhances cardiovascular health",
+      "Increases growth hormone secretion",
+      "Improves mood and reduces stress",
+      "Supports longevity and cognitive function"
+    ],
+    "science": "Regular sauna use activates heat shock proteins, which protect cells from stress and support various health benefits. Studies have shown that deliberate heat exposure can improve heart function, increase growth hormone levels, and reduce the risk of neurodegenerative diseases.",
+    "contraindications": [
+      "Individuals with cardiovascular conditions should consult a healthcare provider before starting any new heat exposure protocols.",
+      "Pregnant women should avoid high-heat environments unless approved by a healthcare professional."
+    ],
+    "estimated_impact": {
+      "cardiovascular_health": "high",
+      "growth_hormone_increase": "moderate",
+      "mood_improvement": "moderate",
+      "longevity_support": "moderate"
+    },
+    "learning_resources": [
+      {
+        "title": "The Science & Health Benefits of Deliberate Heat Exposure",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/the-science-and-health-benefits-of-deliberate-heat-exposure",
+        "duration": "90 minutes"
+      },
+      {
+        "title": "Deliberate Heat Exposure Protocols for Health & Performance",
+        "type": "article",
+        "url": "https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance"
+      }
+    ]
+  },
+  {
+    "id": "neuroplasticity_super_001",
+    "title": "Neuroplasticity Super Protocol",
+    "description": "Combine high focus, urgency, acetylcholine, and epinephrine to maximize neuroplasticity during learning sessions. Stack behavioral tools (alertness, focus, repetition) followed by deep rest for consolidation.",
+    "category": "focus",
+    "duration": "90 minutes focused + 20 min NSDR",
+    "difficulty": "advanced",
+    "priority": 10,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Generate high alertness before the learning bout",
+        "duration": "5-10 minutes",
+        "frequency": "Before each focused learning session",
+        "timing": "Start of work session",
+        "details": "Use 1-2 techniques to raise epinephrine/alertness: cold face wash, 25 jumping jacks, cyclic hyperventilation (Wim Hof-style for 25 breaths), or caffeine. You need to feel alert and slightly activated — this releases norepinephrine which flags experiences as important for encoding."
+      },
+      {
+        "action": "Engage in focused, effortful learning for up to 90 minutes",
+        "duration": "60-90 minutes",
+        "frequency": "1-2 sessions per day",
+        "timing": "During peak alertness",
+        "details": "Focus intensely on the skill or material you want to learn. Make errors — they signal the nervous system that change is needed. The feeling of strain and frustration is a marker that neuroplasticity is being triggered. Repeat the most difficult elements more often."
+      },
+      {
+        "action": "Perform NSDR or sleep within 1-2 hours after learning",
+        "duration": "10-20 minutes",
+        "frequency": "After each learning session",
+        "timing": "Within 1-2 hours of finishing",
+        "details": "Perform a Yoga Nidra / NSDR session or take a nap. Neural replay (consolidation) occurs during states of deep rest and sleep, accelerating the rewiring of circuits that were activated during the learning bout."
+      }
+    ],
+    "benefits": [
+      "Maximizes rate of neuroplastic change (learning speed)",
+      "Applies to motor skills, cognitive skills, and emotional learning",
+      "Uses behavioral tools only — no supplements required",
+      "Backed by mechanisms of long-term potentiation and depression",
+      "NSDR accelerates consolidation without needing full sleep",
+      "Framework applicable to any skill at any age"
+    ],
+    "science": "Neuroplasticity requires three components: (1) epinephrine/alertness to mark an experience as important, (2) acetylcholine/focus to highlight specific synapses, and (3) rest/sleep for actual rewiring (BDNF-mediated consolidation). The learning happens DURING rest, not during practice. Practice sets the stage; sleep/NSDR completes the rewiring. Huberman calls this the 'neuroplasticity super protocol.'",
+    "contraindications": [
+      "Intense focus sessions can be mentally exhausting — limit to 1-2 per day",
+      "Not suitable for casual learning — designed for deliberate skill acquisition",
+      "Avoid cyclic hyperventilation if you have respiratory conditions or epilepsy"
+    ],
+    "estimated_impact": {
+      "learning_speed": "Very high improvement",
+      "skill_acquisition": "Very high improvement",
+      "memory_consolidation": "High improvement",
+      "cognitive_performance": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Learn Skills Faster — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-learn-skills-faster",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Using Failures, Movement & Balance to Learn Faster — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/using-failures-movement-and-balance-to-learn-faster",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "alpha_gpc_acetylcholine_001",
+    "title": "Alpha-GPC Acetylcholine Priming",
+    "description": "Situational supplementation with Alpha-GPC (300-600mg) 10-20 minutes before demanding cognitive work or training, 3-4x per week, to elevate acetylcholine and sharpen focus and learning.",
+    "category": "focus",
+    "duration": "10-20 min before sessions (supplement timing)",
+    "difficulty": "intermediate",
+    "priority": 11,
+    "importance": "supplemental",
+    "frequency_type": "weekly",
+    "source": "Huberman Lab Podcast (Episode 88); Examine.com",
+    "last_updated": "2026-09-12",
+    "weekly_frequency": {
+      "times_per_week": 3,
+      "preferred_days": [
+        "monday",
+        "wednesday",
+        "friday"
+      ],
+      "min_rest_days": 0
+    },
+    "actions": [
+      {
+        "action": "Take Alpha-GPC 10-20 minutes before cognitive work",
+        "duration": "Immediate (supplement)",
+        "frequency": "3-4x per week (not daily)",
+        "timing": "10-20 minutes before a focused work session or training",
+        "details": "Take 300-600mg Alpha-GPC (alpha-glycerophosphocholine) 10-20 minutes before a cognitively demanding session. This is a situational tool — not a daily supplement. Huberman takes it 3-4x per week. It can be stacked with caffeine for a compounded effect. Available in capsule or powder form. Start at 300mg to assess tolerance."
+      },
+      {
+        "action": "Food alternative if not supplementing",
+        "duration": "With a meal",
+        "frequency": "Daily",
+        "timing": "Breakfast or pre-work meal",
+        "details": "If you prefer food sources, prioritize high-choline foods: 2 egg yolks, 3oz beef liver, or a can of sardines all provide significant choline for acetylcholine synthesis. These are less acute than Alpha-GPC supplementation but support baseline acetylcholine tone."
+      },
+      {
+        "action": "Do not take daily — cycle use",
+        "duration": "Ongoing",
+        "frequency": "3-4x per week maximum",
+        "timing": "On high-demand workdays or training days only",
+        "details": "Huberman and research flag a concern with daily choline supplementation: TMAO (trimethylamine N-oxide) production by gut bacteria from chronic high choline intake may increase cardiovascular risk. Keep Alpha-GPC to 3-4x per week, on your most cognitively demanding days. Rest days support acetylcholine receptor sensitivity reset."
+      }
+    ],
+    "benefits": [
+      "Elevates acetylcholine — the neurotransmitter of focus, attention, and learning",
+      "Improves performance on cognitively demanding tasks",
+      "Stacks synergistically with caffeine for compounded focus",
+      "Supports muscular output when taken before training",
+      "Situational — used only on high-demand days, avoiding habituation"
+    ],
+    "science": "Acetylcholine is the primary neuromodulator of focused attention and learning. Alpha-GPC is a highly bioavailable choline precursor that crosses the blood-brain barrier and rapidly increases acetylcholine synthesis. Unlike many nootropics, it has direct evidence from human studies for cognitive performance improvement. Huberman discusses it specifically in the context of the Focus Toolkit (Episode 88) as one of the few supplements with a clear, fast-acting mechanism for attention enhancement.",
+    "contraindications": [
+      "Do not take daily — limit to 3-4x per week to reduce TMAO production risk",
+      "Those on cholinergic medications (some Alzheimer's drugs) should consult a physician",
+      "May intensify vivid dreaming if taken too close to bedtime",
+      "Individuals with fish/soy allergies should check the source of their Alpha-GPC product",
+      "Not a replacement for sleep — sleep deprivation overrides any supplement-based focus boost"
+    ],
+    "estimated_impact": {
+      "acute_focus": "High improvement",
+      "learning_efficiency": "Moderate improvement",
+      "cognitive_performance": "High improvement",
+      "physical_performance": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab (Ep. 88)",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Huberman Supplements Guide — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/huberman-lab-supplement-guide"
+      },
+      {
+        "title": "Effects of Alpha-GPC on Human Cognitive Performance — Examine.com",
+        "type": "article",
+        "url": "https://examine.com/supplements/alpha-gpc/"
+      }
+    ]
+  },
+  {
+    "id": "testosterone_optimization_001",
+    "title": "Testosterone Optimization (Behavioral Protocol)",
+    "description": "Behavioral and lifestyle interventions to optimize testosterone levels naturally through sleep, exercise, light exposure, and stress management — no supplements or hormones required.",
+    "category": "fitness",
+    "duration": "Integrated into daily routine",
+    "difficulty": "intermediate",
+    "priority": 12,
+    "importance": "supplemental",
+    "frequency_type": "daily",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "actions": [
+      {
+        "action": "Get bright light exposure early in the day",
+        "duration": "5-10 minutes",
+        "frequency": "Daily",
+        "timing": "Within first hour of waking",
+        "details": "Morning light exposure (especially to the eyes and skin) supports healthy dopamine and luteinizing hormone (LH) signaling, both upstream of testosterone production. This overlaps with the morning sunlight protocol."
+      },
+      {
+        "action": "Perform heavy compound resistance training",
+        "duration": "45-60 minutes",
+        "frequency": "3-5 times per week",
+        "timing": "Any time, but consistency matters",
+        "details": "Compound movements (squat, deadlift, bench, overhead press) with heavy loads (6-10 rep range) acutely increase testosterone. Multi-joint exercises recruiting large muscle groups produce the largest hormonal response."
+      },
+      {
+        "action": "Prioritize sleep quality (6-8 hours minimum)",
+        "duration": "6-8 hours",
+        "frequency": "Nightly",
+        "timing": "Consistent bedtime",
+        "details": "Testosterone is primarily produced during sleep (especially REM). Even one week of sleep restriction (5 hours/night) can reduce testosterone by 10-15%. Prioritize consistent sleep timing and duration."
+      },
+      {
+        "action": "Manage chronic stress and cortisol",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "Throughout the day",
+        "details": "Chronic cortisol elevation directly suppresses gonadotropin-releasing hormone (GnRH) and testosterone production. Use breathing techniques, time in nature, social connection, and exercise to manage stress levels."
+      }
+    ],
+    "benefits": [
+      "Optimizes natural testosterone production",
+      "Improves muscle growth, recovery, and strength",
+      "Enhances mood, motivation, and cognitive function",
+      "Supports bone density and cardiovascular health",
+      "No supplements or hormones needed",
+      "Benefits general health beyond testosterone"
+    ],
+    "science": "Huberman discusses the hypothalamic-pituitary-gonadal (HPG) axis: GnRH from the hypothalamus triggers LH release, which signals the testes (or ovaries) to produce testosterone. Sleep, light exposure, exercise, and stress all modulate this axis. Heavy resistance training acutely elevates testosterone, while chronic stress suppresses it via cortisol-GnRH antagonism.",
+    "contraindications": [
+      "This is not a substitute for medical evaluation of hypogonadism",
+      "If experiencing symptoms of low testosterone, get blood work done",
+      "Overtraining can paradoxically lower testosterone — rest is essential"
+    ],
+    "estimated_impact": {
+      "testosterone_levels": "Moderate improvement",
+      "muscle_performance": "Moderate improvement",
+      "mood_and_motivation": "Moderate improvement",
+      "overall_vitality": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How to Optimize Testosterone & Estrogen — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-to-optimize-testosterone-and-estrogen",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Dr. Kyle Gillett: Tools for Hormone Optimization — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/dr-kyle-gillett-tools-for-hormone-optimization-in-males",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "sugar_craving_control_001",
+    "title": "Sugar Craving Control Protocol",
+    "description": "Use science-based techniques to reduce sugar cravings by leveraging the gut-brain axis, amino acid supplementation, and behavioral interventions discussed by Huberman.",
+    "category": "nutrition",
+    "duration": "As needed",
+    "difficulty": "beginner",
+    "priority": 13,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "conditional": {
+      "question": "Are you experiencing sugar cravings today?",
+      "yesLabel": "Yes, add craving control tips",
+      "noLabel": "No, I'm good"
+    },
+    "actions": [
+      {
+        "action": "Use L-glutamine to blunt acute sugar cravings",
+        "duration": "Immediate",
+        "frequency": "When cravings hit",
+        "timing": "At the onset of a sugar craving",
+        "details": "Take 1-2g of L-glutamine (sublingual or in water) when a sugar craving strikes. Glutamine can serve as an alternative fuel source for neurons that are signaling for glucose, reducing the craving within minutes. This is a short-term intervention."
+      },
+      {
+        "action": "Ensure adequate protein and fat at meals",
+        "duration": "With each meal",
+        "frequency": "Every meal",
+        "timing": "Start of meals",
+        "details": "Eating protein and healthy fats before carbohydrates blunts blood glucose spikes and reduces subsequent cravings. Aim for 30g+ protein per meal. Starting with protein/fat before starchy carbs improves glycemic control."
+      },
+      {
+        "action": "Walk for 5-10 minutes after meals",
+        "duration": "5-10 minutes",
+        "frequency": "After meals (especially larger ones)",
+        "timing": "Within 30 minutes of finishing a meal",
+        "details": "Light walking after eating helps clear blood glucose through muscle contraction (GLUT4-mediated uptake), reducing the insulin spike and subsequent crash that drives cravings."
+      }
+    ],
+    "benefits": [
+      "Reduces sugar cravings through multiple mechanisms",
+      "Improves blood glucose stability",
+      "Supports healthier food choices long-term",
+      "Reduces energy crashes from blood sugar swings",
+      "Simple interventions that require minimal effort"
+    ],
+    "science": "Sugar cravings are driven by both central (brain dopamine circuits) and peripheral (gut-brain neuropod cell) mechanisms. Huberman explains that neuropod cells in the gut sense sugar and signal the brain via the vagus nerve, creating cravings independent of taste. L-glutamine may blunt cravings by providing an alternative fuel for glucose-sensing neurons. Post-meal walking improves GLUT4-mediated glucose disposal.",
+    "contraindications": [
+      "L-glutamine should be avoided by those with liver disease or kidney disease without medical supervision",
+      "Not a substitute for addressing underlying insulin resistance or diabetes",
+      "Those with eating disorders should work with a professional"
+    ],
+    "estimated_impact": {
+      "sugar_cravings": "High reduction",
+      "blood_glucose_stability": "Moderate improvement",
+      "energy_stability": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "How Our Hormones Control Our Hunger, Eating & Satiety — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/how-our-hormones-control-our-hunger-eating-and-satiety",
+        "duration": "2 hours"
+      },
+      {
+        "title": "Controlling Sugar Cravings & Metabolism with Science-Based Tools — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/controlling-sugar-cravings-and-metabolism-with-science-based-tools",
+        "duration": "2 hours"
+      }
+    ]
+  },
+  {
+    "id": "alcohol_harm_reduction_001",
+    "title": "Alcohol Harm Reduction Protocol",
+    "description": "Evidence-based strategies to minimize the negative health effects of alcohol consumption, including gut protection, sleep quality preservation, and hangover mitigation — for those who choose to drink.",
+    "category": "nutrition",
+    "duration": "Before and after drinking occasions",
+    "difficulty": "beginner",
+    "priority": 14,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab Podcast",
+    "last_updated": "2026-02-20",
+    "conditional": {
+      "question": "Are you planning to drink alcohol today?",
+      "yesLabel": "Yes, show harm reduction tips",
+      "noLabel": "No, not today"
+    },
+    "actions": [
+      {
+        "action": "Eat food (especially protein and fat) before drinking",
+        "duration": "30-60 minutes before drinking",
+        "frequency": "Every drinking occasion",
+        "timing": "Before the first drink",
+        "details": "Food in the stomach slows alcohol absorption dramatically. Protein and fats slow gastric emptying the most. Never drink on an empty stomach. This reduces peak blood alcohol concentration and the severity of gut disruption."
+      },
+      {
+        "action": "Hydrate between and after alcoholic drinks",
+        "duration": "Throughout drinking and before bed",
+        "frequency": "Every drinking occasion",
+        "timing": "Between drinks and before sleep",
+        "details": "Drink water between alcoholic beverages (1:1 ratio ideally). Alcohol is a diuretic that depletes water and electrolytes. Before bed, drink 16-32 oz of water with electrolytes. This mitigates hangover symptoms, most of which are dehydration-mediated."
+      },
+      {
+        "action": "Support gut lining with fermented foods the day after",
+        "duration": "Next day",
+        "frequency": "After drinking occasions",
+        "timing": "The day after alcohol consumption",
+        "details": "Alcohol disrupts the gut mucosal lining and kills beneficial bacteria. Consuming fermented foods (yogurt, sauerkraut, kimchi) the following day supports gut barrier repair. Consider also supplementing with probiotics."
+      }
+    ],
+    "benefits": [
+      "Reduces severity of hangovers",
+      "Protects gut microbiome from alcohol damage",
+      "Minimizes sleep disruption from alcohol",
+      "Reduces peak blood alcohol for safer consumption",
+      "Practical strategies for those who choose to drink",
+      "Supports faster recovery"
+    ],
+    "science": "Huberman's episode on alcohol details its effects: alcohol is a toxin metabolized to acetaldehyde (a carcinogen), disrupts gut permeability (leaky gut), suppresses REM sleep, increases cortisol, and depletes folate. While abstinence is ideal for health, harm reduction strategies can meaningfully reduce these effects. Food slows absorption; hydration combats the ADH-suppression diuresis; fermented foods support gut barrier repair.",
+    "contraindications": [
+      "This is NOT encouragement to drink — zero alcohol is the healthiest option",
+      "Those with alcohol use disorder should seek professional help, not harm reduction tips",
+      "Pregnant women should not consume any alcohol",
+      "Those on medications that interact with alcohol should abstain"
+    ],
+    "estimated_impact": {
+      "hangover_severity": "High reduction",
+      "gut_health_protection": "Moderate improvement",
+      "sleep_quality_preservation": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "What Alcohol Does to Your Body, Brain & Health — Huberman Lab",
+        "type": "video",
+        "url": "https://www.hubermanlab.com/episode/what-alcohol-does-to-your-body-brain-and-health",
+        "duration": "2 hours"
+      }
+    ]
+  }
+]

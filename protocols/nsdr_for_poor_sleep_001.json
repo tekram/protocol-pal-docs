@@ -1,0 +1,84 @@
+{
+  "id": "nsdr_for_poor_sleep_001",
+  "title": "NSDR After Poor Sleep",
+  "description": "Non-Sleep Deep Rest (NSDR) protocols to restore alertness and cognitive function after poor sleep, using guided relaxation techniques to reset the nervous system.",
+  "category": "sleep",
+  "duration": "10-30 minutes",
+  "difficulty": "beginner",
+  "priority": 6,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab Podcast, Sleep Foundation research",
+  "last_updated": "2025-07-16",
+  "oura_triggers": [
+    {
+      "metric": "sleep_score",
+      "operator": "<",
+      "threshold": 75,
+      "label": "sleep < 75"
+    }
+  ],
+  "conditional": {
+    "question": "Did you sleep poorly last night?",
+    "yesLabel": "Yes, add to today's tasks",
+    "noLabel": "No, I slept well"
+  },
+  "actions": [
+    {
+      "action": "Yoga Nidra or guided NSDR",
+      "duration": "10-30 minutes",
+      "frequency": "Once after poor sleep",
+      "timing": "Morning or early afternoon",
+      "details": "Use a guided Yoga Nidra or NSDR protocol. Lie down comfortably and follow breathing and body scan instructions to achieve deep relaxation without sleep."
+    },
+    {
+      "action": "Progressive muscle relaxation",
+      "duration": "10-20 minutes",
+      "frequency": "As needed",
+      "timing": "Any time during the day",
+      "details": "Systematically tense and release muscle groups throughout the body while focusing on the contrast between tension and relaxation."
+    }
+  ],
+  "benefits": [
+    "Restores alertness and cognitive function after poor sleep",
+    "Reduces stress and anxiety from sleep deprivation",
+    "Activates parasympathetic nervous system for recovery",
+    "Improves mood and emotional regulation",
+    "Can partially compensate for lost REM sleep benefits",
+    "Reduces cortisol levels and stress response"
+  ],
+  "science": "NSDR protocols activate the parasympathetic nervous system and can restore dopamine levels in the brain. Studies show that Yoga Nidra increases dopamine in the basal forebrain by up to 65%, helping compensate for the dopamine depletion that occurs after poor sleep.",
+  "contraindications": [
+    "Should not replace regular sleep",
+    "Avoid if experiencing severe insomnia without medical consultation"
+  ],
+  "estimated_impact": {
+    "alertness": "High improvement",
+    "cognitive_function": "Moderate improvement",
+    "stress_reduction": "High improvement",
+    "energy_levels": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    },
+    {
+      "title": "NSDR & Yoga Nidra Protocol - Huberman Lab",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=example2",
+      "duration": "15 minutes"
+    },
+    {
+      "title": "Free Yoga Nidra Audio Guide",
+      "type": "webpage",
+      "url": "https://www.sleepfoundation.org/yoga-nidra"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "distance_viewing_outdoors_001",
+  "title": "Daily Outdoor Distance Viewing",
+  "description": "Spend time outdoors looking at distant objects to support healthy eye development, reduce myopia risk, and provide natural light exposure for circadian health.",
+  "category": "focus",
+  "duration": "30-60 minutes daily",
+  "difficulty": "beginner",
+  "priority": 4,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab; FoundMyFitness/Dexa.ai; Healthline",
+  "last_updated": "2025-09-14",
+  "actions": [
+    {
+      "action": "Outdoor distance viewing",
+      "duration": "At least 30 minutes",
+      "frequency": "Daily",
+      "timing": "Any time during daylight hours",
+      "details": "Spend time outdoors looking at objects at least 20 feet away. Walk, sit in a park, or engage in outdoor activities while consciously viewing distant landscapes, trees, or horizon."
+    },
+    {
+      "action": "Active outdoor pursuits",
+      "duration": "15-30 minutes",
+      "frequency": "Daily",
+      "timing": "Morning or afternoon preferred",
+      "details": "Engage in outdoor sports, hiking, or activities that naturally require distance viewing like tennis, golf, or nature walks."
+    }
+  ],
+  "benefits": [
+    "Reduces risk of myopia development and progression",
+    "Provides natural bright light exposure (2000+ lux)",
+    "Supports healthy circadian rhythm regulation",
+    "Improves overall eye health and visual development",
+    "Enhances depth perception and spatial awareness",
+    "Reduces indoor air pollution exposure for eyes"
+  ],
+  "science": "Outdoor light exposure of 1000-10000+ lux stimulates dopamine release in the retina, which inhibits axial eye growth and myopia development. Time spent outdoors is strongly protective against myopia regardless of near work activity levels.",
+  "contraindications": [
+    "Use UV protection in very bright conditions",
+    "Avoid during extreme weather conditions"
+  ],
+  "estimated_impact": {
+    "myopia_risk": "High reduction",
+    "eye_development": "High support",
+    "circadian_health": "Moderate improvement",
+    "overall_wellness": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Optics & Eye Growth: Huberman Lab on Myopia Prevention by Outdoor Light Exposure",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/light-exposure-outdoors-myopia-and-eye-health"
+    },
+    {
+      "title": "Why Outdoor Time Helps Prevent Myopia — FoundMyFitness / Dexa.ai Article",
+      "type": "article",
+      "url": "https://dexa.ai/foundmyfitness/outdoor-time-myopia-prevention"
+    },
+    {
+      "title": "Natural Light Exposure & Eye Health — Healthline Article",
+      "type": "webpage",
+      "url": "https://www.healthline.com/health/eye-health/natural-light-and-eyes"
+    }
+  ]
+}

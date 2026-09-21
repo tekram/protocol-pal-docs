@@ -1,0 +1,76 @@
+{
+  "id": "sleep_supplements_protocol_001",
+  "title": "Sleep Support Supplements Protocol",
+  "description": "Science-backed supplement stack to enhance sleep quality, reduce sleep latency, and support deeper restorative sleep through targeted neurotransmitter and mineral support.",
+  "category": "sleep",
+  "duration": "30-60 minutes before bedtime",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Newsletter - Toolkit for Sleep",
+  "last_updated": "2025-01-27",
+  "actions": [
+    {
+      "action": "Take core sleep supplements",
+      "duration": "Immediate",
+      "frequency": "Daily, 30-60 minutes before bed",
+      "timing": "30-60 minutes before bedtime",
+      "details": "Take 145mg Magnesium Threonate OR 200mg Magnesium Bisglycinate, 50mg Apigenin, and 100-400mg Theanine. Start with one supplement and add others gradually as needed."
+    },
+    {
+      "action": "Optional additional supplements (3-4 nights per week)",
+      "duration": "Immediate",
+      "frequency": "3-4 nights per week",
+      "timing": "Alongside core supplements",
+      "details": "Add 2g Glycine and 100mg GABA to the core stack. These can enhance sleep depth and reduce nighttime awakenings."
+    },
+    {
+      "action": "Monitor and adjust",
+      "duration": "Ongoing",
+      "frequency": "Weekly assessment",
+      "timing": "Throughout the week",
+      "details": "Track sleep quality and adjust dosages or combinations based on individual response. Some people may not need all supplements."
+    }
+  ],
+  "benefits": [
+    "Reduces time to fall asleep (sleep latency)",
+    "Improves sleep quality and depth",
+    "Reduces nighttime awakenings",
+    "Supports natural melatonin production",
+    "Enhances GABA activity for relaxation",
+    "Provides magnesium for muscle relaxation and nervous system support"
+  ],
+  "science": "Magnesium supports GABA receptor function and muscle relaxation. Apigenin is a flavonoid that binds to GABA-A receptors, promoting sleepiness. Theanine increases GABA, serotonin, and dopamine while reducing cortisol. Glycine acts as an inhibitory neurotransmitter that lowers core body temperature for sleep onset. GABA directly activates inhibitory pathways in the brain.",
+  "contraindications": [
+    "Avoid theanine if you have intense dreams, sleep-walk, or night terrors",
+    "Approximately 5% of people experience stomach agitation from magnesium - discontinue if this occurs",
+    "Consult healthcare provider if taking other medications or supplements",
+    "Start with one supplement at a time to assess individual tolerance"
+  ],
+  "estimated_impact": {
+    "sleep_latency": "High reduction",
+    "sleep_quality": "High improvement",
+    "sleep_depth": "Moderate improvement",
+    "nighttime_awakenings": "Moderate reduction"
+  },
+  "learning_resources": [
+    {
+      "title": "Toolkit for Sleep - Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+    },
+    {
+      "title": "Master Your Sleep - Huberman Lab Podcast Episode 2",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/master-your-sleep",
+      "duration": "90 minutes"
+    },
+    {
+      "title": "Huberman Lab Interview with Dr. Matt Walker on Sleep",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/sleep-expert-matt-walker",
+      "duration": "90 minutes"
+    }
+  ]
+}

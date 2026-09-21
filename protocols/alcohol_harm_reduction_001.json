@@ -1,0 +1,69 @@
+{
+  "id": "alcohol_harm_reduction_001",
+  "title": "Alcohol Harm Reduction Protocol",
+  "description": "Evidence-based strategies to minimize the negative health effects of alcohol consumption, including gut protection, sleep quality preservation, and hangover mitigation — for those who choose to drink.",
+  "category": "nutrition",
+  "duration": "Before and after drinking occasions",
+  "difficulty": "beginner",
+  "priority": 14,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "conditional": {
+    "question": "Are you planning to drink alcohol today?",
+    "yesLabel": "Yes, show harm reduction tips",
+    "noLabel": "No, not today"
+  },
+  "actions": [
+    {
+      "action": "Eat food (especially protein and fat) before drinking",
+      "duration": "30-60 minutes before drinking",
+      "frequency": "Every drinking occasion",
+      "timing": "Before the first drink",
+      "details": "Food in the stomach slows alcohol absorption dramatically. Protein and fats slow gastric emptying the most. Never drink on an empty stomach. This reduces peak blood alcohol concentration and the severity of gut disruption."
+    },
+    {
+      "action": "Hydrate between and after alcoholic drinks",
+      "duration": "Throughout drinking and before bed",
+      "frequency": "Every drinking occasion",
+      "timing": "Between drinks and before sleep",
+      "details": "Drink water between alcoholic beverages (1:1 ratio ideally). Alcohol is a diuretic that depletes water and electrolytes. Before bed, drink 16-32 oz of water with electrolytes. This mitigates hangover symptoms, most of which are dehydration-mediated."
+    },
+    {
+      "action": "Support gut lining with fermented foods the day after",
+      "duration": "Next day",
+      "frequency": "After drinking occasions",
+      "timing": "The day after alcohol consumption",
+      "details": "Alcohol disrupts the gut mucosal lining and kills beneficial bacteria. Consuming fermented foods (yogurt, sauerkraut, kimchi) the following day supports gut barrier repair. Consider also supplementing with probiotics."
+    }
+  ],
+  "benefits": [
+    "Reduces severity of hangovers",
+    "Protects gut microbiome from alcohol damage",
+    "Minimizes sleep disruption from alcohol",
+    "Reduces peak blood alcohol for safer consumption",
+    "Practical strategies for those who choose to drink",
+    "Supports faster recovery"
+  ],
+  "science": "Huberman's episode on alcohol details its effects: alcohol is a toxin metabolized to acetaldehyde (a carcinogen), disrupts gut permeability (leaky gut), suppresses REM sleep, increases cortisol, and depletes folate. While abstinence is ideal for health, harm reduction strategies can meaningfully reduce these effects. Food slows absorption; hydration combats the ADH-suppression diuresis; fermented foods support gut barrier repair.",
+  "contraindications": [
+    "This is NOT encouragement to drink — zero alcohol is the healthiest option",
+    "Those with alcohol use disorder should seek professional help, not harm reduction tips",
+    "Pregnant women should not consume any alcohol",
+    "Those on medications that interact with alcohol should abstain"
+  ],
+  "estimated_impact": {
+    "hangover_severity": "High reduction",
+    "gut_health_protection": "Moderate improvement",
+    "sleep_quality_preservation": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "What Alcohol Does to Your Body, Brain & Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/what-alcohol-does-to-your-body-brain-and-health",
+      "duration": "2 hours"
+    }
+  ]
+}

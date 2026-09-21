@@ -1,0 +1,84 @@
+{
+  "id": "stress_inoculation_001",
+  "title": "Stress Inoculation Protocol",
+  "description": "Deliberately expose yourself to a controlled stressor (cold, HIIT, public speaking) while actively practicing cognitive calm during the adrenaline spike — training your prefrontal cortex to stay online under stress.",
+  "category": "mood",
+  "duration": "5-20 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 8,
+  "importance": "supplemental",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-09-12",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Choose a deliberate stressor",
+      "duration": "1-3 minutes",
+      "frequency": "3x per week",
+      "timing": "Morning or early day (not before bed)",
+      "details": "Select a stressor that reliably spikes adrenaline for you: cold water immersion (1-3 min at 55°F/13°C or colder), 5-10 minutes of high-intensity exercise, a difficult conversation, or brief public speaking. The stressor must feel genuinely uncomfortable — mild discomfort doesn't train the circuit."
+    },
+    {
+      "action": "Maintain cognitive function during the stressor",
+      "duration": "During stressor",
+      "frequency": "Every session",
+      "timing": "Simultaneously with the stressor",
+      "details": "While in the stressor, actively engage your prefrontal cortex: do mental math, recall a list, plan your day out loud, or solve a problem. The goal is NOT to suppress the stress response — let your heart rate and adrenaline spike. The goal is to keep your cognitive self online despite the physiological alarm. This is the exercise."
+    },
+    {
+      "action": "Regulate breathing during and after",
+      "duration": "Throughout session",
+      "frequency": "Every session",
+      "timing": "During and immediately after the stressor",
+      "details": "Use extended-exhale breathing (4 counts in, 8 counts out) during the stressor to modulate heart rate while maintaining cognitive engagement. After the stressor, use physiological sighs (double inhale + long exhale) to actively down-regulate. This teaches rapid recovery — another trainable skill."
+    }
+  ],
+  "benefits": [
+    "Raises your stress 'ceiling' — the adrenaline level at which cognition fails",
+    "Trains prefrontal cortex to stay online during high-arousal states",
+    "Builds genuine psychological resilience (not avoidance)",
+    "Improves performance in high-stakes situations",
+    "Reduces reactivity and emotional hijacking in daily life",
+    "Stacks with cold exposure for compounded benefit"
+  ],
+  "science": "Stress inoculation works by repeatedly exposing the prefrontal cortex to high-norepinephrine/adrenaline states while requiring it to perform. Over weeks, this raises the arousal threshold at which top-down prefrontal control is lost. Huberman distinguishes this from simply habituating to a stressor — the cognitive engagement during stress is the critical training variable. The protocol is used in military and trauma resilience programs and is grounded in research on prefrontal-amygdala regulation.",
+  "contraindications": [
+    "Not recommended for individuals with PTSD — deliberate stress exposure should be done with professional guidance",
+    "Those with cardiovascular conditions should use milder stressors",
+    "Do not perform near bedtime — adrenaline will disrupt sleep",
+    "Start with short durations and mild stressors; progress gradually over weeks"
+  ],
+  "estimated_impact": {
+    "stress_resilience": "High improvement",
+    "cognitive_performance_under_pressure": "High improvement",
+    "emotional_regulation": "High improvement",
+    "baseline_anxiety": "Moderate reduction"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science of Stress, Resilience & How to Manage It — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/the-science-of-stress-resilience-and-how-to-manage-it",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Master Your Stress — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/master-your-stress"
+    },
+    {
+      "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+    }
+  ]
+}

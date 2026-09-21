@@ -1,0 +1,63 @@
+{
+  "id": "huberman-strength-training",
+  "title": "Strength Training Protocol",
+  "description": "A science-backed resistance training routine to build muscle strength, size, and overall physical performance.",
+  "category": "fitness",
+  "duration": "45–60 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 12,
+  "importance": "foundation",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab",
+  "last_updated": "2025-09-18",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Full-Body Resistance Training",
+      "duration": "45–60 minutes",
+      "frequency": "3 times per week",
+      "timing": "any time of day",
+      "details": "Perform compound lifts such as squats, deadlifts, bench press, rows, and overhead presses. Include 3–4 sets of 6–12 reps for each major muscle group. Rest 60–90 seconds between sets."
+    },
+    {
+      "action": "Accessory Work",
+      "duration": "10–15 minutes",
+      "frequency": "2–3 times per week",
+      "timing": "after main lifts",
+      "details": "Add isolation exercises for smaller muscle groups (biceps, triceps, calves, abs) to support balanced muscle development."
+    }
+  ],
+  "benefits": [
+    "Increases muscular strength and endurance",
+    "Promotes hypertrophy and muscle mass growth",
+    "Improves bone density",
+    "Enhances overall functional fitness"
+  ],
+  "science": "Strength training stimulates muscle protein synthesis and promotes neuromuscular adaptations. Regular resistance training improves muscle strength, endurance, bone health, and metabolic efficiency.",
+  "contraindications": [
+    "Individuals with acute injuries or musculoskeletal limitations should consult a healthcare provider before starting.",
+    "Improper technique can lead to injury; proper form and progression are essential."
+  ],
+  "estimated_impact": {
+    "muscle_strength": "high",
+    "muscle_mass": "high",
+    "bone_density": "moderate",
+    "functional_fitness": "high"
+  },
+  "learning_resources": [
+    {
+      "title": "Strength Training and Hypertrophy: Science-Based Guide",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/strength-training-and-hypertrophy-science-based-guide",
+      "duration": "90 minutes"
+    }
+  ]
+}

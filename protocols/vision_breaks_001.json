@@ -1,0 +1,65 @@
+{
+  "id": "vision_breaks_001",
+  "title": "Vision Breaks for Eye Health",
+  "description": "Regular breaks from close-up work to prevent eye strain, reduce fatigue, and maintain visual health through the 20-20-20 rule and deliberate blinking.",
+  "category": "focus",
+  "duration": "20 seconds every 20 minutes",
+  "difficulty": "beginner",
+  "priority": 3,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab, Healthline, Huberman Lab Newsletter",
+  "last_updated": "2025-09-14",
+  "actions": [
+    {
+      "action": "Follow the 20-20-20 rule",
+      "duration": "20 seconds",
+      "frequency": "Every 20 minutes of close work",
+      "timing": "During any close-up visual tasks",
+      "details": "Every 20 minutes, look at something 20 feet away for at least 20 seconds. Set a timer or use an app reminder to maintain consistency."
+    },
+    {
+      "action": "Practice deliberate blinking",
+      "duration": "5-10 blinks",
+      "frequency": "Every few minutes during screen time",
+      "timing": "Throughout the day",
+      "details": "Slow, deliberate blinks help rewet the eyes. Close your eyes completely for a full second with each blink."
+    }
+  ],
+  "benefits": [
+    "Reduces digital eye strain and computer vision syndrome",
+    "Prevents dry eyes and maintains natural tear film",
+    "Reduces risk of myopia progression",
+    "Improves focus flexibility and accommodation",
+    "Decreases headaches and eye fatigue",
+    "Maintains healthy blinking patterns"
+  ],
+  "science": "The 20-20-20 rule helps relax the ciliary muscles responsible for focusing, preventing accommodative spasm. Regular distance viewing stimulates parasympathetic nervous system activity, promoting eye muscle relaxation. Deliberate blinking maintains the tear film layer essential for eye health and clear vision.",
+  "contraindications": [
+    "None - safe for all ages and visual conditions"
+  ],
+  "estimated_impact": {
+    "eye_strain": "High reduction",
+    "focus_quality": "Moderate improvement",
+    "visual_comfort": "High improvement",
+    "productivity": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science of Vision, Eye Health & Seeing Better — Huberman Lab Episode",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ssmwxKPFMFU",
+      "duration": "1 hour 10 minutes"
+    },
+    {
+      "title": "Exercises & Nutrition to Support Eye Health — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/exercises-and-nutrition-to-support-eye-health"
+    },
+    {
+      "title": "20-20-20 Rule: Does It Help Prevent Digital Eyestrain? — Healthline Article",
+      "type": "webpage",
+      "url": "https://www.healthline.com/health/eye-health/20-20-20-rule"
+    }
+  ]
+}

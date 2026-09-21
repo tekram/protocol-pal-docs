@@ -1,0 +1,45 @@
+{
+  "id": "huberman-breathing-daily",
+  "title": "Daily Breathwork Protocol by Dr. Andrew Huberman",
+  "description": "A science-backed breathing routine to optimize mental and physical health, reduce stress, and improve focus.",
+  "category": "breathing",
+  "duration": "5 minutes",
+  "difficulty": "beginner",
+  "priority": 2,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab",
+  "last_updated": "2025-09-18",
+  "actions": [
+    {
+      "action": "Cyclic Sighing",
+      "duration": "5 minutes",
+      "frequency": "daily",
+      "timing": "as needed",
+      "details": "Inhale deeply through the nose, then perform a second quick inhale followed by a long exhale through the mouth. Repeat this cycle for five minutes to activate the parasympathetic nervous system and reduce stress."
+    }
+  ],
+  "benefits": [
+    "Reduces anxiety",
+    "Improves mood",
+    "Enhances sleep quality",
+    "Regulates autonomic nervous system"
+  ],
+  "science": "Cyclic sighing has been shown to be highly effective for reducing stress and improving sleep quality. It involves performing a series of physiological sighs continuously for a set period, which has been reported to improve mood, reduce anxiety, and enhance autonomic functions related to sleep and heart rate variability.",
+  "contraindications": [
+    "Individuals with respiratory conditions should consult a healthcare provider before starting any new breathing exercises."
+  ],
+  "estimated_impact": {
+    "stress_reduction": "high",
+    "mood_improvement": "moderate",
+    "sleep_quality": "moderate"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance",
+      "duration": "90 minutes"
+    }
+  ]
+}

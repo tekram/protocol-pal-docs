@@ -1,0 +1,61 @@
+{
+  "id": "ultradian_work_cycles_001",
+  "title": "Ultradian Work Cycles (90-Minute Focus Blocks)",
+  "description": "Structure deep work into 90-minute blocks aligned with the brain's natural ultradian rhythm, followed by genuine rest, to maximize focus and prevent cognitive fatigue.",
+  "category": "focus",
+  "duration": "90 minutes of focused work + 10-20 min break",
+  "difficulty": "intermediate",
+  "priority": 5,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Work in 90-minute focused blocks",
+      "duration": "90 minutes",
+      "frequency": "1-3 blocks per day",
+      "timing": "During your peak alertness hours",
+      "details": "Set a timer for 90 minutes and work on a single task or project with minimal distractions. It's normal for the first 5-10 minutes to feel unfocused — this is the ramp-up phase. True deep focus typically engages around 10-20 minutes in. Resist checking phone or email during the block."
+    },
+    {
+      "action": "Take a genuine rest break between blocks",
+      "duration": "10-20 minutes",
+      "frequency": "After each 90-minute block",
+      "timing": "Between work blocks",
+      "details": "Step away from screens. Walk, look at a distance, do light stretching, or practice NSDR. Avoid switching to another cognitively demanding task or scrolling social media, which does not constitute rest for the prefrontal cortex."
+    }
+  ],
+  "benefits": [
+    "Aligns work with the brain's natural 90-minute attention cycles",
+    "Maximizes depth and quality of focus",
+    "Prevents cognitive fatigue and burnout",
+    "Improves output per hour of work",
+    "Creates clear boundaries between work and rest"
+  ],
+  "science": "The brain operates in ~90-minute ultradian cycles of higher and lower alertness throughout the day (the same rhythm seen in sleep cycles). Huberman explains that working in alignment with these cycles allows for deeper engagement of prefrontal cortex circuits. Forcing focus beyond 90 minutes yields diminishing returns and increases errors.",
+  "contraindications": [
+    "May not be practical for jobs requiring constant reactivity (e.g., customer support)",
+    "Not every task requires a full 90-minute block — adapt as needed"
+  ],
+  "estimated_impact": {
+    "deep_focus": "High improvement",
+    "productivity": "High improvement",
+    "cognitive_fatigue": "High reduction",
+    "work_quality": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Optimal Protocols for Studying & Learning — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/optimal-protocols-for-studying-and-learning",
+      "duration": "2 hours"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "cold_exposure_001",
+  "title": "Deliberate Cold Exposure",
+  "description": "Deliberate cold water immersion to boost dopamine, norepinephrine, and resilience. Huberman recommends 11 minutes total per week across 2-4 sessions for lasting neurochemical benefits.",
+  "category": "recovery",
+  "duration": "2-5 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 5,
+  "importance": "high-impact",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast & Newsletter",
+  "last_updated": "2026-02-20",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Cold water immersion (cold shower, ice bath, or cold plunge)",
+      "duration": "1-5 minutes",
+      "frequency": "2-4 sessions per week (11 min total/week)",
+      "timing": "Morning preferred for maximum dopamine & alertness benefit",
+      "details": "Enter water cold enough to make you want to get out but safe to stay in (typically 45-60°F / 7-15°C). Submerge up to the neck. Control your breathing with slow exhales. End the session on cold — do not warm up with a hot shower immediately, as shivering extends the metabolic benefit."
+    },
+    {
+      "action": "Post-cold natural rewarming",
+      "duration": "10-15 minutes",
+      "frequency": "After each cold session",
+      "timing": "Immediately after cold exposure",
+      "details": "Allow your body to rewarm naturally through shivering and movement. This extends the dopamine and norepinephrine elevation. Avoid jumping into a hot shower right away."
+    }
+  ],
+  "benefits": [
+    "Increases dopamine by 200-300% for several hours",
+    "Boosts norepinephrine for alertness and focus",
+    "Builds mental resilience and stress tolerance",
+    "Improves mood and reduces symptoms of depression",
+    "Enhances brown fat thermogenesis and metabolism",
+    "Reduces inflammation and supports recovery"
+  ],
+  "science": "Cold exposure triggers a massive release of norepinephrine (200-300%) and dopamine (250%) from the locus coeruleus and adrenal glands. Unlike stimulant-based dopamine spikes, cold-induced dopamine elevation is long-lasting (hours). The practice also increases brown adipose tissue activity, improving metabolic health over time.",
+  "contraindications": [
+    "Individuals with cardiovascular conditions (Raynaud's, heart disease) should consult a physician",
+    "Never do cold water immersion alone — drowning risk exists",
+    "Avoid immediately after strength training if hypertrophy is the goal (blunts adaptation)",
+    "Start conservatively — hypothermia is a real risk at extreme temperatures"
+  ],
+  "estimated_impact": {
+    "dopamine_levels": "Very high increase (250%)",
+    "mental_resilience": "High improvement",
+    "mood": "High improvement",
+    "metabolism": "Moderate improvement",
+    "inflammation": "Moderate reduction"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science & Use of Cold Exposure for Health & Performance — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/the-science-and-use-of-cold-exposure-for-health-and-performance",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Deliberate Cold Exposure Protocols — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/deliberate-cold-exposure"
+    }
+  ]
+}

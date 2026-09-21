@@ -1,0 +1,61 @@
+{
+  "id": "caffeine_delay_001",
+  "title": "Caffeine Delay (90-120 Min After Waking)",
+  "description": "Delay your first caffeine intake to 90-120 minutes after waking to allow natural cortisol-driven alertness to peak, then use caffeine to extend focus without an afternoon crash.",
+  "category": "energy",
+  "duration": "N/A — timing adjustment",
+  "difficulty": "beginner",
+  "priority": 2,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Delay caffeine 90-120 minutes after waking",
+      "duration": "N/A",
+      "frequency": "Daily",
+      "timing": "90-120 minutes after waking up",
+      "details": "Resist coffee or tea immediately upon waking. Allow your natural cortisol awakening response (CAR) to peak first. Drink water and get morning sunlight instead. Then have your first caffeine at the 90-120 minute mark."
+    },
+    {
+      "action": "Stop caffeine intake by early afternoon",
+      "duration": "N/A",
+      "frequency": "Daily",
+      "timing": "No caffeine after ~2 PM (8-10 hours before bed)",
+      "details": "Caffeine has a half-life of 5-6 hours. To protect sleep architecture, avoid caffeine in the second half of the day. This pairs with the delay to give you a focused caffeine window."
+    }
+  ],
+  "benefits": [
+    "Eliminates the mid-morning energy crash",
+    "Leverages natural cortisol for initial wakefulness",
+    "Extends afternoon focus and productivity",
+    "Improves sleep quality by reducing residual caffeine at night",
+    "Reduces caffeine dependency over time"
+  ],
+  "science": "Cortisol peaks naturally 30-45 minutes after waking (the Cortisol Awakening Response). Consuming caffeine during this peak blocks adenosine receptors while cortisol is already handling alertness, leading to a crash when cortisol drops. Delaying caffeine allows cortisol to do its job, then caffeine extends alertness afterward.",
+  "contraindications": [
+    "May be difficult for those with strong caffeine habits — taper gradually",
+    "Not applicable if you don't consume caffeine"
+  ],
+  "estimated_impact": {
+    "morning_alertness": "High improvement",
+    "afternoon_energy": "High improvement",
+    "sleep_quality": "Moderate improvement",
+    "caffeine_dependency": "Moderate reduction"
+  },
+  "learning_resources": [
+    {
+      "title": "Optimize Your Morning Routine — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/optimize-your-morning-routine",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Using Caffeine to Optimize Mental & Physical Performance — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/using-caffeine-to-optimize-mental-and-physical-performance",
+      "duration": "2 hours"
+    }
+  ]
+}

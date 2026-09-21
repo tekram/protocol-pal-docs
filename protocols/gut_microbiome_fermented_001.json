@@ -1,0 +1,51 @@
+{
+  "id": "gut_microbiome_fermented_001",
+  "title": "Gut Microbiome Support (Fermented Foods)",
+  "description": "Consume 2-4 servings of low-sugar fermented foods daily to increase gut microbiome diversity and reduce inflammatory markers, as demonstrated in the Stanford study discussed by Huberman.",
+  "category": "nutrition",
+  "duration": "Incorporated into meals",
+  "difficulty": "beginner",
+  "priority": 9,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Eat 2-4 servings of fermented foods daily",
+      "duration": "With meals",
+      "frequency": "Daily",
+      "timing": "Spread across meals throughout the day",
+      "details": "Include low-sugar fermented foods such as: plain yogurt, kefir, sauerkraut, kimchi, kombucha (low sugar), natto, or miso. The key is variety and consistency. Start with 1 serving and increase gradually to avoid GI discomfort. Fermented foods outperformed high-fiber diets for microbiome diversity in the Stanford study."
+    }
+  ],
+  "benefits": [
+    "Increases gut microbiome diversity (most important metric)",
+    "Reduces 19 inflammatory markers (Stanford study finding)",
+    "Supports immune system function",
+    "May improve mood via gut-brain axis",
+    "Better than high-fiber diet alone for microbiome diversity",
+    "Easy to incorporate into existing diet"
+  ],
+  "science": "A Stanford study by Justin Sonnenburg (discussed extensively on Huberman Lab) compared high-fiber vs. high-fermented-food diets over 10 weeks. The fermented food group showed significantly increased microbiome diversity and reduced 19 inflammatory markers. The fiber group did not show the same diversity improvements, though fiber remains important for existing microbe nourishment.",
+  "contraindications": [
+    "Start slowly to avoid bloating and GI discomfort",
+    "Those with histamine intolerance may react to fermented foods",
+    "Immunocompromised individuals should consult a physician",
+    "Choose low-sugar options (many commercial kombuchas are high in sugar)"
+  ],
+  "estimated_impact": {
+    "microbiome_diversity": "High improvement",
+    "inflammation": "High reduction",
+    "immune_function": "Moderate improvement",
+    "mood": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-enhance-your-gut-microbiome-for-brain-and-overall-health",
+      "duration": "2 hours"
+    }
+  ]
+}

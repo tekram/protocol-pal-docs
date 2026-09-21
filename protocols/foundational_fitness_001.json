@@ -1,0 +1,94 @@
+{
+  "id": "foundational_fitness_001",
+  "title": "Foundational Fitness (Weekly Schedule)",
+  "description": "Huberman's complete weekly fitness template combining cardiovascular training, resistance training, and flexibility work across a structured 5-6 day schedule for comprehensive fitness.",
+  "category": "fitness",
+  "duration": "45-75 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 11,
+  "importance": "high-impact",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast & Newsletter",
+  "last_updated": "2026-02-20",
+  "weekly_frequency": {
+    "times_per_week": 5,
+    "preferred_days": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Day 1 — Long endurance (Zone 2 cardio)",
+      "duration": "60-75 minutes",
+      "frequency": "Once per week",
+      "timing": "Any day",
+      "details": "Sustained low-to-moderate intensity cardio: jogging, cycling, rowing, or brisk hiking. Heart rate in Zone 2 (can hold a conversation but slightly breathless). Builds mitochondrial density and aerobic base."
+    },
+    {
+      "action": "Day 2 — Legs resistance training",
+      "duration": "45-60 minutes",
+      "frequency": "Once per week",
+      "timing": "Any day",
+      "details": "Focus on quads, hamstrings, glutes, and calves. Exercises: squats, leg press, RDLs, lunges, calf raises. 3-4 sets of 5-8 reps for strength or 8-15 for hypertrophy."
+    },
+    {
+      "action": "Day 3 — Heat/cold or active recovery",
+      "duration": "30-60 minutes",
+      "frequency": "Once per week",
+      "timing": "Any day",
+      "details": "Sauna, cold plunge, yoga, or light walking. Focus on recovery and mobility. This day supports the training days around it."
+    },
+    {
+      "action": "Day 4 — Torso/upper body (push/pull)",
+      "duration": "45-60 minutes",
+      "frequency": "Once per week",
+      "timing": "Any day",
+      "details": "Chest, back, shoulders, and arms. Exercises: bench press, rows, overhead press, pull-ups, curls. Alternate push and pull movements. 3-4 sets of 6-12 reps."
+    },
+    {
+      "action": "Day 5 — High-intensity cardio (intervals or sprints)",
+      "duration": "20-35 minutes",
+      "frequency": "Once per week",
+      "timing": "Any day",
+      "details": "Sprint intervals, rowing intervals, or cycling intervals. 30-60 seconds work, 30-90 seconds rest. This builds VO2 max and anaerobic capacity."
+    }
+  ],
+  "benefits": [
+    "Addresses all components of fitness: endurance, strength, and flexibility",
+    "Structured for sustainable long-term adherence",
+    "Balances training stimulus with recovery",
+    "Adaptable to different fitness levels",
+    "Based on Huberman's personal training schedule",
+    "Combines cardiovascular and resistance training optimally"
+  ],
+  "science": "Huberman's foundational fitness protocol is based on the principle that optimal fitness requires training all major energy systems: the phosphagen system (strength/power), glycolytic system (HIIT/anaerobic), and oxidative system (Zone 2/endurance). The weekly split allows adequate recovery between sessions while maintaining training frequency.",
+  "contraindications": [
+    "Beginners should start with reduced volume and build up over 4-6 weeks",
+    "Those with injuries should modify exercises — consult a physical therapist",
+    "Avoid training through acute pain"
+  ],
+  "estimated_impact": {
+    "overall_fitness": "High improvement",
+    "cardiovascular_health": "High improvement",
+    "muscular_strength": "High improvement",
+    "body_composition": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Foundational Fitness Protocol — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
+    },
+    {
+      "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/dr-andy-galpin-optimize-your-training-program-for-fitness-and-longevity",
+      "duration": "3 hours"
+    }
+  ]
+}

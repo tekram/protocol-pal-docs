@@ -1,0 +1,83 @@
+{
+  "id": "creativity_enhancement_001",
+  "title": "Creativity Enhancement Protocol",
+  "description": "A two-phase meditation sequence — open monitoring then focused attention — to prime both divergent and convergent thinking, with mood calibration before creative work sessions.",
+  "category": "focus",
+  "duration": "15-25 minutes",
+  "difficulty": "intermediate",
+  "priority": 9,
+  "importance": "supplemental",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-09-12",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 0
+  },
+  "actions": [
+    {
+      "action": "Phase 1: Open Monitoring Meditation (divergent thinking)",
+      "duration": "5-10 minutes",
+      "frequency": "Each creative session",
+      "timing": "Before creative work",
+      "details": "Sit comfortably with eyes closed. Let your mind roam freely — don't anchor to any single thought, sensation, or object. If a thought arises, observe it without engaging or suppressing it, then let it pass. The goal is wide, defocused awareness that mirrors the unfocused, associative thinking required for generating novel ideas. This activates the default mode network (DMN), which is where creative connections are made."
+    },
+    {
+      "action": "Phase 2: Focused Attention Meditation (convergent thinking)",
+      "duration": "5-10 minutes",
+      "frequency": "Each creative session",
+      "timing": "Immediately after Phase 1",
+      "details": "Transition to single-point focus — breath, a visual target, or a body sensation. Hold attention on that one point. When your mind wanders, return focus. This transitions you from generative (DMN) mode into evaluative (prefrontal/executive) mode, which is needed for selecting the best idea from what the open monitoring phase generated."
+    },
+    {
+      "action": "Mood calibration before creative work",
+      "duration": "5 minutes",
+      "frequency": "As needed",
+      "timing": "Before the meditation sequence if in a low or neutral mood",
+      "details": "Creativity requires adequate dopamine tone. If you feel flat or unmotivated, briefly elevate your mood before the sequence: 5 minutes of upbeat music you enjoy, a short social interaction, or 5-10 minutes of light exercise. Dopamine gates creative output via the nigrostriatal pathway — low dopamine produces narrow, uncreative thinking."
+    }
+  ],
+  "benefits": [
+    "Primes both divergent thinking (idea generation) and convergent thinking (idea selection)",
+    "Leverages the default mode network for associative, creative connections",
+    "Dopamine optimization supports creative flexibility",
+    "Distinct from focus meditation — different goal, different neural circuits",
+    "Applicable before writing, problem-solving, design, or strategic planning sessions"
+  ],
+  "science": "Creativity requires two distinct neural modes. Divergent thinking (generating many novel ideas) relies on the default mode network (DMN) — the same network active during mind-wandering. Convergent thinking (evaluating and selecting ideas) requires prefrontal executive control. Open monitoring meditation activates DMN; focused attention meditation activates prefrontal circuits. Huberman explains that dopamine, particularly via the nigrostriatal pathway, modulates creative flexibility — low dopamine narrows thinking, adequate dopamine enables broad associative ideation.",
+  "contraindications": [
+    "Do not use immediately after high-intensity exercise (elevated norepinephrine narrows cognitive focus, opposing divergent thinking)",
+    "Avoid screens and social media between the two phases — they interrupt the DMN activation"
+  ],
+  "estimated_impact": {
+    "creative_output": "High improvement",
+    "idea_generation": "High improvement",
+    "convergent_thinking": "Moderate improvement",
+    "focus_for_creative_work": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science of Creativity & How to Enhance Creative Innovation — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/the-science-of-creativity-and-how-to-enhance-creative-innovation",
+      "duration": "2 hours"
+    },
+    {
+      "title": "How Meditation Works & Science-Based Effective Meditations — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-meditation-works-and-science-based-effective-meditations",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "duration": "2 hours"
+    }
+  ]
+}

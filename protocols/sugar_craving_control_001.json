@@ -1,0 +1,73 @@
+{
+  "id": "sugar_craving_control_001",
+  "title": "Sugar Craving Control Protocol",
+  "description": "Use science-based techniques to reduce sugar cravings by leveraging the gut-brain axis, amino acid supplementation, and behavioral interventions discussed by Huberman.",
+  "category": "nutrition",
+  "duration": "As needed",
+  "difficulty": "beginner",
+  "priority": 13,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "conditional": {
+    "question": "Are you experiencing sugar cravings today?",
+    "yesLabel": "Yes, add craving control tips",
+    "noLabel": "No, I'm good"
+  },
+  "actions": [
+    {
+      "action": "Use L-glutamine to blunt acute sugar cravings",
+      "duration": "Immediate",
+      "frequency": "When cravings hit",
+      "timing": "At the onset of a sugar craving",
+      "details": "Take 1-2g of L-glutamine (sublingual or in water) when a sugar craving strikes. Glutamine can serve as an alternative fuel source for neurons that are signaling for glucose, reducing the craving within minutes. This is a short-term intervention."
+    },
+    {
+      "action": "Ensure adequate protein and fat at meals",
+      "duration": "With each meal",
+      "frequency": "Every meal",
+      "timing": "Start of meals",
+      "details": "Eating protein and healthy fats before carbohydrates blunts blood glucose spikes and reduces subsequent cravings. Aim for 30g+ protein per meal. Starting with protein/fat before starchy carbs improves glycemic control."
+    },
+    {
+      "action": "Walk for 5-10 minutes after meals",
+      "duration": "5-10 minutes",
+      "frequency": "After meals (especially larger ones)",
+      "timing": "Within 30 minutes of finishing a meal",
+      "details": "Light walking after eating helps clear blood glucose through muscle contraction (GLUT4-mediated uptake), reducing the insulin spike and subsequent crash that drives cravings."
+    }
+  ],
+  "benefits": [
+    "Reduces sugar cravings through multiple mechanisms",
+    "Improves blood glucose stability",
+    "Supports healthier food choices long-term",
+    "Reduces energy crashes from blood sugar swings",
+    "Simple interventions that require minimal effort"
+  ],
+  "science": "Sugar cravings are driven by both central (brain dopamine circuits) and peripheral (gut-brain neuropod cell) mechanisms. Huberman explains that neuropod cells in the gut sense sugar and signal the brain via the vagus nerve, creating cravings independent of taste. L-glutamine may blunt cravings by providing an alternative fuel for glucose-sensing neurons. Post-meal walking improves GLUT4-mediated glucose disposal.",
+  "contraindications": [
+    "L-glutamine should be avoided by those with liver disease or kidney disease without medical supervision",
+    "Not a substitute for addressing underlying insulin resistance or diabetes",
+    "Those with eating disorders should work with a professional"
+  ],
+  "estimated_impact": {
+    "sugar_cravings": "High reduction",
+    "blood_glucose_stability": "Moderate improvement",
+    "energy_stability": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How Our Hormones Control Our Hunger, Eating & Satiety — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-our-hormones-control-our-hunger-eating-and-satiety",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Controlling Sugar Cravings & Metabolism with Science-Based Tools — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/controlling-sugar-cravings-and-metabolism-with-science-based-tools",
+      "duration": "2 hours"
+    }
+  ]
+}

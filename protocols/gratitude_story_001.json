@@ -1,0 +1,58 @@
+{
+  "id": "gratitude_story_001",
+  "title": "Gratitude Practice (Story-Based)",
+  "description": "A neuroscience-backed gratitude practice that involves receiving or reading a genuine story of gratitude (not just listing things you're grateful for), which activates pro-social brain circuits and serotonin pathways.",
+  "category": "mood",
+  "duration": "5 minutes per session",
+  "difficulty": "beginner",
+  "priority": 10,
+  "importance": "high-impact",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Read or recall a genuine story of gratitude",
+      "duration": "5 minutes",
+      "frequency": "3 times per week",
+      "timing": "Any time of day",
+      "details": "Find or write a brief story about someone genuinely receiving help or expressing gratitude. It doesn't have to be YOUR story — observing genuine gratitude activates the same neural circuits. Re-read the same story if it still moves you. The key is emotional resonance, not novelty."
+    }
+  ],
+  "benefits": [
+    "Activates pro-social prefrontal circuits",
+    "Increases serotonin and shifts autonomic tone toward calm",
+    "More effective than gratitude lists (which often feel performative)",
+    "Takes only 5 minutes for measurable neural effects",
+    "Improves resilience and subjective well-being",
+    "Effects are cumulative over weeks"
+  ],
+  "science": "Huberman explains that traditional gratitude lists are less effective because they can feel forced. The neuroscience shows that the most potent gratitude effect comes from the narrative experience of receiving or witnessing genuine gratitude. This activates the medial prefrontal cortex and anterior cingulate cortex — areas associated with empathy, reward, and pro-social behavior — and shifts autonomic nervous system function.",
+  "contraindications": [
+    "None — safe for everyone",
+    "Those experiencing grief or loss should choose timing that feels appropriate"
+  ],
+  "estimated_impact": {
+    "mood": "High improvement",
+    "resilience": "Moderate improvement",
+    "social_connection": "Moderate improvement",
+    "stress_reduction": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science of Gratitude & How to Build a Gratitude Practice — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/the-science-of-gratitude-and-how-to-build-a-gratitude-practice",
+      "duration": "1.5 hours"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "optic_flow_walking_001",
+  "title": "Optic Flow Walking",
+  "description": "Deliberate forward walking outdoors — without headphones — to generate optic flow, which suppresses amygdala activity and reduces anxiety and stress at a neurological level.",
+  "category": "mood",
+  "duration": "10-30 minutes",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-09-12",
+  "actions": [
+    {
+      "action": "Outdoor forward walk without headphones",
+      "duration": "10-30 minutes",
+      "frequency": "Daily",
+      "timing": "Any time of day — morning or post-work ideal",
+      "details": "Walk outdoors at a comfortable pace in a forward direction. The key is self-generated forward motion — not a treadmill, bike, or car. Leave headphones behind. Allow your eyes to naturally take in the passing visual environment (optic flow). This is not an exercise protocol — the goal is visual stimulation suppressing the amygdala, not cardiovascular output."
+    },
+    {
+      "action": "Allow panoramic gaze while walking",
+      "duration": "Throughout walk",
+      "frequency": "Daily",
+      "timing": "During the walk",
+      "details": "Soften your gaze and allow your visual field to expand to peripheral vision. Don't fix your eyes on a single point — let the environment pass. This wide-angle, forward-motion visual input is the active ingredient in optic flow's anxiety-reducing effect."
+    }
+  ],
+  "benefits": [
+    "Reduces amygdala activity and acute anxiety",
+    "Lowers cortisol and sympathetic nervous system tone",
+    "Improves mood through visual stimulation of brainstem circuits",
+    "Accessible — requires no equipment or cost",
+    "Stacks with morning sunlight and outdoor distance viewing",
+    "Supports processing of stressful events"
+  ],
+  "science": "Forward self-generated locomotion creates optic flow — the visual impression of the environment streaming past. Research shows this specific visual pattern suppresses activity in the amygdala (the brain's threat-detection center), reducing fear and anxiety states. The mechanism is distinct from exercise-induced mood effects. Huberman cites this as one of the most underused and accessible mental health tools available.",
+  "contraindications": [
+    "Treadmill walking does not produce the same optic flow effect",
+    "Headphone use (especially audio that demands attention) blunts the visual engagement"
+  ],
+  "estimated_impact": {
+    "anxiety": "High reduction",
+    "stress": "High reduction",
+    "mood": "Moderate improvement",
+    "amygdala_tone": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Understanding & Conquering Depression — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/understanding-and-conquering-depression",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/controlling-your-dopamine-for-motivation-focus-and-satisfaction",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+    }
+  ]
+}

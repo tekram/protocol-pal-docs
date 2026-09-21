@@ -1,0 +1,56 @@
+{
+  "id": "omega3_epa_001",
+  "title": "Omega-3 / EPA Supplementation",
+  "description": "Daily supplementation with omega-3 fatty acids (targeting 1-2g EPA) to support mood, cardiovascular health, brain function, and reduce inflammation.",
+  "category": "nutrition",
+  "duration": "Ongoing daily supplementation",
+  "difficulty": "beginner",
+  "priority": 8,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Take omega-3 supplement with at least 1g EPA",
+      "duration": "Immediate",
+      "frequency": "Daily",
+      "timing": "With a meal containing fat for better absorption",
+      "details": "Take a high-quality fish oil, krill oil, or algae-based omega-3 supplement. The key metric is EPA content — aim for at least 1000mg (1g) EPA per day. EPA (not DHA) is the primary driver of the mood and anti-inflammatory benefits. Check the label for EPA specifically."
+    }
+  ],
+  "benefits": [
+    "Significant antidepressant effects at 1g+ EPA/day",
+    "Reduces systemic inflammation",
+    "Supports cardiovascular health",
+    "Improves brain function and neuronal membrane fluidity",
+    "May improve HRV (heart rate variability)",
+    "Supports joint health and recovery"
+  ],
+  "science": "Huberman cites meta-analyses showing that EPA at doses of 1-2g/day has antidepressant effects comparable to some prescription medications. EPA modulates the inflammatory pathway by competing with arachidonic acid, reducing pro-inflammatory eicosanoid production. The mood effect is primarily from EPA, not DHA, though DHA supports brain structure.",
+  "contraindications": [
+    "May interact with blood-thinning medications — consult physician",
+    "Some people experience fish burps — taking with meals or using enteric-coated capsules helps",
+    "High doses (>3g/day) may increase bleeding risk"
+  ],
+  "estimated_impact": {
+    "mood": "High improvement (at 1g+ EPA)",
+    "inflammation": "High reduction",
+    "cardiovascular_health": "Moderate improvement",
+    "brain_function": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-enhance-your-gut-microbiome-for-brain-and-overall-health",
+      "duration": "2 hours"
+    },
+    {
+      "title": "The Science of Emotions & Relationships — Huberman Lab (omega-3 discussion)",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/the-science-of-emotions-and-relationships",
+      "duration": "2 hours"
+    }
+  ]
+}

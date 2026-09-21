@@ -1,0 +1,75 @@
+{
+  "id": "creatine_daily_001",
+  "title": "Daily Creatine Supplementation",
+  "description": "Daily intake of creatine monohydrate to support cognitive function, muscle performance, and overall energy metabolism.",
+  "category": "nutrition",
+  "duration": "Ongoing daily supplementation",
+  "difficulty": "beginner",
+  "priority": 8,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab; Yahoo/Health",
+  "last_updated": "2025-09-14",
+  "actions": [
+    {
+      "action": "Take 5 grams of creatine monohydrate",
+      "duration": "Immediate",
+      "frequency": "Daily",
+      "timing": "Any time of day, ideally post-workout or with a meal",
+      "details": "Mix 5 grams of creatine monohydrate in water, juice, or your preferred beverage. Consistency is more important than timing. No loading phase is required for long-term benefits."
+    },
+    {
+      "action": "Ensure adequate hydration",
+      "duration": "Throughout the day",
+      "frequency": "Daily",
+      "timing": "Throughout the day",
+      "details": "Drink at least 2–3 liters of water daily to support kidney function and optimize creatine utilization."
+    },
+    {
+      "action": "Optional: Combine with carbohydrates for better uptake",
+      "duration": "With meal or post-workout",
+      "frequency": "Daily",
+      "timing": "Alongside creatine intake",
+      "details": "Consuming creatine with a source of carbs (like fruit juice) may increase uptake into muscles due to insulin-mediated transport."
+    }
+  ],
+  "benefits": [
+    "Supports cognitive performance, memory, and learning",
+    "Improves strength, power, and muscle endurance",
+    "Enhances recovery after high-intensity exercise",
+    "May reduce mental fatigue under stress or sleep deprivation",
+    "Supports cellular energy metabolism (ATP availability)"
+  ],
+  "science": "Creatine supplementation increases phosphocreatine stores in muscles and the brain, improving rapid ATP regeneration. Huberman Lab notes that daily creatine (3–5 g/day) can enhance memory, attention, and cognitive resilience, especially under sleep deprivation or stress. Muscle strength and recovery are also consistently improved.",
+  "contraindications": [
+    "Individuals with kidney disease or impaired renal function should consult a physician",
+    "Avoid excessive dosages beyond recommended 5 grams/day",
+    "Ensure adequate hydration"
+  ],
+  "estimated_impact": {
+    "cognitive_function": "Moderate to high improvement",
+    "muscle_strength": "High improvement",
+    "recovery": "Moderate improvement",
+    "mental_fatigue": "Moderate reduction",
+    "energy_levels": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Dr. Layne Norton & Dr. Andrew Huberman — Why Creatine Monohydrate Is So Effective",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=s6cozqL2TF8",
+      "duration": "1 hour 8 minutes approx"
+    },
+    {
+      "title": "How Creatine Can Help with Concussion & Traumatic Brain Injury — Huberman Lab",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=cqUBgPMtLSQ",
+      "duration": "≈15 minutes"
+    },
+    {
+      "title": "Andrew Huberman Breaks Down Creatine's Impact on Mood and Cognition — Yahoo/Health article",
+      "type": "webpage",
+      "url": "https://health.yahoo.com/wellness/nutrition/vitamins-supplements/articles/andrew-huberman-breaks-down-creatine-035557797.html"
+    }
+  ]
+}

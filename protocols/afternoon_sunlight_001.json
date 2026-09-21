@@ -1,0 +1,52 @@
+{
+  "id": "afternoon_sunlight_001",
+  "title": "Afternoon Sunlight Viewing",
+  "description": "View sunlight in the late afternoon to signal your circadian clock that evening is approaching, which helps protect against the negative effects of artificial light at night on melatonin production.",
+  "category": "sleep",
+  "duration": "5-10 minutes",
+  "difficulty": "beginner",
+  "priority": 4,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast & Newsletter",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "View low solar angle sunlight in the late afternoon",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "Late afternoon, ideally in the last 1-2 hours before sunset",
+      "details": "Go outside and look toward the sun (not directly at it) as it descends. The yellow-orange light at low solar angles activates a different set of retinal neurons that signal 'evening' to your circadian clock. This provides a second anchor point for your internal clock."
+    }
+  ],
+  "benefits": [
+    "Provides a second circadian anchor point (complementing morning light)",
+    "Reduces sensitivity to artificial light at night",
+    "Protects melatonin onset from being delayed by evening screen use",
+    "Supports consistent sleep-wake timing",
+    "Free and requires no equipment"
+  ],
+  "science": "Afternoon/evening sunlight exposure at low solar angles activates melanopsin-containing retinal ganglion cells in a pattern that signals 'dusk' to the suprachiasmatic nucleus (SCN). Huberman explains this acts as a protective buffer — it reduces the melatonin-suppressing effect of artificial light exposure later in the evening by up to 50%.",
+  "contraindications": [
+    "Do not stare directly at the sun",
+    "Use UV protection if extended exposure in bright conditions"
+  ],
+  "estimated_impact": {
+    "sleep_quality": "Moderate improvement",
+    "circadian_health": "High improvement",
+    "melatonin_protection": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake",
+      "duration": "1.5 hours"
+    },
+    {
+      "title": "Toolkit for Sleep — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+    }
+  ]
+}

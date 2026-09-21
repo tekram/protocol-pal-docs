@@ -1,0 +1,63 @@
+{
+  "id": "huberman-journaling-mental-health",
+  "title": "Expressive Journaling Protocol for Mental Health",
+  "description": "A science-backed journaling method developed by Dr. James Pennebaker, shown to enhance emotional processing, reduce stress, and improve overall well-being.",
+  "category": "mood",
+  "duration": "15–30 minutes per session",
+  "difficulty": "beginner",
+  "priority": 10,
+  "importance": "high-impact",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab",
+  "last_updated": "2025-09-18",
+  "weekly_frequency": {
+    "times_per_week": 4,
+    "preferred_days": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday"
+    ],
+    "min_rest_days": 0
+  },
+  "actions": [
+    {
+      "action": "Expressive Writing Session",
+      "duration": "15–30 minutes",
+      "frequency": "4 consecutive days",
+      "timing": "any time of day",
+      "details": "Write continuously about a significant emotional experience or trauma. Focus on expressing your deepest thoughts and feelings without concern for grammar or spelling."
+    },
+    {
+      "action": "Post-Writing Reflection",
+      "duration": "5–15 minutes",
+      "frequency": "after each writing session",
+      "timing": "immediately after writing",
+      "details": "Engage in calming activities such as deep breathing, meditation, or a short walk to help process emotions and stabilize mood."
+    }
+  ],
+  "benefits": [
+    "Improves emotional processing",
+    "Reduces symptoms of anxiety and depression",
+    "Enhances immune function",
+    "Promotes neuroplasticity and brain rewiring"
+  ],
+  "science": "This protocol is supported by over 200 peer-reviewed studies demonstrating its effectiveness in improving mental and physical health by engaging the prefrontal cortex and reducing amygdala activity.",
+  "contraindications": [
+    "Individuals with severe trauma or PTSD should consult a mental health professional before starting this protocol.",
+    "Not recommended for those currently in crisis without professional support."
+  ],
+  "estimated_impact": {
+    "mental_health": "high",
+    "immune_function": "moderate",
+    "neuroplasticity": "moderate"
+  },
+  "learning_resources": [
+    {
+      "title": "A Science-Supported Journaling Protocol to Improve Mental & Physical Health",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/a-science-supported-journaling-protocol-to-improve-mental-physical-health",
+      "duration": "90 minutes"
+    }
+  ]
+}

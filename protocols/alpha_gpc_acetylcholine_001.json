@@ -1,0 +1,84 @@
+{
+  "id": "alpha_gpc_acetylcholine_001",
+  "title": "Alpha-GPC Acetylcholine Priming",
+  "description": "Situational supplementation with Alpha-GPC (300-600mg) 10-20 minutes before demanding cognitive work or training, 3-4x per week, to elevate acetylcholine and sharpen focus and learning.",
+  "category": "focus",
+  "duration": "10-20 min before sessions (supplement timing)",
+  "difficulty": "intermediate",
+  "priority": 11,
+  "importance": "supplemental",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast (Episode 88); Examine.com",
+  "last_updated": "2026-09-12",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 0
+  },
+  "actions": [
+    {
+      "action": "Take Alpha-GPC 10-20 minutes before cognitive work",
+      "duration": "Immediate (supplement)",
+      "frequency": "3-4x per week (not daily)",
+      "timing": "10-20 minutes before a focused work session or training",
+      "details": "Take 300-600mg Alpha-GPC (alpha-glycerophosphocholine) 10-20 minutes before a cognitively demanding session. This is a situational tool — not a daily supplement. Huberman takes it 3-4x per week. It can be stacked with caffeine for a compounded effect. Available in capsule or powder form. Start at 300mg to assess tolerance."
+    },
+    {
+      "action": "Food alternative if not supplementing",
+      "duration": "With a meal",
+      "frequency": "Daily",
+      "timing": "Breakfast or pre-work meal",
+      "details": "If you prefer food sources, prioritize high-choline foods: 2 egg yolks, 3oz beef liver, or a can of sardines all provide significant choline for acetylcholine synthesis. These are less acute than Alpha-GPC supplementation but support baseline acetylcholine tone."
+    },
+    {
+      "action": "Do not take daily — cycle use",
+      "duration": "Ongoing",
+      "frequency": "3-4x per week maximum",
+      "timing": "On high-demand workdays or training days only",
+      "details": "Huberman and research flag a concern with daily choline supplementation: TMAO (trimethylamine N-oxide) production by gut bacteria from chronic high choline intake may increase cardiovascular risk. Keep Alpha-GPC to 3-4x per week, on your most cognitively demanding days. Rest days support acetylcholine receptor sensitivity reset."
+    }
+  ],
+  "benefits": [
+    "Elevates acetylcholine — the neurotransmitter of focus, attention, and learning",
+    "Improves performance on cognitively demanding tasks",
+    "Stacks synergistically with caffeine for compounded focus",
+    "Supports muscular output when taken before training",
+    "Situational — used only on high-demand days, avoiding habituation"
+  ],
+  "science": "Acetylcholine is the primary neuromodulator of focused attention and learning. Alpha-GPC is a highly bioavailable choline precursor that crosses the blood-brain barrier and rapidly increases acetylcholine synthesis. Unlike many nootropics, it has direct evidence from human studies for cognitive performance improvement. Huberman discusses it specifically in the context of the Focus Toolkit (Episode 88) as one of the few supplements with a clear, fast-acting mechanism for attention enhancement.",
+  "contraindications": [
+    "Do not take daily — limit to 3-4x per week to reduce TMAO production risk",
+    "Those on cholinergic medications (some Alzheimer's drugs) should consult a physician",
+    "May intensify vivid dreaming if taken too close to bedtime",
+    "Individuals with fish/soy allergies should check the source of their Alpha-GPC product",
+    "Not a replacement for sleep — sleep deprivation overrides any supplement-based focus boost"
+  ],
+  "estimated_impact": {
+    "acute_focus": "High improvement",
+    "learning_efficiency": "Moderate improvement",
+    "cognitive_performance": "High improvement",
+    "physical_performance": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab (Ep. 88)",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Huberman Supplements Guide — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/huberman-lab-supplement-guide"
+    },
+    {
+      "title": "Effects of Alpha-GPC on Human Cognitive Performance — Examine.com",
+      "type": "article",
+      "url": "https://examine.com/supplements/alpha-gpc/"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "red_light_photobiomodulation_001",
+  "title": "Red Light / Photobiomodulation",
+  "description": "Brief morning exposure to 670nm red light to recharge retinal mitochondria and slow age-related photoreceptor decline. Supported by research showing significant improvements in visual acuity in adults over 40.",
+  "category": "recovery",
+  "duration": "2-3 minutes per session",
+  "difficulty": "beginner",
+  "priority": 7,
+  "importance": "supplemental",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab Podcast; UCL Research",
+  "last_updated": "2026-09-12",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Morning red light viewing (670nm)",
+      "duration": "2-3 minutes",
+      "frequency": "3x per week",
+      "timing": "Within the first 3 hours of waking",
+      "details": "Look toward a 670nm red light source (LED panel or red light device) from a distance of about 1-2 feet. Keep eyes open and relaxed — do not stare fixedly, blink naturally. 2-3 minutes is the studied dose. Do this in the morning only — evening red light exposure does not carry the same benefit and may interfere with sleep timing. Low-cost 670nm LED panels are widely available."
+    },
+    {
+      "action": "Optional: Full-body near-infrared panel (recovery use)",
+      "duration": "10-15 minutes",
+      "frequency": "3-5x per week",
+      "timing": "Post-workout or early morning",
+      "details": "For muscle recovery and skin health, use a 650-850nm red/near-infrared panel at 1-2 feet distance for 10-15 minutes. This is a separate use case from the retinal protocol — different mechanism (skin and muscle mitochondria vs. photoreceptor mitochondria), different devices. Not required for the eye health benefit."
+    }
+  ],
+  "benefits": [
+    "Counteracts age-related mitochondrial decline in retinal photoreceptors",
+    "Studies show 22% improvement in visual acuity in adults over 40",
+    "Reduces photoreceptor fatigue and improves color contrast sensitivity",
+    "Near-infrared wavelengths support muscle recovery and skin repair",
+    "Non-invasive and low-risk when used correctly"
+  ],
+  "science": "Retinal cone cells are among the most metabolically active cells in the body and rely heavily on mitochondrial function. Mitochondrial efficiency declines with age, leading to photoreceptor deterioration. Research published in the Journals of Gerontology (cited by Huberman) found that 3 minutes of 670nm light exposure in the morning 3x/week reversed some age-related visual decline. The mechanism is mitochondrial stimulation — red wavelengths are absorbed by cytochrome c oxidase, boosting ATP production in photoreceptors.",
+  "contraindications": [
+    "Do not stare directly into high-intensity red light devices at close range",
+    "Those with photosensitive conditions (lupus, porphyria) should consult a physician",
+    "Evening use of bright red light panels may interfere with melatonin in some individuals",
+    "Not a replacement for regular eye exams"
+  ],
+  "estimated_impact": {
+    "visual_acuity": "Moderate improvement (significant in 40+ age group)",
+    "photoreceptor_health": "High improvement",
+    "muscle_recovery": "Moderate improvement (full-body panel)",
+    "skin_health": "Moderate improvement (full-body panel)"
+  },
+  "learning_resources": [
+    {
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+      "duration": "1.5 hours"
+    },
+    {
+      "title": "The Science of Vision, Eye Health & Seeing Better — Huberman Lab",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ssmwxKPFMFU",
+      "duration": "1 hour 10 minutes"
+    },
+    {
+      "title": "Red Light Therapy for Eye Health — Glen Jeffrey Research Summary",
+      "type": "article",
+      "url": "https://www.ucl.ac.uk/news/2020/jun/three-minute-exposure-red-light-once-week-significantly-improves-declining-eyesight"
+    }
+  ]
+}

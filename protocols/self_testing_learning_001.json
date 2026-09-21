@@ -1,0 +1,56 @@
+{
+  "id": "self_testing_learning_001",
+  "title": "Studying & Learning (Self-Testing Protocol)",
+  "description": "Use active recall and self-testing as the primary study method rather than passive re-reading, leveraging the testing effect to dramatically improve long-term retention and understanding.",
+  "category": "focus",
+  "duration": "Integrated into study sessions",
+  "difficulty": "beginner",
+  "priority": 7,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Test yourself on material rather than re-reading",
+      "duration": "Varies with study session",
+      "frequency": "Every study session",
+      "timing": "During and after learning new material",
+      "details": "After reading or watching material, close the source and attempt to recall the key points from memory. Write them down or speak them aloud. The struggle of retrieval is what strengthens memory. Don't look at the material until you've attempted recall. Test yourself immediately after learning and then at spaced intervals."
+    },
+    {
+      "action": "Use spaced repetition for long-term retention",
+      "duration": "10-15 minutes",
+      "frequency": "Daily or every other day",
+      "timing": "Any time, but shortly after sleep is effective",
+      "details": "Review material at increasing intervals: 1 day, 3 days, 7 days, 14 days. Use flashcards (physical or apps like Anki) to automate spacing. Each retrieval attempt strengthens the neural pathway, making the memory more durable."
+    }
+  ],
+  "benefits": [
+    "Dramatically improves long-term retention (testing effect)",
+    "More effective than re-reading or highlighting by 50-100%",
+    "Identifies knowledge gaps early",
+    "Strengthens neural pathways through effortful retrieval",
+    "Builds confidence through demonstrated knowledge",
+    "Works for any subject matter"
+  ],
+  "science": "Huberman discusses extensive research on the 'testing effect' — actively retrieving information strengthens memory far more than passive review. Each retrieval attempt triggers neuroplasticity in hippocampal and cortical circuits. The effort of recall (even when incorrect) signals the brain that this information is important, triggering consolidation during subsequent sleep.",
+  "contraindications": [
+    "None — effective for all ages and subjects",
+    "May feel frustrating initially if accustomed to passive study — this is normal and part of the benefit"
+  ],
+  "estimated_impact": {
+    "long_term_retention": "Very high improvement",
+    "learning_efficiency": "High improvement",
+    "knowledge_gaps_identification": "High improvement",
+    "exam_performance": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Optimal Protocols for Studying & Learning — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/optimal-protocols-for-studying-and-learning",
+      "duration": "2 hours"
+    }
+  ]
+}

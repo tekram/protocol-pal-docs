@@ -1,0 +1,57 @@
+{
+  "id": "nasal_breathing_001",
+  "title": "Nasal Breathing Practice",
+  "description": "Deliberately practice nasal breathing during the day and especially during low-to-moderate exercise to improve oxygen delivery, filter air, and activate the parasympathetic nervous system.",
+  "category": "breathing",
+  "duration": "Ongoing daily practice",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Breathe through your nose during daily activities and exercise",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "Throughout the day, especially during low-moderate intensity exercise",
+      "details": "Consciously close your mouth and breathe through your nose during walking, working, and exercising at low to moderate intensity. Nasal breathing produces nitric oxide, which dilates blood vessels and improves oxygen delivery. During high-intensity exercise, mouth breathing is acceptable when needed."
+    },
+    {
+      "action": "Mouth-tape during sleep (optional)",
+      "duration": "During sleep",
+      "frequency": "Nightly",
+      "timing": "At bedtime",
+      "details": "Use medical-grade mouth tape to encourage nasal breathing during sleep. Start with a small strip and ensure you can breathe freely through your nose before attempting. This reduces snoring and improves sleep quality. Discontinue if uncomfortable."
+    }
+  ],
+  "benefits": [
+    "Increases nitric oxide production for better oxygen delivery",
+    "Filters, warms, and humidifies incoming air",
+    "Activates parasympathetic nervous system (calming)",
+    "Reduces over-breathing and CO2 loss",
+    "Improves exercise efficiency at submaximal intensities",
+    "May reduce snoring and improve sleep quality"
+  ],
+  "science": "Nasal breathing produces nitric oxide in the paranasal sinuses, which acts as a vasodilator improving oxygen uptake by 10-15%. Huberman discusses how nasal breathing preferentially activates the parasympathetic nervous system compared to mouth breathing, which tends to activate sympathetic (stress) pathways. The nasal passages also filter pathogens and warm incoming air.",
+  "contraindications": [
+    "Nasal congestion or deviated septum may require medical treatment first",
+    "Do not force nasal breathing during high-intensity exercise if it causes distress",
+    "Mouth taping is not suitable for those with nasal obstruction, sleep apnea, or nasal polyps"
+  ],
+  "estimated_impact": {
+    "oxygen_delivery": "Moderate improvement",
+    "stress_reduction": "Moderate improvement",
+    "sleep_quality": "Moderate improvement",
+    "exercise_efficiency": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance",
+      "duration": "2 hours"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "evening_light_minimization_001",
+  "title": "Evening Light Minimization",
+  "description": "Minimize bright artificial light exposure between 10 PM and 4 AM to protect melatonin secretion, support circadian health, and improve sleep quality.",
+  "category": "sleep",
+  "duration": "Ongoing evening practice",
+  "difficulty": "beginner",
+  "priority": 3,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast & Newsletter",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Dim overhead lights and use low-positioned lamps after sunset",
+      "duration": "Evening hours",
+      "frequency": "Daily",
+      "timing": "From sunset until bedtime",
+      "details": "Switch from overhead/ceiling lights to desk lamps, candles, or floor-level lighting. Light from above (like ceiling fixtures) more closely mimics sunlight and suppresses melatonin more than light from below eye level. Use warm-toned (amber/red) bulbs."
+    },
+    {
+      "action": "Use blue-light blocking or night mode on screens",
+      "duration": "Evening hours",
+      "frequency": "Daily",
+      "timing": "After sunset, especially 10 PM - 4 AM",
+      "details": "Enable Night Shift/Night Light on devices or use blue-light blocking glasses. Reduce screen brightness. Better yet, minimize screen time in the last 1-2 hours before bed entirely."
+    }
+  ],
+  "benefits": [
+    "Protects melatonin production for healthy sleep onset",
+    "Reduces cortisol dysregulation from nighttime light",
+    "Improves sleep latency (time to fall asleep)",
+    "Supports overall circadian rhythm health",
+    "Reduces risk of mood disruption from late-night light"
+  ],
+  "science": "Huberman emphasizes that bright light exposure between 10 PM and 4 AM suppresses dopamine, disrupts cortisol rhythm, and inhibits melatonin release via the habenula pathway. Even brief bright light at night can shift the circadian clock. The position of light matters — overhead light is more suppressive than light at or below eye level.",
+  "contraindications": [
+    "None — universally safe and beneficial",
+    "Those with night-shift jobs should consult specialized circadian protocols"
+  ],
+  "estimated_impact": {
+    "sleep_quality": "High improvement",
+    "melatonin_production": "High improvement",
+    "mood": "Moderate improvement",
+    "circadian_health": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+      "duration": "1.5 hours"
+    },
+    {
+      "title": "Toolkit for Sleep — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
+    }
+  ]
+}

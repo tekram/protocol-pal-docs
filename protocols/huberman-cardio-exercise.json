@@ -1,0 +1,64 @@
+{
+  "id": "huberman-cardio-exercise",
+  "title": "Cardiovascular Exercise Protocol",
+  "description": "A science-backed aerobic exercise routine to enhance cardiovascular health, improve endurance, and support overall physical performance.",
+  "category": "fitness",
+  "duration": "20–45 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 11,
+  "importance": "foundation",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab",
+  "last_updated": "2025-09-18",
+  "weekly_frequency": {
+    "times_per_week": 4,
+    "preferred_days": [
+      "monday",
+      "tuesday",
+      "thursday",
+      "friday"
+    ],
+    "min_rest_days": 0
+  },
+  "actions": [
+    {
+      "action": "Moderate Intensity Cardio",
+      "duration": "20–45 minutes",
+      "frequency": "3–5 times per week",
+      "timing": "any time of day",
+      "details": "Engage in moderate-intensity aerobic exercise such as brisk walking, jogging, cycling, or swimming. Maintain a heart rate within 50–70% of your maximum heart rate."
+    },
+    {
+      "action": "High-Intensity Intervals (Optional)",
+      "duration": "10–15 minutes",
+      "frequency": "1–2 times per week",
+      "timing": "after moderate-intensity sessions or on separate days",
+      "details": "Incorporate intervals of high-intensity cardio (e.g., sprints or fast cycling) followed by rest periods to improve cardiovascular capacity and VO2 max."
+    }
+  ],
+  "benefits": [
+    "Improves heart health and circulation",
+    "Increases endurance and aerobic capacity",
+    "Supports weight management",
+    "Enhances mood and reduces stress"
+  ],
+  "science": "Aerobic exercise has been extensively studied and shown to improve cardiovascular function, enhance mitochondrial efficiency, reduce blood pressure, and support overall longevity. High-intensity interval training can further boost VO2 max and cardiovascular performance.",
+  "contraindications": [
+    "Individuals with cardiovascular or respiratory conditions should consult a healthcare provider before starting this protocol.",
+    "Not recommended for those with acute injuries without clearance from a professional."
+  ],
+  "estimated_impact": {
+    "cardiovascular_health": "high",
+    "endurance": "high",
+    "weight_management": "moderate",
+    "mood": "moderate"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Optimize Cardiovascular Exercise",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/how-to-optimize-cardiovascular-exercise",
+      "duration": "90 minutes"
+    }
+  ]
+}

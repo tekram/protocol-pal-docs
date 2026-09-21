@@ -1,0 +1,64 @@
+{
+  "id": "time_restricted_eating_001",
+  "title": "Time-Restricted Eating (Intermittent Fasting)",
+  "description": "Confine food intake to an 8-10 hour window each day, aligned with your circadian rhythm, to support metabolic health, reduce inflammation, and improve body composition.",
+  "category": "nutrition",
+  "duration": "8-10 hour eating window",
+  "difficulty": "intermediate",
+  "priority": 8,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Eat within an 8-10 hour window",
+      "duration": "8-10 hours",
+      "frequency": "Daily",
+      "timing": "Ideally starting 1-2 hours after waking, ending 2-3 hours before bed",
+      "details": "Choose a consistent eating window (e.g., 10 AM - 6 PM). Consume all meals and caloric beverages within this window. Water, black coffee, and plain tea are fine outside the window. Consistency of timing matters more than exact window length."
+    },
+    {
+      "action": "Avoid eating close to bedtime",
+      "duration": "N/A",
+      "frequency": "Daily",
+      "timing": "Stop eating 2-3 hours before sleep",
+      "details": "Late-night eating disrupts sleep architecture and shifts circadian clock gene expression in the liver. Finish your last meal at least 2-3 hours before bedtime."
+    }
+  ],
+  "benefits": [
+    "Improves insulin sensitivity and blood glucose regulation",
+    "Supports healthy body composition and fat loss",
+    "Reduces systemic inflammation",
+    "Aligns peripheral clocks with circadian rhythm",
+    "May support longevity through autophagy activation",
+    "Improves digestive health"
+  ],
+  "science": "Time-restricted eating (TRE) aligns food intake with circadian biology. Satchin Panda's research (discussed extensively on Huberman Lab) shows TRE improves metabolic markers even without calorie reduction. Eating within a consistent window synchronizes liver, gut, and muscle clocks with the master clock in the SCN.",
+  "contraindications": [
+    "Not recommended for individuals with eating disorders or history of disordered eating",
+    "Pregnant or breastfeeding women should not fast without medical supervision",
+    "Those on blood sugar medications should consult a physician",
+    "May not be suitable for high-performance athletes requiring frequent fueling"
+  ],
+  "estimated_impact": {
+    "metabolic_health": "High improvement",
+    "body_composition": "Moderate improvement",
+    "inflammation": "Moderate reduction",
+    "sleep_quality": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/effects-of-fasting-and-time-restricted-eating-on-fat-loss-and-health",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Dr. Satchin Panda: Intermittent Fasting to Improve Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/dr-satchin-panda-intermittent-fasting-to-improve-health-cognition-and-longevity",
+      "duration": "2.5 hours"
+    }
+  ]
+}

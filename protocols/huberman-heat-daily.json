@@ -1,0 +1,61 @@
+{
+  "id": "huberman-heat-daily",
+  "title": "Deliberate Heat Exposure Protocol by Dr. Andrew Huberman",
+  "description": "A science-backed sauna protocol to enhance cardiovascular health, hormone production, and overall well-being.",
+  "category": "fitness",
+  "duration": "5–20 minutes per session",
+  "difficulty": "intermediate",
+  "priority": 9,
+  "importance": "supplemental",
+  "frequency_type": "weekly",
+  "source": "Huberman Lab",
+  "last_updated": "2025-09-18",
+  "weekly_frequency": {
+    "times_per_week": 3,
+    "preferred_days": [
+      "monday",
+      "wednesday",
+      "friday"
+    ],
+    "min_rest_days": 1
+  },
+  "actions": [
+    {
+      "action": "Sauna Session",
+      "duration": "5–20 minutes",
+      "frequency": "2–7 times per week",
+      "timing": "post-exercise or as standalone session",
+      "details": "Use a dry sauna heated to 80–100°C (176–212°F). Start with 5 minutes and gradually increase duration. Aim for 2–3 sessions per week, or up to 7 times per week for optimal cardiovascular benefits."
+    }
+  ],
+  "benefits": [
+    "Enhances cardiovascular health",
+    "Increases growth hormone secretion",
+    "Improves mood and reduces stress",
+    "Supports longevity and cognitive function"
+  ],
+  "science": "Regular sauna use activates heat shock proteins, which protect cells from stress and support various health benefits. Studies have shown that deliberate heat exposure can improve heart function, increase growth hormone levels, and reduce the risk of neurodegenerative diseases.",
+  "contraindications": [
+    "Individuals with cardiovascular conditions should consult a healthcare provider before starting any new heat exposure protocols.",
+    "Pregnant women should avoid high-heat environments unless approved by a healthcare professional."
+  ],
+  "estimated_impact": {
+    "cardiovascular_health": "high",
+    "growth_hormone_increase": "moderate",
+    "mood_improvement": "moderate",
+    "longevity_support": "moderate"
+  },
+  "learning_resources": [
+    {
+      "title": "The Science & Health Benefits of Deliberate Heat Exposure",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/the-science-and-health-benefits-of-deliberate-heat-exposure",
+      "duration": "90 minutes"
+    },
+    {
+      "title": "Deliberate Heat Exposure Protocols for Health & Performance",
+      "type": "article",
+      "url": "https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "hrv_improvement_protocol_001",
+  "title": "Heart Rate Variability (HRV) Improvement Protocol",
+  "description": "Science-backed protocol to enhance Heart Rate Variability (HRV) through breathing techniques, music therapy, and nutrition to improve autonomic nervous system balance and recovery.",
+  "category": "recovery",
+  "duration": "10-30 minutes daily",
+  "difficulty": "beginner",
+  "priority": 8,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab AI - Andy Galpin & Andrew Huberman",
+  "last_updated": "2025-01-27",
+  "oura_triggers": [
+    {
+      "metric": "hrv",
+      "operator": "<",
+      "threshold": 40,
+      "label": "HRV < 40 ms"
+    }
+  ],
+  "actions": [
+    {
+      "action": "Extended exhale breathing practice",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "Morning or evening",
+      "details": "Practice breathing techniques emphasizing extended exhales. Inhale for 4 counts, exhale for 6-8 counts. This helps lower heart rate and promotes calmness by activating the parasympathetic nervous system."
+    },
+    {
+      "action": "Box breathing technique",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "During stress or as daily practice",
+      "details": "Inhale for 4 counts, hold for 4 counts, exhale for 4 counts, hold for 4 counts. Repeat this cycle to enhance HRV and manage stress effectively."
+    },
+    {
+      "action": "Physiological sighing",
+      "duration": "3-5 minutes",
+      "frequency": "As needed throughout the day",
+      "timing": "During moments of stress or anxiety",
+      "details": "Perform double inhales through the nose followed by a long exhale through the mouth. This technique is highly effective for managing stress and improving HRV."
+    },
+    {
+      "action": "Daily music therapy",
+      "duration": "10-30 minutes",
+      "frequency": "Daily",
+      "timing": "Any time of day",
+      "details": "Listen to calming music for 10-30 minutes daily. Choose music that promotes relaxation and engages the parasympathetic nervous system to boost HRV and physiological resilience."
+    },
+    {
+      "action": "Omega-3 fatty acid supplementation",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "With meals",
+      "details": "Ensure adequate omega-3 fatty acid intake through diet or supplementation. Omega-3s are associated with improved HRV, enhanced mood, and reduced anxiety symptoms."
+    },
+    {
+      "action": "HRV monitoring and tracking",
+      "duration": "2-5 minutes",
+      "frequency": "Daily",
+      "timing": "Morning upon waking",
+      "details": "Use a reliable HRV monitoring device to track your progress. Note that device accuracy varies, so focus on trends rather than absolute values. Higher HRV indicates better autonomic nervous system balance."
+    }
+  ],
+  "benefits": [
+    "Improves autonomic nervous system balance",
+    "Enhances recovery from stress and exercise",
+    "Increases vagal tone and parasympathetic activity",
+    "Reduces overall stress and anxiety levels",
+    "Promotes better emotional regulation",
+    "Supports cardiovascular health",
+    "Enhances physiological resilience and adaptability"
+  ],
+  "science": "HRV refers to the variation in time between heartbeats, serving as an indicator of autonomic nervous system function. Higher HRV indicates healthy balance between sympathetic (fight or flight) and parasympathetic (rest and digest) states. Irregular heartbeats (greater HRV) correlate with states of rest and recovery, while rhythmic patterns (lower HRV) suggest stress. Vagal tone, associated with the vagus nerve, influences HRV and plays a role in regulating heart rate and emotional states. Breathing techniques with extended exhales help lower heart rate and promote calmness by activating the parasympathetic nervous system.",
+  "contraindications": [
+    "Be cautious with HRV devices - not all are reliable and comparisons between individuals can be misleading",
+    "If you have cardiovascular conditions, consult a healthcare provider before starting breathing exercises",
+    "Start slowly with breathing techniques if you're new to them",
+    "Omega-3 supplements may interact with blood-thinning medications - consult your doctor"
+  ],
+  "estimated_impact": {
+    "hrv_improvement": "High improvement",
+    "stress_reduction": "High improvement",
+    "recovery_enhancement": "Moderate improvement",
+    "autonomic_balance": "High improvement",
+    "emotional_regulation": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Heart Rate Variability - Huberman Lab AI",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs"
+    },
+    {
+      "title": "Heart Rate Variability - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+      "duration": "2 hours 7 minutes"
+    },
+    {
+      "title": "Vagal Tone Insights - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+      "duration": "1 hour 14 minutes"
+    },
+    {
+      "title": "Breathing for Control - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+      "duration": "1 hour 43 minutes"
+    },
+    {
+      "title": "Breathing and Heart Rate - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/XZgD6BZs",
+      "duration": "1 hour 41 minutes"
+    }
+  ]
+}

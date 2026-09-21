@@ -1,0 +1,53 @@
+{
+  "id": "morning_sunlight_exposure_001",
+  "title": "Morning Sunlight Exposure",
+  "description": "Expose your eyes to natural sunlight within the first 30 minutes of waking up to align your circadian rhythm, enhance mood, and improve alertness.",
+  "category": "sleep",
+  "priority": 1,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab, Business Insider, official Huberman YouTube",
+  "last_updated": "2025-09-14",
+  "actions": [
+    {
+      "action": "Get at least 1000 lux of natural light exposure (ideally sunlight)",
+      "duration": "5–10 minutes on sunny days; 10–20 minutes on cloudy days",
+      "frequency": "Daily",
+      "timing": "Within the first 30–60 minutes of waking",
+      "details": "Go outside without sunglasses (contact lenses or prescription glasses are fine). Light through windows is not sufficient unless exceptionally bright. Avoid direct sunlight into the eyes—look toward the direction of sunlight, not at it."
+    }
+  ],
+  "benefits": [
+    "Improves sleep quality by anchoring circadian rhythm",
+    "Boosts mood by increasing dopamine and serotonin levels",
+    "Enhances alertness and wakefulness in the morning",
+    "Supports healthy cortisol rhythm",
+    "May reduce risk of depression and seasonal affective disorder"
+  ],
+  "science": "Morning sunlight exposure stimulates intrinsically photosensitive retinal ganglion cells (ipRGCs), which signal the brain's circadian clock (SCN) to regulate sleep, mood, and alertness. Exposure to 1000+ lux light in the morning leads to earlier melatonin offset and improved nighttime sleep (Huberman Lab Podcast).",
+  "contraindications": [],
+  "estimated_impact": {
+    "sleep_quality": "High",
+    "mood": "High",
+    "alertness": "High",
+    "circadian_health": "High"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Feel Energized & Sleep Better With One Morning Activity — Huberman Lab Video",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=WDv4AWk0J3U",
+      "duration": "6 minutes"
+    },
+    {
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health — Huberman Lab Podcast",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/using-light-sunlight-blue-light-and-red-light-to-optimize-health"
+    },
+    {
+      "title": "Andrew Huberman Swears by Morning Sunlight — Business Insider Profile",
+      "type": "article",
+      "url": "https://www.businessinsider.com/andrew-huberman-swears-by-morning-sunlight-healthy-circadian-clock-2023-11"
+    }
+  ]
+}

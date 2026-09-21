@@ -1,0 +1,74 @@
+{
+  "id": "creatine_poor_sleep_001",
+  "title": "High-Dose Creatine After Poor Sleep",
+  "description": "On days following poor sleep, a significantly higher creatine dose (~0.35 g/kg body weight, or 20–25 g for most adults) can blunt sleep-deprivation-related cognitive decline. This is separate from your regular daily 5 g maintenance dose.",
+  "category": "nutrition",
+  "duration": "Once, morning of a poor-sleep day",
+  "difficulty": "beginner",
+  "priority": 7,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "McMorris et al. 2024 (PMC); Huberman Lab; Dr. Rhonda Patrick",
+  "last_updated": "2026-09-19",
+  "oura_triggers": [
+    {
+      "metric": "sleep_score",
+      "operator": "<",
+      "threshold": 75,
+      "label": "sleep < 75 — rescue dose day"
+    }
+  ],
+  "conditional": {
+    "question": "Did you sleep poorly last night?",
+    "yesLabel": "Yes, take rescue dose today",
+    "noLabel": "No, I slept fine"
+  },
+  "actions": [
+    {
+      "action": "Take a high-dose creatine rescue dose",
+      "duration": "Immediate",
+      "frequency": "Only on poor-sleep days",
+      "timing": "Morning, ideally within 1–2 hours of waking",
+      "details": "Take ~0.35 g per kg of body weight (roughly 20–25 g for a 70 kg person, or 15–20 g for a lighter individual). Mix into water, juice, or a smoothie in divided sips — do not take all at once to reduce GI discomfort. This is IN ADDITION to your regular 5 g daily dose."
+    },
+    {
+      "action": "Ensure extra hydration",
+      "duration": "Throughout the day",
+      "frequency": "On rescue dose days",
+      "timing": "Throughout the day",
+      "details": "Higher creatine doses require more water. Target at least 3 liters on days you take the rescue dose to prevent cramping or GI issues."
+    }
+  ],
+  "benefits": [
+    "Shown to restore cognitive performance after sleep deprivation",
+    "Reduces reaction time slowing caused by poor sleep",
+    "Supports executive function, working memory, and attention",
+    "Addresses neuroenergetic deficit (ATP) in the prefrontal cortex after sleep loss",
+    "Used by Huberman and discussed extensively by Dr. Rhonda Patrick"
+  ],
+  "science": "A 2024 randomized trial (McMorris et al., PMC10902318) found that a single 0.35 g/kg creatine dose significantly improved cognitive performance in sleep-deprived subjects. Creatine raises cerebral phosphocreatine, which replenishes ATP rapidly in the prefrontal cortex — the area most impaired by sleep deprivation. Rhonda Patrick and Huberman Lab both highlight this as a practical acute intervention. Huberman has noted he raises his own intake to 10–15 g on poor-sleep days.",
+  "contraindications": [
+    "Divide doses into 2–3 sips to minimize GI discomfort at high amounts",
+    "Not suitable for those with kidney disease — consult physician first",
+    "Do not exceed 30 g in a single day",
+    "Ensure adequate hydration"
+  ],
+  "estimated_impact": {
+    "cognitive_function": "High improvement (acute)",
+    "reaction_time": "Moderate improvement",
+    "mental_fatigue": "High reduction",
+    "focus": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Single dose creatine improves cognitive performance and induces changes in cerebral high energy phosphates during sleep deprivation — NIH/PMC",
+      "type": "article",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10902318/"
+    },
+    {
+      "title": "How Much Creatine for Sleep Deprivation — Cymbiotika",
+      "type": "webpage",
+      "url": "https://cymbiotika.com/blogs/fitness-and-recovery/how-much-creatine-to-help-with-sleep-deprivation-and-brain-fog"
+    }
+  ]
+}

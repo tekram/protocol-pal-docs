@@ -1,0 +1,79 @@
+{
+  "id": "worry_journal_protocol_001",
+  "title": "Worry Journal Protocol for Better Sleep",
+  "description": "Science-backed journaling technique to reduce nighttime worries and improve sleep quality by writing down concerns earlier in the evening to clear mental clutter before bed.",
+  "category": "sleep",
+  "duration": "10-15 minutes",
+  "difficulty": "beginner",
+  "priority": 6,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab AI - Matt Walker & Andrew Huberman",
+  "last_updated": "2025-01-27",
+  "actions": [
+    {
+      "action": "Evening worry journaling session",
+      "duration": "10-15 minutes",
+      "frequency": "Daily",
+      "timing": "1-2 hours before bedtime",
+      "details": "Write down all your worries, concerns, and thoughts in a dedicated journal. Include both specific problems and general anxieties. The goal is to 'close down all emotional tabs' in your mind, similar to shutting down a computer with too many active tabs."
+    },
+    {
+      "action": "Structured worry documentation",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "During journaling session",
+      "details": "For each worry, write down: 1) What you're worried about, 2) Why it's concerning you, 3) Any potential solutions or next steps, 4) Whether it's within your control. This structured approach helps organize thoughts and reduce mental chaos."
+    },
+    {
+      "action": "Mental closure ritual",
+      "duration": "2-3 minutes",
+      "frequency": "Daily",
+      "timing": "At the end of journaling session",
+      "details": "Close your journal and mentally acknowledge that you've addressed your worries for the day. Take a few deep breaths and consciously decide to set aside these concerns until tomorrow. This creates psychological closure."
+    },
+    {
+      "action": "Morning review (optional)",
+      "duration": "5 minutes",
+      "frequency": "Daily",
+      "timing": "Morning after journaling",
+      "details": "Briefly review the previous night's worries to see which ones still feel important and which may have resolved themselves. This helps you recognize patterns and realize that many nighttime worries are amplified by fatigue."
+    }
+  ],
+  "benefits": [
+    "Reduces time to fall asleep by up to 50%",
+    "Clears mental clutter and racing thoughts",
+    "Provides psychological closure on daily concerns",
+    "Reduces nighttime anxiety and worry amplification",
+    "Improves overall sleep quality and duration",
+    "Helps organize thoughts and prioritize concerns",
+    "Creates healthy separation between day and night mental states"
+  ],
+  "science": "According to Matt Walker, maintaining a worry journal helps 'close down all of the emotional tabs' in your mind, similar to shutting down a computer with too many active tabs that can impede sleep. Writing down worries earlier in the evening (not right before bed) helps clear your mind of nagging thoughts and concerns, making it easier to fall asleep. This practice has been shown to decrease the time it takes to fall asleep by 50%, comparable to some sleep medications. It counteracts the amplified anxiety that often occurs at night, leading to more manageable feelings during the day.",
+  "contraindications": [
+    "Don't journal right before bed - allow 1-2 hours between journaling and sleep",
+    "Avoid dwelling on worries without structure - use the structured approach",
+    "Don't use this as a replacement for professional mental health care if needed",
+    "Avoid re-reading old worries excessively - focus on current concerns"
+  ],
+  "estimated_impact": {
+    "sleep_onset": "High improvement (up to 50% faster)",
+    "sleep_quality": "High improvement",
+    "nighttime_anxiety": "High reduction",
+    "mental_clarity": "High improvement",
+    "worry_management": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Journaling to Reduce Night Time Worries - Huberman Lab AI",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/xUWyoHra"
+    },
+    {
+      "title": "Mental Clarity Before Sleep - Huberman Lab",
+      "type": "video",
+      "url": "https://ai.hubermanlab.com/hubermanlab/s/xUWyoHra",
+      "duration": "2 hours 53 minutes"
+    }
+  ]
+}

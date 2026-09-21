@@ -1,0 +1,55 @@
+{
+  "id": "focus_meditation_001",
+  "title": "Focus Meditation (13-Minute Daily)",
+  "description": "A daily 13-minute meditation practice focused on sustained attention to a single point (breath, visual target, or body sensation) to improve focus, attention span, and memory.",
+  "category": "focus",
+  "duration": "13 minutes",
+  "difficulty": "beginner",
+  "priority": 6,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "13-minute focused attention meditation",
+      "duration": "13 minutes",
+      "frequency": "Daily",
+      "timing": "Any consistent time of day (morning recommended)",
+      "details": "Sit comfortably and focus your attention on a single point — your breath, a visual target (like a candle flame or spot on the wall), or an internal body sensation. When your mind wanders, gently return focus to the target. The act of refocusing IS the exercise that builds attentional circuits. Don't aim for perfect focus; aim for consistent refocusing."
+    }
+  ],
+  "benefits": [
+    "Improves sustained attention and focus within 8 weeks",
+    "Enhances working memory capacity",
+    "Reduces default mode network activity (mind wandering)",
+    "Increases prefrontal cortex function",
+    "Supports emotional regulation",
+    "Accessible to beginners with no prior meditation experience"
+  ],
+  "science": "A study from Wendy Suzuki's lab (discussed on Huberman Lab) found that 13 minutes of daily focused attention meditation for 8 weeks significantly improved attention, mood, and memory. The key mechanism is the repeated act of refocusing attention, which strengthens prefrontal cortex circuits involved in top-down attentional control.",
+  "contraindications": [
+    "None for most people",
+    "If meditation increases anxiety, start with shorter sessions (5 minutes) and build up"
+  ],
+  "estimated_impact": {
+    "focus": "High improvement",
+    "memory": "Moderate improvement",
+    "emotional_regulation": "Moderate improvement",
+    "stress_reduction": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How Meditation Works & Science-Based Effective Meditations — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-meditation-works-and-science-based-effective-meditations",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "duration": "2 hours"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "hydration_electrolytes_001",
+  "title": "Hydration & Electrolyte Protocol",
+  "description": "Optimize daily hydration with water and electrolytes (sodium, potassium, magnesium) to support brain function, physical performance, and energy levels throughout the day.",
+  "category": "nutrition",
+  "duration": "Throughout the day",
+  "difficulty": "beginner",
+  "priority": 3,
+  "importance": "foundation",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Drink water with electrolytes upon waking",
+      "duration": "First 30 minutes of the day",
+      "frequency": "Daily",
+      "timing": "Immediately upon waking",
+      "details": "Drink 16-32 oz (500-1000ml) of water with a pinch of sea salt (or electrolyte mix) first thing in the morning. You lose significant water during sleep through respiration and perspiration. Rehydrating quickly improves alertness and cognitive function."
+    },
+    {
+      "action": "Maintain hydration throughout the day",
+      "duration": "All day",
+      "frequency": "Daily",
+      "timing": "Spread evenly across waking hours",
+      "details": "Aim for roughly half your body weight in ounces of water per day (e.g., 160 lbs = ~80 oz). Ensure adequate electrolytes: sodium, potassium, and magnesium. Low-sugar electrolyte mixes or simply adding a pinch of salt and squeeze of lemon to water works well."
+    }
+  ],
+  "benefits": [
+    "Improves cognitive function and focus",
+    "Supports physical performance and endurance",
+    "Prevents headaches and fatigue from dehydration",
+    "Supports kidney function and detoxification",
+    "Improves mood and energy levels",
+    "Essential for thermoregulation"
+  ],
+  "science": "Even mild dehydration (1-2% body water loss) impairs cognitive function, mood, and physical performance. Huberman emphasizes that water alone without electrolytes can dilute blood sodium, reducing the effectiveness of hydration. Sodium, potassium, and magnesium are essential for neuronal firing, muscle contraction, and fluid balance.",
+  "contraindications": [
+    "Those with kidney disease should consult a physician about fluid and electrolyte intake",
+    "Excessive water without electrolytes can cause hyponatremia",
+    "Adjust intake based on activity level, climate, and body size"
+  ],
+  "estimated_impact": {
+    "cognitive_function": "Moderate improvement",
+    "physical_performance": "Moderate improvement",
+    "energy_levels": "Moderate improvement",
+    "mood": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Optimize Your Water Quality & Intake for Health — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/optimize-your-water-quality-and-intake-for-health",
+      "duration": "2 hours"
+    }
+  ]
+}

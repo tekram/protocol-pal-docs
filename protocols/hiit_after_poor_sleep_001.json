@@ -1,0 +1,81 @@
+{
+  "id": "hiit_after_poor_sleep_001",
+  "title": "HIIT After Poor Sleep",
+  "description": "High-Intensity Interval Training to boost alertness, energy, and cognitive function after a night of poor sleep by increasing dopamine and adrenaline.",
+  "category": "energy",
+  "duration": "5-15 minutes",
+  "difficulty": "intermediate",
+  "priority": 7,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab; Dexa.ai / FoundMyFitness",
+  "last_updated": "2025-09-14",
+  "oura_triggers": [
+    {
+      "metric": "sleep_score",
+      "operator": "<",
+      "threshold": 75,
+      "label": "sleep < 75"
+    }
+  ],
+  "conditional": {
+    "question": "Did you sleep poorly last night?",
+    "yesLabel": "Yes, add to today's tasks",
+    "noLabel": "No, I slept well"
+  },
+  "actions": [
+    {
+      "action": "Brief high-intensity exercise",
+      "duration": "5-15 minutes total",
+      "frequency": "Once after poor sleep",
+      "timing": "Morning or early afternoon",
+      "details": "Perform 30 seconds of high-intensity exercise (jumping jacks, burpees, sprint) followed by 30 seconds rest. Repeat 5-15 rounds depending on fitness level."
+    },
+    {
+      "action": "Alternative: Stair climbing",
+      "duration": "5-10 minutes",
+      "frequency": "As needed",
+      "timing": "Any time during the day",
+      "details": "Rapidly climb stairs for 30-60 seconds, rest for 30 seconds, repeat. This provides similar benefits when gym equipment isn't available."
+    }
+  ],
+  "benefits": [
+    "Rapidly increases alertness and energy levels",
+    "Boosts dopamine and adrenaline to combat fatigue",
+    "Improves cognitive function and focus",
+    "Enhances mood through endorphin release",
+    "Increases metabolic rate for sustained energy",
+    "Can partially offset negative effects of sleep loss"
+  ],
+  "science": "High-intensity exercise triggers release of dopamine, adrenaline, and BDNF (brain-derived neurotrophic factor), which help compensate for the neurochemical imbalances caused by sleep deprivation. The stress response from HIIT can temporarily override fatigue signals.",
+  "contraindications": [
+    "Avoid if experiencing heart conditions",
+    "Not recommended with severe sleep deprivation (less than 4 hours)",
+    "Should not replace regular sleep habits",
+    "Consult doctor if new to high-intensity exercise"
+  ],
+  "estimated_impact": {
+    "energy_levels": "High improvement",
+    "alertness": "High improvement",
+    "cognitive_function": "Moderate improvement",
+    "mood": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Exercise After Poor Sleep — Huberman Lab Podcast Segment",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/how-to-defeat-jetlag-shift-work-sleeplessness"
+    },
+    {
+      "title": "HIIT, Sleep Loss, & Recovery — Huberman Lab video or podcast",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=veRbckoCwkc",
+      "duration": "1 hour approx"
+    },
+    {
+      "title": "Effects of Exercise Timing, Intensity on Sleep Deprivation — Dexa.ai / FoundMyFitness article",
+      "type": "article",
+      "url": "https://dexa.ai/foundmyfitness/fitness-recovery-sleep-deprivation-exercise"
+    }
+  ]
+}

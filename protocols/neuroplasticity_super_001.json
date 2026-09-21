@@ -1,0 +1,70 @@
+{
+  "id": "neuroplasticity_super_001",
+  "title": "Neuroplasticity Super Protocol",
+  "description": "Combine high focus, urgency, acetylcholine, and epinephrine to maximize neuroplasticity during learning sessions. Stack behavioral tools (alertness, focus, repetition) followed by deep rest for consolidation.",
+  "category": "focus",
+  "duration": "90 minutes focused + 20 min NSDR",
+  "difficulty": "advanced",
+  "priority": 10,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Generate high alertness before the learning bout",
+      "duration": "5-10 minutes",
+      "frequency": "Before each focused learning session",
+      "timing": "Start of work session",
+      "details": "Use 1-2 techniques to raise epinephrine/alertness: cold face wash, 25 jumping jacks, cyclic hyperventilation (Wim Hof-style for 25 breaths), or caffeine. You need to feel alert and slightly activated — this releases norepinephrine which flags experiences as important for encoding."
+    },
+    {
+      "action": "Engage in focused, effortful learning for up to 90 minutes",
+      "duration": "60-90 minutes",
+      "frequency": "1-2 sessions per day",
+      "timing": "During peak alertness",
+      "details": "Focus intensely on the skill or material you want to learn. Make errors — they signal the nervous system that change is needed. The feeling of strain and frustration is a marker that neuroplasticity is being triggered. Repeat the most difficult elements more often."
+    },
+    {
+      "action": "Perform NSDR or sleep within 1-2 hours after learning",
+      "duration": "10-20 minutes",
+      "frequency": "After each learning session",
+      "timing": "Within 1-2 hours of finishing",
+      "details": "Perform a Yoga Nidra / NSDR session or take a nap. Neural replay (consolidation) occurs during states of deep rest and sleep, accelerating the rewiring of circuits that were activated during the learning bout."
+    }
+  ],
+  "benefits": [
+    "Maximizes rate of neuroplastic change (learning speed)",
+    "Applies to motor skills, cognitive skills, and emotional learning",
+    "Uses behavioral tools only — no supplements required",
+    "Backed by mechanisms of long-term potentiation and depression",
+    "NSDR accelerates consolidation without needing full sleep",
+    "Framework applicable to any skill at any age"
+  ],
+  "science": "Neuroplasticity requires three components: (1) epinephrine/alertness to mark an experience as important, (2) acetylcholine/focus to highlight specific synapses, and (3) rest/sleep for actual rewiring (BDNF-mediated consolidation). The learning happens DURING rest, not during practice. Practice sets the stage; sleep/NSDR completes the rewiring. Huberman calls this the 'neuroplasticity super protocol.'",
+  "contraindications": [
+    "Intense focus sessions can be mentally exhausting — limit to 1-2 per day",
+    "Not suitable for casual learning — designed for deliberate skill acquisition",
+    "Avoid cyclic hyperventilation if you have respiratory conditions or epilepsy"
+  ],
+  "estimated_impact": {
+    "learning_speed": "Very high improvement",
+    "skill_acquisition": "Very high improvement",
+    "memory_consolidation": "High improvement",
+    "cognitive_performance": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Learn Skills Faster — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-learn-skills-faster",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Using Failures, Movement & Balance to Learn Faster — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/using-failures-movement-and-balance-to-learn-faster",
+      "duration": "2 hours"
+    }
+  ]
+}

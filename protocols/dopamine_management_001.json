@@ -1,0 +1,68 @@
+{
+  "id": "dopamine_management_001",
+  "title": "Dopamine Management Protocol",
+  "description": "Manage dopamine peaks and troughs deliberately to sustain motivation, avoid burnout, and maintain a healthy baseline. Avoid layering too many dopamine-triggering behaviors simultaneously.",
+  "category": "mood",
+  "duration": "Ongoing lifestyle practice",
+  "difficulty": "intermediate",
+  "priority": 7,
+  "importance": "high-impact",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Avoid stacking dopamine triggers",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "Throughout the day",
+      "details": "Do not combine multiple high-dopamine activities simultaneously (e.g., music + pre-workout + caffeine + phone scrolling before a workout). Stacking amplifies the peak but deepens the subsequent trough, reducing baseline dopamine over time."
+    },
+    {
+      "action": "Intermittently reward effort-based activities",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "During work or exercise",
+      "details": "Randomly celebrate wins rather than rewarding every accomplishment. This mimics a variable reinforcement schedule, which sustains dopamine release and motivation better than constant rewards."
+    },
+    {
+      "action": "Practice 'dopamine fasting' from phone/social media",
+      "duration": "1-4 hours",
+      "frequency": "Daily",
+      "timing": "Morning and/or evening",
+      "details": "Avoid high-stimulation, low-effort dopamine sources (social media, news scrolling, video games) during focused work blocks and the first/last hour of the day."
+    }
+  ],
+  "benefits": [
+    "Maintains healthy dopamine baseline for sustained motivation",
+    "Prevents burnout and anhedonia from dopamine depletion",
+    "Improves ability to find satisfaction in effort-based activities",
+    "Reduces phone/social media dependency",
+    "Enhances focus and goal-directed behavior"
+  ],
+  "science": "Dopamine operates on a trough-peak system: large peaks are followed by proportional troughs below baseline. Repeated high-dopamine stimulation without recovery lowers the baseline, leading to reduced motivation and pleasure (anhedonia). Intermittent reinforcement and avoiding dopamine stacking help maintain a healthy set point.",
+  "contraindications": [
+    "Not a substitute for treatment of clinical depression or ADHD",
+    "Excessive restriction of all pleasurable activities is not the goal"
+  ],
+  "estimated_impact": {
+    "motivation": "High improvement",
+    "mood_stability": "High improvement",
+    "focus": "Moderate improvement",
+    "phone_dependency": "High reduction"
+  },
+  "learning_resources": [
+    {
+      "title": "Controlling Your Dopamine for Motivation, Focus & Satisfaction — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/controlling-your-dopamine-for-motivation-focus-and-satisfaction",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Leverage Dopamine to Overcome Procrastination & Optimize Effort — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/leverage-dopamine-to-overcome-procrastination-and-optimize-effort",
+      "duration": "2 hours"
+    }
+  ]
+}

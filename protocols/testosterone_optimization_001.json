@@ -1,0 +1,77 @@
+{
+  "id": "testosterone_optimization_001",
+  "title": "Testosterone Optimization (Behavioral Protocol)",
+  "description": "Behavioral and lifestyle interventions to optimize testosterone levels naturally through sleep, exercise, light exposure, and stress management — no supplements or hormones required.",
+  "category": "fitness",
+  "duration": "Integrated into daily routine",
+  "difficulty": "intermediate",
+  "priority": 12,
+  "importance": "supplemental",
+  "frequency_type": "daily",
+  "source": "Huberman Lab Podcast",
+  "last_updated": "2026-02-20",
+  "actions": [
+    {
+      "action": "Get bright light exposure early in the day",
+      "duration": "5-10 minutes",
+      "frequency": "Daily",
+      "timing": "Within first hour of waking",
+      "details": "Morning light exposure (especially to the eyes and skin) supports healthy dopamine and luteinizing hormone (LH) signaling, both upstream of testosterone production. This overlaps with the morning sunlight protocol."
+    },
+    {
+      "action": "Perform heavy compound resistance training",
+      "duration": "45-60 minutes",
+      "frequency": "3-5 times per week",
+      "timing": "Any time, but consistency matters",
+      "details": "Compound movements (squat, deadlift, bench, overhead press) with heavy loads (6-10 rep range) acutely increase testosterone. Multi-joint exercises recruiting large muscle groups produce the largest hormonal response."
+    },
+    {
+      "action": "Prioritize sleep quality (6-8 hours minimum)",
+      "duration": "6-8 hours",
+      "frequency": "Nightly",
+      "timing": "Consistent bedtime",
+      "details": "Testosterone is primarily produced during sleep (especially REM). Even one week of sleep restriction (5 hours/night) can reduce testosterone by 10-15%. Prioritize consistent sleep timing and duration."
+    },
+    {
+      "action": "Manage chronic stress and cortisol",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "Throughout the day",
+      "details": "Chronic cortisol elevation directly suppresses gonadotropin-releasing hormone (GnRH) and testosterone production. Use breathing techniques, time in nature, social connection, and exercise to manage stress levels."
+    }
+  ],
+  "benefits": [
+    "Optimizes natural testosterone production",
+    "Improves muscle growth, recovery, and strength",
+    "Enhances mood, motivation, and cognitive function",
+    "Supports bone density and cardiovascular health",
+    "No supplements or hormones needed",
+    "Benefits general health beyond testosterone"
+  ],
+  "science": "Huberman discusses the hypothalamic-pituitary-gonadal (HPG) axis: GnRH from the hypothalamus triggers LH release, which signals the testes (or ovaries) to produce testosterone. Sleep, light exposure, exercise, and stress all modulate this axis. Heavy resistance training acutely elevates testosterone, while chronic stress suppresses it via cortisol-GnRH antagonism.",
+  "contraindications": [
+    "This is not a substitute for medical evaluation of hypogonadism",
+    "If experiencing symptoms of low testosterone, get blood work done",
+    "Overtraining can paradoxically lower testosterone — rest is essential"
+  ],
+  "estimated_impact": {
+    "testosterone_levels": "Moderate improvement",
+    "muscle_performance": "Moderate improvement",
+    "mood_and_motivation": "Moderate improvement",
+    "overall_vitality": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "How to Optimize Testosterone & Estrogen — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/how-to-optimize-testosterone-and-estrogen",
+      "duration": "2 hours"
+    },
+    {
+      "title": "Dr. Kyle Gillett: Tools for Hormone Optimization — Huberman Lab",
+      "type": "video",
+      "url": "https://www.hubermanlab.com/episode/dr-kyle-gillett-tools-for-hormone-optimization-in-males",
+      "duration": "2 hours"
+    }
+  ]
+}
