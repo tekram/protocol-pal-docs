@@ -1,0 +1,95 @@
+{
+  "id": "nsdr_recovery_signal_mild_001",
+  "title": "NSDR for Early Recovery Signal",
+  "description": "A light-touch NSDR nudge when sleep duration and HRV both dip modestly below your personal baseline — an early autonomic recovery signal, well short of a full recovery deficit. No training change is recommended at this tier.",
+  "category": "sleep",
+  "duration": "10-15 minutes",
+  "difficulty": "beginner",
+  "priority": 8,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (NSDR); product heuristic (trigger combination)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "sleep duration < 90% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "HRV < 90% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "Recovery deficit (mild)"
+  },
+  "conditional": {
+    "question": "Did last night's sleep and readiness look a bit off?",
+    "yesLabel": "Yes, add a short NSDR to today",
+    "noLabel": "No, I feel fine"
+  },
+  "actions": [
+    {
+      "action": "Short NSDR / Yoga Nidra session",
+      "duration": "10-15 minutes",
+      "frequency": "Once, as an optional nudge",
+      "timing": "Early afternoon or whenever a break is available",
+      "details": "A brief guided NSDR session to support parasympathetic recovery. Optional — this tier is a light nudge, not a strong signal that training or plans need to change."
+    }
+  ],
+  "benefits": [
+    "Supports early-stage autonomic recovery before it compounds",
+    "Low time cost, no disruption to planned training",
+    "Builds the habit of responding to small deviations before they become large ones"
+  ],
+  "science": "Mild simultaneous dips in sleep duration and HRV relative to one's own baseline are commonly used as early, low-confidence indicators of accumulating physiological strain. NSDR (Non-Sleep Deep Rest) protocols promote parasympathetic activation and are Huberman Lab's standard low-cost recommendation for supporting recovery without requiring behavior change elsewhere.",
+  "contraindications": [
+    "Not a substitute for addressing a real sleep debt",
+    "Do not use as justification to skip planned training at this tier alone — signal is weak"
+  ],
+  "estimated_impact": {
+    "stress_reduction": "Mild improvement",
+    "alertness": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "MILD_RECOVERY_DEFICIT",
+    "scientific_rationale": "Two-signal (sleep duration + HRV), both below 90% of personal rolling baseline for one night. Two independently-measured signals moving the same direction is a weaker but still meaningful early indicator of reduced recovery capacity, consistent with general autonomic-nervous-system-strain literature (lower HRV and reduced sleep duration both associate with elevated sympathetic tone).",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Huberman Lab directly and repeatedly recommends NSDR/Yoga Nidra as a general-purpose tool for supporting recovery and offsetting the effects of a poor night's sleep. This part of the recommendation (NSDR is a reasonable, low-risk response to reduced recovery) is well supported by the source material."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The specific choice of 90%/90% baseline-percentage thresholds, the two-metric combination, and the 1-night persistence window are NOT independently validated — they are a product heuristic chosen to catch early signal with low specificity while keeping the recommendation itself low-stakes (an optional relaxation nudge, not a training change). Should be tuned against real user outcome data once n-of-1 tracking exists."
+    },
+    "expected_effect": {
+      "short_term": "Modest reduction in subjective stress/fatigue same day; unlikely to be measurable on the ring itself within 24h.",
+      "long_term": "If used consistently at this tier, may reduce the frequency/severity of escalation to the high or severe recovery-deficit tiers below, though this is untested."
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "hiit_readiness_confirmed_001",
+  "title": "Full Training Intensity Cleared",
+  "description": "Sleep duration, HRV, and resting heart rate all look at or above your personal baseline — a positive, multi-signal confirmation that today is a reasonable day for planned HIIT or max-effort training, with no recovery-based reason to downgrade intensity.",
+  "category": "fitness",
+  "duration": "N/A",
+  "difficulty": "beginner",
+  "priority": 9,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (training/recovery balance); product heuristic (trigger combination)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": ">=",
+            "mode": "baseline_pct",
+            "threshold": 95,
+            "persistence": 1,
+            "label": "sleep duration >= 95% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": ">=",
+            "mode": "baseline_pct",
+            "threshold": 100,
+            "persistence": 1,
+            "label": "HRV >= 100% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": "<=",
+            "mode": "baseline_pct",
+            "threshold": 100,
+            "persistence": 1,
+            "label": "resting HR <= 100% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "HIIT readiness confirmed"
+  },
+  "conditional": {
+    "question": "Sleep, HRV, and resting heart rate all look good today — want confirmation you're clear for planned hard training?",
+    "yesLabel": "Yes, show me the confirmation",
+    "noLabel": "No thanks"
+  },
+  "actions": [
+    {
+      "action": "Proceed with planned training intensity",
+      "duration": "N/A",
+      "frequency": "Informational, once per triggering day",
+      "timing": "N/A",
+      "details": "No intensity downgrade is indicated by recovery signals today. This is a confirmation nudge, not a new action — proceed with whatever intensity was already planned."
+    }
+  ],
+  "benefits": [
+    "Prevents over-cautious training downgrades when recovery signals are genuinely good",
+    "Builds trust in the trigger system by surfacing positive signal, not only warnings",
+    "Reinforces that intensity decisions are being made on real data, not guesswork"
+  ],
+  "science": "The absence of any negative deviation across three independently-measured recovery signals (sleep duration, HRV, resting heart rate all at or better than personal baseline) is the inverse of the multi-signal recovery-deficit pattern, and is used here only as a confirmation signal rather than to drive any new behavior.",
+  "contraindications": [
+    "Not a substitute for subjective readiness (soreness, motivation, life stress) — a good ring reading does not override how the person actually feels",
+    "Does not account for local/muscle-group recovery (e.g. DOMS from a prior session) — Oura's whole-body signals cannot and should not be used to infer local muscle recovery status"
+  ],
+  "estimated_impact": {
+    "confidence_in_plan": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "HIIT_READINESS_CONFIRMED",
+    "scientific_rationale": "Three-signal AND requiring sleep duration >= 95% baseline, HRV >= 100% baseline, and resting HR <= 100% baseline, one night — the mirror image of the recovery-deficit/delay-hard-training pattern, used purely as a 'no downgrade needed' confirmation rather than a call to increase training beyond what was already planned.",
+    "evidence_for_protocol": {
+      "level": "product_heuristic",
+      "notes": "There is no direct Huberman Lab claim being surfaced here beyond 'if recovery signals are good, there's no recovery-based reason to hold back' — this protocol exists to counterbalance over-suppression risk (brief section on conflict rules) rather than to add a new scientific recommendation."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The 95%/100%/100% thresholds are an unvalidated, symmetric-ish mirror of the caution/delay tiers' downside thresholds, chosen so this only fires on genuinely strong across-the-board nights, not merely 'not bad' ones."
+    },
+    "expected_effect": {
+      "short_term": "No physiological effect intended — informational only, meant to reduce unnecessary training downgrades.",
+      "long_term": "If this under- or over-fires in practice, tune thresholds against real trigger co-occurrence and user feedback once outcome tracking exists."
+    }
+  }
+}

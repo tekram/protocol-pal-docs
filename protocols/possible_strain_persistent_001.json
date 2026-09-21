@@ -1,0 +1,218 @@
+{
+  "id": "possible_strain_persistent_001",
+  "title": "Rest and Check-In Nudge for Persistent Possible Physiological Strain",
+  "description": "The same combination of overnight signals (skin temperature, respiratory rate, resting heart rate, HRV) has now moved against your personal baseline for two consecutive nights. This still is not a diagnosis of illness — but a pattern that repeats across multiple nights is a stronger signal than one off night, and is worth taking seriously with rest and, if it continues or you notice other symptoms, a conversation with a healthcare provider.",
+  "category": "recovery",
+  "duration": "20-30 minutes",
+  "difficulty": "beginner",
+  "priority": 2,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (rest/recovery principles); evidence-informed trigger combination",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 2,
+            "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 2,
+            "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 2,
+            "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 2,
+            "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 2,
+            "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 2,
+            "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 2,
+            "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Possible physiological strain (persistent)"
+  },
+  "conditional": {
+    "question": "The same combination of signals (temperature, breathing rate, heart rate, or HRV) has looked off for two nights in a row now — want help prioritizing rest today?",
+    "yesLabel": "Yes, help me rest and recover",
+    "noLabel": "No, I feel normal"
+  },
+  "actions": [
+    {
+      "action": "Postpone intense training",
+      "duration": "For the day",
+      "frequency": "Once, on the day this triggers (repeat if the pattern continues)",
+      "timing": "All day",
+      "details": "Prefer full rest or very light activity (short walk, gentle mobility) over planned high-intensity or heavy-load training while this pattern persists."
+    },
+    {
+      "action": "Prioritize sleep and general rest",
+      "duration": "Ongoing while the pattern persists",
+      "frequency": "Nightly",
+      "timing": "Evening",
+      "details": "Protect sleep opportunity, reduce evening alcohol/late meals, and generally lower physical and cognitive load until your signals return toward baseline."
+    },
+    {
+      "action": "Optional NSDR / Yoga Nidra session",
+      "duration": "20-30 minutes",
+      "frequency": "Once, as an optional supportive nudge",
+      "timing": "Morning or early afternoon",
+      "details": "A longer guided NSDR session to support parasympathetic recovery alongside physical rest."
+    },
+    {
+      "action": "Consider checking in with a healthcare provider",
+      "duration": "N/A",
+      "frequency": "As needed",
+      "timing": "If the pattern continues past today or you notice other symptoms",
+      "details": "This is a supportive suggestion, not a directive: your ring data cannot diagnose illness. If this pattern doesn't resolve, or if you notice how-you-actually-feel symptoms (fever, sore throat, unusual fatigue, aches), it's reasonable to check in with a doctor — trust how you feel over what the ring shows either way."
+    }
+  ],
+  "benefits": [
+    "Recognizes that a pattern repeating across two consecutive nights is a meaningfully stronger signal than a single off night",
+    "Encourages rest and, if warranted, medical input before pushing through a persistent multi-signal deviation",
+    "Written to nudge toward caution without alarming the user or making unsupported claims about their health"
+  ],
+  "science": "This rule uses the same 2-of-4 signal combination as the moderate tier (elevated skin temperature, elevated respiratory rate, elevated resting heart rate, suppressed HRV, each vs. personal baseline) but requires it to hold for two consecutive nights rather than one. Persistence across multiple nights reduces the chance that ordinary single-night noise (poor sleeping position, a late workout, alcohol, room temperature, travel) explains the pattern, and is consistent with general sleep/wearable literature associating sustained deviation in these markers with elevated physiological load. This rule identifies a pattern in wearable data. It does not identify a cause, and it does not diagnose illness, infection, or any medical condition — those determinations can only be made by a healthcare provider based on symptoms and, where appropriate, clinical testing.",
+  "contraindications": [
+    "This is not a diagnosis of illness, infection (including but not limited to COVID-19, influenza, or any other condition), or any medical condition, and must never be presented or interpreted as one",
+    "The suggestion to consider medical evaluation is a supportive nudge, not medical advice or a directive — the user's own symptoms and judgment (or a clinician's) should always take priority over ring data",
+    "Do not use the absence of this trigger to conclude you are not unwell, and do not use its presence to conclude you are — it is a data pattern, not a health assessment",
+    "If the user reports urgent or severe symptoms, this protocol's suggestions are not a substitute for seeking prompt medical care"
+  ],
+  "estimated_impact": {
+    "recovery_support": "Moderate improvement",
+    "illness_risk_reduction": "Unclear — not established for this specific rule"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "POSSIBLE_PHYSIOLOGICAL_STRAIN_PERSISTENT",
+    "scientific_rationale": "Same 2-of-4 signal combination as the moderate tier (temperature_deviation ↑, respiratory_rate ↑, resting_hr ↑, hrv ↓, each vs. personal baseline), gated with persistence: 2 (must hold for 2 consecutive nights) rather than 1. Requiring persistence rather than tightening thresholds was a deliberate choice — it targets a genuinely different, higher-confidence pattern (sustained deviation) rather than just a more extreme single-night deviation, and is why this tier's evidence_level is bumped to evidence_informed while the moderate tier stays at product_heuristic.",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Rest, reduced training load, and NSDR during a period of elevated physiological load are directly and repeatedly supported by Huberman Lab source material as low-risk, sensible responses. The 'consider checking in with a healthcare provider' action is deliberately scoped as a supportive suggestion tied to persistence or self-reported symptoms, not a diagnostic claim — this framing is a product/safety decision, not itself a clinical claim, and should be evaluated as such in review."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The exact thresholds (+0.3°C, 105%, 105%, 90%) and the 2-of-4/persistence-2 combination are a product heuristic, unvalidated against real outcome data. Same KNOWN ENGINE GAP as the moderate tier: temperature_deviation is absent from BASELINE_FIELD_BY_METRIC in src/hooks/useOuraProtocolTriggers.ts despite bleBaseline.ts now computing a real tempBaseline, so this rule uses mode: 'absolute' for that one condition rather than baseline_pct (defensible since Oura's temperature_deviation value is already baseline-relative by construction) — flagging again here per the same disclosure pattern used in recovery-deficit.md/.json for its sleep_duration gap. Persistence: 2 was chosen to match the brief's '2+ days' framing for the stronger, medically-adjacent recommendation in this tier; it has not been tuned against outcome data."
+    },
+    "expected_effect": {
+      "short_term": "Reduced same-day training load and prioritized rest; underlying signals may take 1-2+ nights to normalize even with intervention.",
+      "long_term": "If genuinely early strain or illness, resting now and seeking care if needed may reduce severity/duration versus training through it. If the pattern is a false positive, the cost is a rest day and, at most, an unnecessary doctor visit — asymmetric but non-trivial cost, which is why this tier's language must stay strictly non-diagnostic. Untested against real outcome data in this app."
+    }
+  }
+}

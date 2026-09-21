@@ -1,0 +1,102 @@
+{
+  "id": "reduce_intensity_training_caution_001",
+  "title": "Lower-Intensity Training Day",
+  "description": "Sleep and/or cardiovascular recovery signals are modestly below your personal baseline — not enough to call a recovery deficit, but enough to favor easier training today. Recommends swapping planned hard training for Zone 1/2 cardio, walking, or mobility work instead of cancelling training outright.",
+  "category": "fitness",
+  "duration": "20-45 minutes",
+  "difficulty": "beginner",
+  "priority": 6,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (training/recovery balance); product heuristic (trigger combination)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 92,
+            "persistence": 1,
+            "label": "HRV < 92% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 93,
+            "persistence": 1,
+            "label": "sleep duration < 93% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 103,
+            "persistence": 1,
+            "label": "resting HR > 103% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "Training caution"
+  },
+  "conditional": {
+    "question": "Is your recovery looking a little off today (sleep or HRV slightly down)?",
+    "yesLabel": "Yes, dial back today's intensity",
+    "noLabel": "No, I feel normal"
+  },
+  "actions": [
+    {
+      "action": "Swap hard training for Zone 1/2 cardio, walking, or mobility",
+      "duration": "20-45 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Whenever training was planned",
+      "details": "Keep the training session, but drop the intensity: easy aerobic pace, a walk, or a mobility/stretching session instead of intervals, heavy lifting, or a max-effort workout. This is a downgrade, not a cancellation."
+    }
+  ],
+  "benefits": [
+    "Keeps the training habit intact on a borderline-recovery day instead of an all-or-nothing skip",
+    "Avoids adding meaningful cardiovascular/sympathetic load on top of an already-softer recovery signal",
+    "Lower stakes than delaying training outright — appropriate for a single or loosely-corroborated signal"
+  ],
+  "science": "A single moderately depressed HRV reading, or a looser two-signal combination of reduced sleep duration and elevated resting heart rate, is a weaker and less specific indicator of reduced recovery capacity than a concurrent three-signal deviation. At this confidence level the evidence-based response is to favor easier training modalities rather than treating it as a hard stop, consistent with general training-load-management guidance (train through minor recovery dips at reduced intensity, reserve full rest for stronger/more corroborated signals).",
+  "contraindications": [
+    "Not a reason to skip training altogether at this tier — signal is single or loosely corroborated",
+    "If this triggers on most days, the underlying baseline itself may be shifting (e.g. new training block, illness onset, life stress) — worth a broader look rather than only reacting day to day"
+  ],
+  "estimated_impact": {
+    "injury_risk_reduction": "Mild improvement",
+    "recovery_support": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "TRAINING_CAUTION",
+    "scientific_rationale": "Single-signal (HRV < 92% baseline) OR a looser two-signal combination (sleep duration < 93% baseline AND resting HR > 103% baseline), for one night. Deliberately looser than the recovery-deficit 'mild' tier (docs/oura-rules/recovery-deficit.json, 90%/90% two-signal sleep_duration+HRV) — this rule uses a different metric pairing and an OR-of-groups shape so it can fire on a single moderately-off HRV reading alone, trading specificity for earlier/cheaper action (a training-intensity swap, not a recovery protocol).",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Favoring lower-intensity training (easy aerobic work, mobility) over hard training on days with softer recovery signals, while still training, is a standard and directly-supported training-load-management principle discussed in Huberman Lab's fitness content — this is a milder version of the same logic as the existing 'reduce high-intensity training' action in the recovery-deficit high tier."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The 92%/93%/103% thresholds, the single-vs-two-signal OR structure, and the choice of HRV alone as a sufficient single trigger are product heuristics, not independently validated. Chosen to sit clearly below the recovery-deficit mild tier in both specificity and stakes (a same-workout intensity swap, not an NSDR recommendation or training cancellation) so a false positive costs almost nothing."
+    },
+    "expected_effect": {
+      "short_term": "Marginally lower same-day cardiovascular/sympathetic load from training; unlikely to be measurable on the ring within 24h.",
+      "long_term": "May reduce the frequency of escalation into the recovery-deficit or delay-hard-training tiers by catching softer dips earlier, though untested."
+    }
+  }
+}

@@ -53,6 +53,117 @@
     ]
   },
   {
+    "id": "nsdr_recovery_deficit_severe_001",
+    "title": "NSDR for Severe Recovery Deficit",
+    "description": "Sleep duration, HRV, and resting heart rate have all moved sharply against your personal baseline — a severe, high-confidence recovery deficit. Recommends an extended NSDR session and postponing intense training for the day.",
+    "category": "sleep",
+    "duration": "30-60 minutes",
+    "difficulty": "beginner",
+    "priority": 1,
+    "importance": "foundation",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (NSDR); evidence-informed trigger combination",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 80,
+              "persistence": 1,
+              "label": "sleep duration < 80% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 80,
+              "persistence": 1,
+              "label": "HRV < 80% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 110,
+              "persistence": 1,
+              "label": "resting HR > 110% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Recovery deficit (severe)"
+    },
+    "conditional": {
+      "question": "Your sleep, HRV, and resting heart rate all look significantly off from your baseline today — is that accurate?",
+      "yesLabel": "Yes, help me recover today",
+      "noLabel": "No, I feel normal"
+    },
+    "actions": [
+      {
+        "action": "Extended NSDR / Yoga Nidra session",
+        "duration": "30-60 minutes",
+        "frequency": "Once, on the day this triggers (repeat if it persists)",
+        "timing": "Morning, with an optional second short session in the evening",
+        "details": "A longer guided NSDR or Yoga Nidra session, potentially split across the day, to maximize parasympathetic recovery support given the severity of the signal."
+      },
+      {
+        "action": "Postpone intense training",
+        "duration": "For the day",
+        "frequency": "Once, on the day this triggers",
+        "timing": "All day",
+        "details": "Postpone planned high-intensity, heavy-load, or long-duration training. Prefer full rest or very light activity (short walk, gentle mobility). Reassess against the next night's data before resuming normal intensity."
+      }
+    ],
+    "benefits": [
+      "Avoids training through a severe, multi-signal-confirmed autonomic strain state",
+      "Reduces risk of illness, injury, or prolonged recovery debt from pushing through this state",
+      "Extended NSDR provides a larger relative recovery benefit at this severity than the high-tier dose"
+    ],
+    "science": "This tier uses the same three-signal logic as the high-recovery-deficit rule (sleep duration, HRV, resting heart rate all deviating from personal baseline in the same night) but at tighter thresholds, reflecting a more severe deviation. The wider gap from baseline across all three concurrently-monitored systems increases confidence that this represents genuine, not noise-driven, autonomic strain.",
+    "contraindications": [
+      "If this state recurs on consecutive days, this is a stronger signal to consult a physician or coach rather than repeatedly self-managing with NSDR alone",
+      "Not a diagnosis of illness — if accompanied by other symptoms (fever, sore throat, unusual fatigue), treat as a possible early illness signal and prioritize rest/medical guidance over training decisions"
+    ],
+    "estimated_impact": {
+      "stress_reduction": "High improvement",
+      "recovery_support": "High improvement",
+      "injury_illness_risk_reduction": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "SEVERE_RECOVERY_DEFICIT",
+      "scientific_rationale": "Same three-signal design as the high tier (sleep duration, HRV, resting HR vs. personal baseline, 1 night), with tighter thresholds (80%/80%/110%) intended to isolate a more severe subset of recovery-deficit nights that warrant postponing rather than merely reducing training.",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Same as the high tier: NSDR as a recovery-support tool and avoiding intense training during genuine autonomic strain are both directly supported by Huberman Lab source material."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The tightened 80%/80%/110% thresholds are a product heuristic — a reasonable escalation from the high tier's 85%/85%/105% but not derived from any cited study establishing that these specific cutoffs mark a qualitatively different (rather than merely quantitatively worse) state. Persistence is kept at 1 night to match the brief's worked example exactly; an alternative design worth testing later is requiring persistence >= 2 nights before recommending postponing training outright, since a single severe night could still be one-off noise (illness onset, travel, alcohol, etc.) rather than accumulated strain — flagged here rather than implemented, to avoid silently diverging from the brief's spec."
+      },
+      "expected_effect": {
+        "short_term": "Meaningfully reduced same-day physiological load; NSDR dose is larger than the high tier to match the larger deficit.",
+        "long_term": "Intended to prevent the worst-case outcome of training through severe strain (illness, injury, prolonged recovery), though, like the high tier, this exact rule has not been outcome-tested."
+      }
+    }
+  },
+  {
     "id": "caffeine_delay_001",
     "title": "Caffeine Delay (90-120 Min After Waking)",
     "description": "Delay your first caffeine intake to 90-120 minutes after waking to allow natural cortisol-driven alertness to peak, then use caffeine to extend focus without an afternoon crash.",
@@ -630,6 +741,335 @@
     ]
   },
   {
+    "id": "possible_strain_persistent_001",
+    "title": "Rest and Check-In Nudge for Persistent Possible Physiological Strain",
+    "description": "The same combination of overnight signals (skin temperature, respiratory rate, resting heart rate, HRV) has now moved against your personal baseline for two consecutive nights. This still is not a diagnosis of illness — but a pattern that repeats across multiple nights is a stronger signal than one off night, and is worth taking seriously with rest and, if it continues or you notice other symptoms, a conversation with a healthcare provider.",
+    "category": "recovery",
+    "duration": "20-30 minutes",
+    "difficulty": "beginner",
+    "priority": 2,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (rest/recovery principles); evidence-informed trigger combination",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 2,
+              "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 2,
+              "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 2,
+              "label": "skin temperature > +0.3°C from personal baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 2,
+              "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "respiratory rate > 105% of rolling baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 2,
+              "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 2,
+              "label": "resting HR > 105% of rolling baseline, 2 consecutive nights"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 2,
+              "label": "HRV < 90% of rolling baseline, 2 consecutive nights"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Possible physiological strain (persistent)"
+    },
+    "conditional": {
+      "question": "The same combination of signals (temperature, breathing rate, heart rate, or HRV) has looked off for two nights in a row now — want help prioritizing rest today?",
+      "yesLabel": "Yes, help me rest and recover",
+      "noLabel": "No, I feel normal"
+    },
+    "actions": [
+      {
+        "action": "Postpone intense training",
+        "duration": "For the day",
+        "frequency": "Once, on the day this triggers (repeat if the pattern continues)",
+        "timing": "All day",
+        "details": "Prefer full rest or very light activity (short walk, gentle mobility) over planned high-intensity or heavy-load training while this pattern persists."
+      },
+      {
+        "action": "Prioritize sleep and general rest",
+        "duration": "Ongoing while the pattern persists",
+        "frequency": "Nightly",
+        "timing": "Evening",
+        "details": "Protect sleep opportunity, reduce evening alcohol/late meals, and generally lower physical and cognitive load until your signals return toward baseline."
+      },
+      {
+        "action": "Optional NSDR / Yoga Nidra session",
+        "duration": "20-30 minutes",
+        "frequency": "Once, as an optional supportive nudge",
+        "timing": "Morning or early afternoon",
+        "details": "A longer guided NSDR session to support parasympathetic recovery alongside physical rest."
+      },
+      {
+        "action": "Consider checking in with a healthcare provider",
+        "duration": "N/A",
+        "frequency": "As needed",
+        "timing": "If the pattern continues past today or you notice other symptoms",
+        "details": "This is a supportive suggestion, not a directive: your ring data cannot diagnose illness. If this pattern doesn't resolve, or if you notice how-you-actually-feel symptoms (fever, sore throat, unusual fatigue, aches), it's reasonable to check in with a doctor — trust how you feel over what the ring shows either way."
+      }
+    ],
+    "benefits": [
+      "Recognizes that a pattern repeating across two consecutive nights is a meaningfully stronger signal than a single off night",
+      "Encourages rest and, if warranted, medical input before pushing through a persistent multi-signal deviation",
+      "Written to nudge toward caution without alarming the user or making unsupported claims about their health"
+    ],
+    "science": "This rule uses the same 2-of-4 signal combination as the moderate tier (elevated skin temperature, elevated respiratory rate, elevated resting heart rate, suppressed HRV, each vs. personal baseline) but requires it to hold for two consecutive nights rather than one. Persistence across multiple nights reduces the chance that ordinary single-night noise (poor sleeping position, a late workout, alcohol, room temperature, travel) explains the pattern, and is consistent with general sleep/wearable literature associating sustained deviation in these markers with elevated physiological load. This rule identifies a pattern in wearable data. It does not identify a cause, and it does not diagnose illness, infection, or any medical condition — those determinations can only be made by a healthcare provider based on symptoms and, where appropriate, clinical testing.",
+    "contraindications": [
+      "This is not a diagnosis of illness, infection (including but not limited to COVID-19, influenza, or any other condition), or any medical condition, and must never be presented or interpreted as one",
+      "The suggestion to consider medical evaluation is a supportive nudge, not medical advice or a directive — the user's own symptoms and judgment (or a clinician's) should always take priority over ring data",
+      "Do not use the absence of this trigger to conclude you are not unwell, and do not use its presence to conclude you are — it is a data pattern, not a health assessment",
+      "If the user reports urgent or severe symptoms, this protocol's suggestions are not a substitute for seeking prompt medical care"
+    ],
+    "estimated_impact": {
+      "recovery_support": "Moderate improvement",
+      "illness_risk_reduction": "Unclear — not established for this specific rule"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "POSSIBLE_PHYSIOLOGICAL_STRAIN_PERSISTENT",
+      "scientific_rationale": "Same 2-of-4 signal combination as the moderate tier (temperature_deviation ↑, respiratory_rate ↑, resting_hr ↑, hrv ↓, each vs. personal baseline), gated with persistence: 2 (must hold for 2 consecutive nights) rather than 1. Requiring persistence rather than tightening thresholds was a deliberate choice — it targets a genuinely different, higher-confidence pattern (sustained deviation) rather than just a more extreme single-night deviation, and is why this tier's evidence_level is bumped to evidence_informed while the moderate tier stays at product_heuristic.",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Rest, reduced training load, and NSDR during a period of elevated physiological load are directly and repeatedly supported by Huberman Lab source material as low-risk, sensible responses. The 'consider checking in with a healthcare provider' action is deliberately scoped as a supportive suggestion tied to persistence or self-reported symptoms, not a diagnostic claim — this framing is a product/safety decision, not itself a clinical claim, and should be evaluated as such in review."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The exact thresholds (+0.3°C, 105%, 105%, 90%) and the 2-of-4/persistence-2 combination are a product heuristic, unvalidated against real outcome data. Same KNOWN ENGINE GAP as the moderate tier: temperature_deviation is absent from BASELINE_FIELD_BY_METRIC in src/hooks/useOuraProtocolTriggers.ts despite bleBaseline.ts now computing a real tempBaseline, so this rule uses mode: 'absolute' for that one condition rather than baseline_pct (defensible since Oura's temperature_deviation value is already baseline-relative by construction) — flagging again here per the same disclosure pattern used in recovery-deficit.md/.json for its sleep_duration gap. Persistence: 2 was chosen to match the brief's '2+ days' framing for the stronger, medically-adjacent recommendation in this tier; it has not been tuned against outcome data."
+      },
+      "expected_effect": {
+        "short_term": "Reduced same-day training load and prioritized rest; underlying signals may take 1-2+ nights to normalize even with intervention.",
+        "long_term": "If genuinely early strain or illness, resting now and seeking care if needed may reduce severity/duration versus training through it. If the pattern is a false positive, the cost is a rest day and, at most, an unnecessary doctor visit — asymmetric but non-trivial cost, which is why this tier's language must stay strictly non-diagnostic. Untested against real outcome data in this app."
+      }
+    }
+  },
+  {
+    "id": "nsdr_recovery_deficit_high_001",
+    "title": "NSDR for High Recovery Deficit",
+    "description": "Sleep duration, HRV, and resting heart rate have all moved meaningfully against your personal baseline in the same night — a three-signal, high-confidence recovery deficit. Recommends a longer NSDR session and reducing high-intensity training for the day.",
+    "category": "sleep",
+    "duration": "20-30 minutes",
+    "difficulty": "beginner",
+    "priority": 3,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (NSDR); evidence-informed trigger combination",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 85,
+              "persistence": 1,
+              "label": "sleep duration < 85% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 85,
+              "persistence": 1,
+              "label": "HRV < 85% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "resting HR > 105% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Recovery deficit"
+    },
+    "conditional": {
+      "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — is that accurate?",
+      "yesLabel": "Yes, add recovery support to today",
+      "noLabel": "No, I feel normal"
+    },
+    "actions": [
+      {
+        "action": "Extended NSDR / Yoga Nidra session",
+        "duration": "20-30 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Morning or early afternoon",
+        "details": "A longer guided NSDR session to support parasympathetic recovery and partially offset the dopamine/alertness deficit from a poor recovery night."
+      },
+      {
+        "action": "Reduce high-intensity training",
+        "duration": "For the day",
+        "frequency": "Once, on the day this triggers",
+        "timing": "All day",
+        "details": "Swap planned high-intensity or heavy-load training for light-to-moderate activity (easy cardio, mobility, walking). Avoid adding further sympathetic/cardiovascular load on top of an already-elevated resting heart rate and depressed HRV."
+      }
+    ],
+    "benefits": [
+      "Avoids compounding strain by adding hard training on top of a genuine multi-signal recovery deficit",
+      "Supports faster return to baseline HRV/RHR",
+      "Reduces injury and illness risk associated with training through significant autonomic strain"
+    ],
+    "science": "HRV suppression and resting-heart-rate elevation are well-established markers of unresolved autonomic/sympathetic strain, and short sleep duration compounds both. When all three move against baseline together, the combined signal is substantially more specific for genuine reduced recovery capacity than any single metric alone, which is why this rule requires all three rather than any one.",
+    "contraindications": [
+      "Should not replace addressing the underlying cause of poor sleep if it recurs",
+      "If this state persists for multiple consecutive days, treat as a stronger signal to scale back training volume, not just intensity, and consider consulting a coach or physician"
+    ],
+    "estimated_impact": {
+      "stress_reduction": "High improvement",
+      "recovery_support": "High improvement",
+      "injury_risk_reduction": "Moderate improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "RECOVERY_DEFICIT_HIGH",
+      "scientific_rationale": "Three concurrent signals — sleep duration < 85% baseline, HRV < 85% baseline, resting HR > 105% baseline, for 1 night — matches the tiered recovery-deficit rule specified in the source research brief. Requiring all three (AND, not OR) is the key design choice: it trades sensitivity for specificity, avoiding false triggers from any single noisy metric (Oura HRV/RHR readings can vary night-to-night for reasons unrelated to true recovery state).",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "NSDR-for-poor-recovery and reducing training intensity after poor recovery are both directly and repeatedly discussed by Huberman Lab as reasonable, low-risk responses. This is the same underlying recommendation as the existing legacy protocols nsdr_for_poor_sleep_001 and (inversely) hiit_after_poor_sleep_001, just gated on a stronger, multi-signal condition."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The specific 85%/85%/105% baseline-percentage thresholds and the 3-signal AND combination come directly from the research brief's worked example, but the brief itself did not cite a validated study establishing these exact cutoffs — they are a reasonable, evidence-informed design (grounded in the general HRV/RHR-as-autonomic-strain-marker literature) rather than independently validated thresholds. Tag this rule's evidence_level as evidence_informed at the combination-design level, while treating the exact numbers as unvalidated until tuned against real outcome data."
+      },
+      "expected_effect": {
+        "short_term": "Reduced same-day training load and an NSDR session should reduce further sympathetic loading; HRV/RHR are not expected to normalize same-day.",
+        "long_term": "Consistently avoiding hard training during genuine 3-signal recovery deficits should reduce cumulative strain and lower risk of overtraining or illness, though this specific rule combination has not been outcome-tested in this app."
+      }
+    }
+  },
+  {
     "id": "vision_breaks_001",
     "title": "Vision Breaks for Eye Health",
     "description": "Regular breaks from close-up work to prevent eye strain, reduce fatigue, and maintain visual health through the 20-20-20 rule and deliberate blinking.",
@@ -745,6 +1185,116 @@
         "url": "https://www.hubermanlab.com/newsletter/toolkit-for-sleep"
       }
     ]
+  },
+  {
+    "id": "delay_hard_training_high_001",
+    "title": "Delay Hard Training Today",
+    "description": "Sleep duration, HRV, and resting heart rate have all moved meaningfully against your personal baseline in the same night — the same three-signal pattern as a high recovery deficit, framed specifically around today's training decision. Recommends postponing HIIT/max-effort work and swapping in aerobic or mobility work instead.",
+    "category": "fitness",
+    "duration": "20-40 minutes",
+    "difficulty": "beginner",
+    "priority": 4,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (training/recovery balance); evidence-informed trigger combination",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 85,
+              "persistence": 1,
+              "label": "sleep duration < 85% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 85,
+              "persistence": 1,
+              "label": "HRV < 85% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "resting HR > 105% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Delay hard training (high intensity)"
+    },
+    "conditional": {
+      "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — should today's hard training wait?",
+      "yesLabel": "Yes, swap today's session for something easier",
+      "noLabel": "No, I feel normal, keep today's plan"
+    },
+    "actions": [
+      {
+        "action": "Postpone HIIT / max-effort / heavy-load training",
+        "duration": "For the day",
+        "frequency": "Once, on the day this triggers",
+        "timing": "All day",
+        "details": "Move any planned intervals, max lifts, or high-intensity conditioning to a later day when the three signals have recovered. Reassess against the next night's data before resuming full intensity."
+      },
+      {
+        "action": "Swap in aerobic or mobility work",
+        "duration": "20-40 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Whenever training was planned",
+        "details": "Easy Zone 1/2 cardio, a walk, or a mobility/stretching session in place of the planned hard session, so the training habit continues without adding further sympathetic/cardiovascular load."
+      }
+    ],
+    "benefits": [
+      "Avoids stacking hard training on top of a genuine, three-signal-confirmed recovery deficit",
+      "Reduces injury and illness risk associated with training through significant autonomic strain",
+      "Keeps the recommendation specifically actionable for today's training plan rather than general rest advice"
+    ],
+    "science": "Concurrent reductions in sleep duration and HRV alongside an elevated resting heart rate are well-established markers of unresolved autonomic/sympathetic strain. Training at high intensity while all three are depressed is associated with elevated injury and illness risk and blunted training adaptation, so postponing the hardest-effort work (rather than training volume broadly) is the targeted response for this specific decision.",
+    "contraindications": [
+      "Not a reason to skip all training — the recommendation is to postpone the hardest-effort portion, not stop training entirely",
+      "If this state persists for multiple consecutive days, treat as a stronger signal to reduce training volume more broadly and consider consulting a coach or physician"
+    ],
+    "estimated_impact": {
+      "injury_risk_reduction": "Moderate improvement",
+      "recovery_support": "High improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+      },
+      {
+        "title": "How to Improve Endurance and Cardiovascular Health — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/how-to-improve-endurance-and-cardiovascular-health"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "DELAY_HARD_TRAINING",
+      "scientific_rationale": "Same three-signal pattern (sleep duration < 85% baseline, HRV < 85% baseline, resting HR > 105% baseline, 1 night) as the recovery-deficit 'high' tier in docs/oura-rules/recovery-deficit.json. Deliberately kept at identical thresholds rather than invented separately, since these are meant to represent the same underlying physiological state (high recovery deficit) viewed through a training-decision lens rather than a competing definition of it.",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Avoiding hard/high-intensity training during genuine multi-signal autonomic strain, in favor of easier aerobic or mobility work, is directly and repeatedly supported by Huberman Lab training-and-recovery content. This is the training-decision framing of the same recommendation already present as an action inside the recovery-deficit high tier ('reduce high-intensity training')."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "Thresholds are copied intentionally from the recovery-deficit high tier's worked example rather than independently derived, so this rule is a companion/alternate framing of that same state, not a new validated threshold set."
+      },
+      "expected_effect": {
+        "short_term": "Reduced same-day sympathetic/cardiovascular training load; HRV/RHR are not expected to normalize same-day.",
+        "long_term": "Consistently deferring hard training during genuine 3-signal recovery deficits should reduce cumulative strain and lower overtraining/illness risk, though untested as a rule."
+      }
+    }
   },
   {
     "id": "cold_exposure_001",
@@ -875,6 +1425,116 @@
         "duration": "2 hours"
       }
     ]
+  },
+  {
+    "id": "sleep_quality_efficiency_latency_001",
+    "title": "Address Poor Sleep Quality (Low Efficiency + Slow Onset)",
+    "description": "Sleep efficiency has dropped below your personal baseline at the same time sleep latency has risen above it — a combined signal of poor sleep quality (slow to fall asleep, then a larger share of time in bed spent awake) that can occur even when total time in bed looks adequate. Recommends the same behavioral first-line response as elevated sleep latency, with added emphasis on stress/arousal management.",
+    "category": "sleep",
+    "duration": "Ongoing (evening + morning routine change)",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (caffeine timing, light exposure, NSDR); product heuristic (trigger combination)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_efficiency",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "sleep efficiency < 90% of rolling baseline"
+            },
+            {
+              "metric": "sleep_latency",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 120,
+              "persistence": 1,
+              "label": "sleep latency > 120% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Poor sleep quality (low efficiency, slow onset)"
+    },
+    "conditional": {
+      "question": "Did last night feel like it took a while to fall asleep, and like you spent more time awake in bed than usual?",
+      "yesLabel": "Yes, help me improve tonight's sleep quality",
+      "noLabel": "No, that doesn't match how I slept"
+    },
+    "actions": [
+      {
+        "action": "Push caffeine intake earlier and add a firm cutoff",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "Delay first caffeine 90-120 minutes after waking; no caffeine within 8-10 hours of target bedtime",
+        "details": "Same first-line adjustment as elevated sleep latency alone — residual caffeine can both delay sleep onset and reduce sleep efficiency by causing more awakenings."
+      },
+      {
+        "action": "Reduce evening bright/blue light and pre-sleep arousal",
+        "duration": "1-2 hours before bed",
+        "frequency": "Daily",
+        "timing": "Evening",
+        "details": "Dim lighting and lower-stimulation activity in the hour or two before bed. When both onset and efficiency are affected together, elevated pre-sleep physiological/cognitive arousal is a more likely shared driver than either issue in isolation."
+      },
+      {
+        "action": "NSDR or brief relaxation practice before bed",
+        "duration": "10-15 minutes",
+        "frequency": "As needed",
+        "timing": "Before bed",
+        "details": "Given the combined onset-and-efficiency signal (suggesting broader pre-sleep arousal, not just a single environmental factor), a short NSDR session is elevated to a primary-tier suggestion here, unlike the fragmentation-only rule above."
+      }
+    ],
+    "benefits": [
+      "Targets the shared arousal-related driver when both onset and efficiency are affected together, rather than treating them as separate issues",
+      "Behavioral-first, no supplements",
+      "Distinguishes this state from simple short-duration recovery deficit, which calls for a different response"
+    ],
+    "science": "Sleep efficiency (time asleep as a share of time in bed) and sleep latency are both markers of how readily the nervous system transitions into and stays in sleep. When both move unfavorably together, it more often reflects elevated general pre-sleep arousal (stress, stimulant load, irregular timing) than a single isolated cause, which is why this rule elevates broader arousal-reduction actions (light hygiene, NSDR) alongside the caffeine-timing response used for sleep latency alone.",
+    "contraindications": [
+      "Not a diagnosis or treatment for insomnia or another sleep disorder",
+      "If this combined pattern persists most nights over several weeks despite consistent behavioral changes, consider discussing with a physician or sleep specialist"
+    ],
+    "estimated_impact": {
+      "sleep_onset": "Moderate improvement",
+      "sleep_quality": "Moderate improvement",
+      "stress_reduction": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+      },
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "POOR_SLEEP_QUALITY_EFFICIENCY_ONSET",
+      "scientific_rationale": "Two-signal combination: sleep_efficiency < 90% of baseline AND sleep_latency > 120% of baseline, both for one night. Distinct from the recovery-deficit family (which keys on sleep_duration + HRV + RHR) because total time asleep can look normal here — the deficit is in sleep quality/continuity, not quantity, which calls for a different response (arousal reduction, not training/NSDR-for-recovery).",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Each individual action (caffeine timing, evening light reduction, NSDR) is directly and repeatedly recommended by Huberman Lab. The judgment that a combined efficiency+latency signal specifically warrants elevating NSDR to a primary-tier action (rather than secondary, as in the fragmentation rule) is this app's own evidence-informed synthesis, not a direct single-source citation."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The 90%/120% thresholds and requiring both signals together (rather than either alone) are unvalidated product heuristics. Chosen as an AND rather than OR specifically so this rule doesn't overlap/double-fire with the single-signal elevated-sleep-latency rule above on nights where only latency, not efficiency, is affected."
+      },
+      "expected_effect": {
+        "short_term": "No same-night effect; targets the following night's onset and efficiency.",
+        "long_term": "Consistent arousal-reduction behavior change is expected to improve both metrics over weeks; this specific two-signal combination has not been outcome-tested in this app."
+      }
+    }
   },
   {
     "id": "focus_meditation_001",
@@ -1014,6 +1674,107 @@
         "url": "https://www.sleepfoundation.org/yoga-nidra"
       }
     ]
+  },
+  {
+    "id": "sleep_latency_behavioral_reset_001",
+    "title": "Behavioral Reset for Elevated Sleep Latency",
+    "description": "Time-to-fall-asleep has moved meaningfully above your personal baseline for at least one night — a signal of elevated pre-sleep arousal (caffeine still active, late bright/blue light exposure, irregular bedtime) rather than a sleep disorder. Recommends behavioral adjustments first, not supplements.",
+    "category": "sleep",
+    "duration": "Ongoing (evening + morning routine change)",
+    "difficulty": "beginner",
+    "priority": 6,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (caffeine timing, light exposure, sleep regularity); product heuristic (trigger threshold)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_latency",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 130,
+              "persistence": 1,
+              "label": "sleep latency > 130% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "evidence_informed",
+      "state_label": "Elevated sleep latency"
+    },
+    "conditional": {
+      "question": "Did it take longer than usual to fall asleep last night?",
+      "yesLabel": "Yes, help me adjust my evening routine",
+      "noLabel": "No, that seems off"
+    },
+    "actions": [
+      {
+        "action": "Push caffeine intake earlier and add a firm cutoff",
+        "duration": "Ongoing",
+        "frequency": "Daily",
+        "timing": "Delay first caffeine 90-120 minutes after waking; no caffeine within 8-10 hours of your target bedtime",
+        "details": "Caffeine has a long half-life and can extend sleep latency even when a person does not subjectively feel 'wired.' Delaying the first dose and setting a cutoff time are Huberman Lab's standard first-line adjustments before considering anything else."
+      },
+      {
+        "action": "Reduce evening bright/blue light exposure",
+        "duration": "1-2 hours before bed",
+        "frequency": "Daily",
+        "timing": "Evening",
+        "details": "Dim overhead lights and reduce screen brightness (or use night-mode/warm-light settings) in the 1-2 hours before bed. Bright, especially blue-enriched, light in the evening suppresses melatonin onset and delays the body's sleep-readiness signal."
+      },
+      {
+        "action": "Anchor a consistent bed and wake time",
+        "duration": "Ongoing",
+        "frequency": "Daily, including weekends",
+        "timing": "Fixed times",
+        "details": "Keep bed and wake times within about a 30-minute window daily. Irregular sleep timing desynchronizes the circadian drive for sleep, which can independently lengthen how long it takes to fall asleep even when total sleep opportunity is adequate."
+      }
+    ],
+    "benefits": [
+      "Addresses the most common behavioral drivers of elevated sleep latency before assuming anything is medically wrong",
+      "No supplements or medication involved — lowest-risk first response",
+      "Builds sleep-onset consistency over time rather than treating a single bad night in isolation"
+    ],
+    "science": "Sleep latency (time to fall asleep) is a well-established, easily measured marker of pre-sleep physiological and cognitive arousal. Elevated caffeine load at bedtime, late bright/blue light exposure, and irregular sleep timing are among the most consistently documented behavioral contributors to prolonged sleep latency in the sleep science literature, and are the standard first-line targets before considering supplements or clinical evaluation.",
+    "contraindications": [
+      "Not a diagnosis or treatment for insomnia or another sleep disorder",
+      "If elevated sleep latency persists most nights over several weeks despite consistent behavioral changes, consider discussing with a physician or sleep specialist rather than continuing to self-manage indefinitely"
+    ],
+    "estimated_impact": {
+      "sleep_onset": "Moderate improvement (over days to weeks of consistent behavior change)",
+      "sleep_quality": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Using Light for Health — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/using-light-for-health"
+      },
+      {
+        "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "ELEVATED_SLEEP_LATENCY",
+      "scientific_rationale": "Single-signal (sleep_latency), above 130% of personal rolling baseline for one night. Sleep latency as a signal of pre-sleep arousal/circadian misalignment is well established in the sleep literature; the specific 130%-of-baseline cutoff used to fire this rule is not independently validated.",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Caffeine-timing, evening light reduction, and consistent sleep/wake timing are all directly and repeatedly recommended by Huberman Lab specifically as first-line, non-supplement responses to trouble falling asleep."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The 130%-of-baseline threshold and 1-night persistence window are a product heuristic, not derived from a cited study. Sleep latency naturally has higher night-to-night variance than metrics like HRV, so this threshold may need tuning (likely upward, to reduce false positives) once real outcome data exists. Deliberately single-signal (no AND with another metric) because sleep latency alone is already a fairly specific, low-stakes-to-be-wrong-about trigger — the recommended actions are safe even if the trigger is noise."
+      },
+      "expected_effect": {
+        "short_term": "Unlikely to change same night; the recommended actions target the following evening's sleep latency, not the night that triggered the rule.",
+        "long_term": "Consistent caffeine-timing, light-hygiene, and schedule-regularity changes are associated with reduced average sleep latency over weeks, though this exact rule/threshold combination has not been outcome-tested in this app."
+      }
+    }
   },
   {
     "id": "dopamine_management_001",
@@ -1603,6 +2364,216 @@
     ]
   },
   {
+    "id": "possible_strain_moderate_001",
+    "title": "Lighter Day Nudge for Possible Physiological Strain",
+    "description": "At least two of your overnight signals (skin temperature, respiratory rate, resting heart rate, HRV) moved against your personal baseline together last night. This is not a diagnosis of anything — it's a gentle nudge to consider an easier day while your body's data settles.",
+    "category": "recovery",
+    "duration": "10-20 minutes",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (rest/recovery principles); product heuristic (multi-signal combination)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 1,
+              "label": "skin temperature > +0.3°C from personal baseline"
+            },
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "respiratory rate > 105% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 1,
+              "label": "skin temperature > +0.3°C from personal baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "resting HR > 105% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "temperature_deviation",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 0.3,
+              "persistence": 1,
+              "label": "skin temperature > +0.3°C from personal baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "HRV < 90% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "respiratory rate > 105% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "resting HR > 105% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "respiratory_rate",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "respiratory rate > 105% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "HRV < 90% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 105,
+              "persistence": 1,
+              "label": "resting HR > 105% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "HRV < 90% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "Possible physiological strain (moderate)"
+    },
+    "conditional": {
+      "question": "A couple of your overnight signals (temperature, breathing rate, heart rate, or HRV) look a bit different than usual — want to plan an easier day just in case?",
+      "yesLabel": "Yes, take it easier today",
+      "noLabel": "No, I feel normal"
+    },
+    "actions": [
+      {
+        "action": "Reduce planned training intensity",
+        "duration": "For the day",
+        "frequency": "Once, on the day this triggers",
+        "timing": "All day",
+        "details": "Swap planned high-intensity or heavy-load training for light-to-moderate activity (easy cardio, mobility, walking). A precaution, not a requirement — your data may simply reflect normal night-to-night variation."
+      },
+      {
+        "action": "Prioritize sleep tonight",
+        "duration": "Full night",
+        "frequency": "Once, the night after this triggers",
+        "timing": "Evening",
+        "details": "Protect an on-time, full-length sleep opportunity tonight to give your body's normal recovery processes room to work."
+      },
+      {
+        "action": "Optional NSDR / Yoga Nidra session",
+        "duration": "10-20 minutes",
+        "frequency": "Once, as an optional nudge",
+        "timing": "Whenever convenient",
+        "details": "A brief guided NSDR session to support parasympathetic recovery, if you'd like an active way to rest."
+      }
+    ],
+    "benefits": [
+      "Gives your body a lower-demand day while multiple signals are showing mild, correlated deviation from your own baseline",
+      "May reduce the chance of a mild deviation compounding into a more significant one",
+      "Low cost if the signal turns out to be noise — worst case is one easier training day"
+    ],
+    "science": "Elevated skin temperature, elevated respiratory rate, elevated resting heart rate, and suppressed HRV are each, individually, general markers that have been associated in the literature with increased physiological/autonomic load, including (but not limited to) early immune activation. None of these signals, alone, reliably indicates anything specific — each is noisy night-to-night for reasons unrelated to illness (sleeping position, room temperature, alcohol, late exercise, travel, menstrual cycle phase, sensor variance). Requiring at least two of the four to move together, on the same night, is intended to reduce the chance this nudge fires on ordinary single-metric noise, while still catching a pattern early and at low stakes. This rule does not identify a cause and is not intended to.",
+    "contraindications": [
+      "This is not a diagnosis of illness, infection, or any medical condition, and should never be interpreted as one",
+      "Do not use this signal, alone, to decide to skip medical care you would otherwise seek — if you feel unwell, trust how you feel over what the ring says",
+      "A single moderate-tier day is a weak signal on its own; treat it as a suggestion to take it easier, not a directive to stop activity entirely"
+    ],
+    "estimated_impact": {
+      "recovery_support": "Mild improvement",
+      "illness_risk_reduction": "Unclear — not established for this specific rule"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "POSSIBLE_PHYSIOLOGICAL_STRAIN_MODERATE",
+      "scientific_rationale": "Any 2 of 4 signals (temperature_deviation ↑, respiratory_rate ↑ vs. baseline, resting_hr ↑ vs. baseline, hrv ↓ vs. baseline) moving together for one night. Modeled as an OR of all 6 pairwise AND-combinations of the 4 signals, since the engine's OuraTriggerV2 shape expresses 'any N of M' as an OR-of-AND-groups. Explicitly excludes any single-signal condition — no group here has fewer than 2 conditions — per the brief's requirement that a lone respiratory-rate (or any single metric) blip must never fire this rule alone.",
+      "evidence_for_protocol": {
+        "level": "evidence_informed",
+        "notes": "Reducing training load and prioritizing sleep/rest when the body shows signs of elevated physiological/autonomic load is a general, well-supported recovery principle (and is the same underlying recommendation as the recovery-deficit family). NSDR as a low-cost parasympathetic-support tool is direct_evidence from Huberman Lab. The general relationship between elevated resting HR / suppressed HRV / elevated temperature / elevated respiratory rate and increased physiological load or early immune activation is evidence_informed — supported by a body of sleep/wearable literature, but this app does not cite a specific validated study and does not claim to detect illness."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The specific thresholds (+0.3°C absolute for temperature_deviation; 105%/105%/90% baseline_pct for respiratory_rate/resting_hr/hrv), the '2 of 4' combination rule, and the 1-night persistence window are a product heuristic, not independently validated. KNOWN ENGINE GAP, confirmed in src/hooks/useOuraProtocolTriggers.ts: temperature_deviation is NOT present in BASELINE_FIELD_BY_METRIC even though src/services/oura/bleBaseline.ts now computes a real tempBaseline (30-day mean of DailyReadiness.temperature_deviation) — baseline_pct mode would fail closed for this metric today. Worked around here by using mode: 'absolute' for temperature_deviation instead, which is defensible because Oura's temperature_deviation value is itself already expressed as a deviation from the wearer's own personal baseline (in °C), so an absolute threshold on it is still a personalized comparison, just not scaled by the engine's baseline_pct machinery. If temperature_deviation is later added to BASELINE_FIELD_BY_METRIC, this condition could be revisited to use baseline_pct for consistency with the other three signals, but is not blocked on that landing. This is the same category of gap the recovery-deficit family flagged for sleep_duration — noting it here rather than silently working around it without disclosure, and NOT fixing useOuraProtocolTriggers.ts directly per scope."
+      },
+      "expected_effect": {
+        "short_term": "Possibly reduced same-day training strain and slightly better sleep protection; the underlying signals are not expected to normalize same-day.",
+        "long_term": "If the pattern is genuinely early strain, an easier day here may reduce the chance of escalation to the persistent tier. If the pattern is noise, the cost is one unnecessarily easy training day. Untested against real outcome data."
+      }
+    }
+  },
+  {
     "id": "sleep_supplements_protocol_001",
     "title": "Sleep Support Supplements Protocol",
     "description": "Science-backed supplement stack to enhance sleep quality, reduce sleep latency, and support deeper restorative sleep through targeted neurotransmitter and mineral support.",
@@ -1677,6 +2648,108 @@
         "duration": "90 minutes"
       }
     ]
+  },
+  {
+    "id": "reduce_intensity_training_caution_001",
+    "title": "Lower-Intensity Training Day",
+    "description": "Sleep and/or cardiovascular recovery signals are modestly below your personal baseline — not enough to call a recovery deficit, but enough to favor easier training today. Recommends swapping planned hard training for Zone 1/2 cardio, walking, or mobility work instead of cancelling training outright.",
+    "category": "fitness",
+    "duration": "20-45 minutes",
+    "difficulty": "beginner",
+    "priority": 6,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (training/recovery balance); product heuristic (trigger combination)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 92,
+              "persistence": 1,
+              "label": "HRV < 92% of rolling baseline"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 93,
+              "persistence": 1,
+              "label": "sleep duration < 93% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 103,
+              "persistence": 1,
+              "label": "resting HR > 103% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "Training caution"
+    },
+    "conditional": {
+      "question": "Is your recovery looking a little off today (sleep or HRV slightly down)?",
+      "yesLabel": "Yes, dial back today's intensity",
+      "noLabel": "No, I feel normal"
+    },
+    "actions": [
+      {
+        "action": "Swap hard training for Zone 1/2 cardio, walking, or mobility",
+        "duration": "20-45 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Whenever training was planned",
+        "details": "Keep the training session, but drop the intensity: easy aerobic pace, a walk, or a mobility/stretching session instead of intervals, heavy lifting, or a max-effort workout. This is a downgrade, not a cancellation."
+      }
+    ],
+    "benefits": [
+      "Keeps the training habit intact on a borderline-recovery day instead of an all-or-nothing skip",
+      "Avoids adding meaningful cardiovascular/sympathetic load on top of an already-softer recovery signal",
+      "Lower stakes than delaying training outright — appropriate for a single or loosely-corroborated signal"
+    ],
+    "science": "A single moderately depressed HRV reading, or a looser two-signal combination of reduced sleep duration and elevated resting heart rate, is a weaker and less specific indicator of reduced recovery capacity than a concurrent three-signal deviation. At this confidence level the evidence-based response is to favor easier training modalities rather than treating it as a hard stop, consistent with general training-load-management guidance (train through minor recovery dips at reduced intensity, reserve full rest for stronger/more corroborated signals).",
+    "contraindications": [
+      "Not a reason to skip training altogether at this tier — signal is single or loosely corroborated",
+      "If this triggers on most days, the underlying baseline itself may be shifting (e.g. new training block, illness onset, life stress) — worth a broader look rather than only reacting day to day"
+    ],
+    "estimated_impact": {
+      "injury_risk_reduction": "Mild improvement",
+      "recovery_support": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "TRAINING_CAUTION",
+      "scientific_rationale": "Single-signal (HRV < 92% baseline) OR a looser two-signal combination (sleep duration < 93% baseline AND resting HR > 103% baseline), for one night. Deliberately looser than the recovery-deficit 'mild' tier (docs/oura-rules/recovery-deficit.json, 90%/90% two-signal sleep_duration+HRV) — this rule uses a different metric pairing and an OR-of-groups shape so it can fire on a single moderately-off HRV reading alone, trading specificity for earlier/cheaper action (a training-intensity swap, not a recovery protocol).",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Favoring lower-intensity training (easy aerobic work, mobility) over hard training on days with softer recovery signals, while still training, is a standard and directly-supported training-load-management principle discussed in Huberman Lab's fitness content — this is a milder version of the same logic as the existing 'reduce high-intensity training' action in the recovery-deficit high tier."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The 92%/93%/103% thresholds, the single-vs-two-signal OR structure, and the choice of HRV alone as a sufficient single trigger are product heuristics, not independently validated. Chosen to sit clearly below the recovery-deficit mild tier in both specificity and stakes (a same-workout intensity swap, not an NSDR recommendation or training cancellation) so a false positive costs almost nothing."
+      },
+      "expected_effect": {
+        "short_term": "Marginally lower same-day cardiovascular/sympathetic load from training; unlikely to be measurable on the ring within 24h.",
+        "long_term": "May reduce the frequency of escalation into the recovery-deficit or delay-hard-training tiers by catching softer dips earlier, though untested."
+      }
+    }
   },
   {
     "id": "worry_journal_protocol_001",
@@ -1843,14 +2916,22 @@
     "frequency_type": "conditional",
     "source": "Huberman Lab; Dexa.ai / FoundMyFitness",
     "last_updated": "2025-09-14",
-    "oura_triggers": [
-      {
-        "metric": "sleep_score",
-        "operator": "<",
-        "threshold": 75,
-        "label": "sleep < 75"
-      }
-    ],
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_score",
+              "operator": "<",
+              "threshold": 75,
+              "label": "sleep < 75"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "Brief HIIT for mild sleep loss (intensity)"
+    },
     "conditional": {
       "question": "Did you sleep poorly last night?",
       "yesLabel": "Yes, add to today's tasks",
@@ -2046,6 +3127,115 @@
     ]
   },
   {
+    "id": "sleep_fragmentation_investigate_001",
+    "title": "Investigate Sleep Fragmentation Despite Adequate Duration",
+    "description": "Restless periods are elevated above your personal baseline while total sleep duration looks roughly normal — a pattern suggesting fragmented, lower-quality sleep rather than insufficient sleep. Recommends investigating likely causes rather than simply sleeping more, with relaxation practice as a secondary support.",
+    "category": "sleep",
+    "duration": "One-time reflection + ongoing evening adjustment",
+    "difficulty": "beginner",
+    "priority": 7,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Product heuristic (trigger combination); Huberman Lab (NSDR, secondary)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "restless_periods",
+              "operator": ">",
+              "mode": "baseline_pct",
+              "threshold": 130,
+              "persistence": 1,
+              "label": "restless periods > 130% of rolling baseline"
+            },
+            {
+              "metric": "sleep_duration",
+              "operator": ">=",
+              "mode": "baseline_pct",
+              "threshold": 95,
+              "persistence": 1,
+              "label": "sleep duration >= 95% of rolling baseline (total sleep roughly normal)"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "Sleep fragmentation (adequate duration)"
+    },
+    "conditional": {
+      "question": "Did you sleep a normal amount but feel like your sleep was restless or broken up?",
+      "yesLabel": "Yes, help me look into possible causes",
+      "noLabel": "No, that doesn't match how I slept"
+    },
+    "actions": [
+      {
+        "action": "Review likely fragmentation triggers from the previous evening",
+        "duration": "5 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Anytime",
+        "details": "Restlessness with otherwise-adequate sleep duration is more often explained by something specific the evening before than by a chronic problem: late alcohol (even one drink fragments sleep architecture), caffeine still active at bedtime, an unusually warm/noisy/bright bedroom, a late large meal, or elevated evening stress/screen stimulation. Reviewing the prior evening against this list is a lower-cost first step than assuming a persistent issue."
+      },
+      {
+        "action": "Adjust the sleep environment and evening stimulation",
+        "duration": "Ongoing",
+        "frequency": "As needed, based on what the review above surfaces",
+        "timing": "Evening / bedroom setup",
+        "details": "If a specific cause is identified (room temperature, light, noise, alcohol or caffeine timing, late high-stimulation screen use), address that specific factor rather than a generic 'sleep more' response, since total sleep time in this pattern is not the deficit."
+      },
+      {
+        "action": "NSDR or brief relaxation practice before bed (secondary)",
+        "duration": "10-15 minutes",
+        "frequency": "Optional, as a secondary support",
+        "timing": "Before bed",
+        "details": "A short NSDR or relaxation session before bed can support parasympathetic wind-down, but this is a secondary suggestion here, not the primary response — it does not address an identifiable environmental or timing cause if one exists."
+      }
+    ],
+    "benefits": [
+      "Directs attention to specific, fixable causes instead of a generic 'get more sleep' response that doesn't match this pattern",
+      "Avoids over-recommending relaxation practices as a first-line fix when a concrete environmental or timing cause is more likely",
+      "Low-cost reflection step before considering anything more involved"
+    ],
+    "science": "Fragmented sleep (frequent restless/wake periods) with roughly preserved total sleep duration is a distinct pattern from short sleep, and is commonly associated with identifiable proximate causes — alcohol, late caffeine, an unfavorable sleep environment, or elevated pre-sleep arousal — rather than a chronic sleep-need deficit. Addressing the specific cause, where identifiable, is a more targeted response than increasing sleep opportunity, which this pattern does not actually lack.",
+    "contraindications": [
+      "This is not a sleep disorder diagnosis. If restless/fragmented sleep of this kind recurs frequently (e.g. most nights over several weeks) despite addressing obvious environmental and timing factors, consider discussing with a physician, since conditions such as sleep apnea or periodic limb movements can present this way and require clinical evaluation",
+      "Not a substitute for addressing a real total-sleep-duration deficit if one is also present — check this rule alongside duration/recovery signals, not in isolation"
+    ],
+    "estimated_impact": {
+      "sleep_quality": "Mild to moderate improvement (dependent on identifying and addressing the actual cause)",
+      "next_day_alertness": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "SLEEP_FRAGMENTATION_ADEQUATE_DURATION",
+      "scientific_rationale": "Two-signal combination: restless_periods > 130% of baseline AND sleep_duration >= 95% of baseline, both for one night. The combination is designed specifically to distinguish 'fragmented but long-enough' sleep from 'short' sleep, since the two call for different responses (investigate a cause vs. sleep more) and the recovery-deficit rule family already covers the short-sleep case.",
+      "evidence_for_protocol": {
+        "level": "evidence_informed",
+        "notes": "That fragmented sleep commonly traces to identifiable proximate causes (alcohol, late caffeine, environment, pre-sleep arousal) is well supported in the general sleep science literature, though this specific app does not cite a Huberman Lab episode that frames 'restlessness with adequate duration' as its own category the way it does for NSDR or light timing. The NSDR fallback action is direct_evidence on its own (see recovery-deficit.json); the 'investigate causes' framing as the primary action is evidence-informed rather than a direct single-source citation."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The 130%-of-baseline restlessness threshold, the 95%-of-baseline duration floor, and the AND combination are all product heuristics chosen to approximate 'duration is fine but sleep felt broken up' — none are independently validated cutoffs. The duration floor in particular is a judgment call (95% was chosen to mean 'not meaningfully short,' not 'exactly average') that should be tuned against real outcome and self-report data once available."
+      },
+      "expected_effect": {
+        "short_term": "No same-night effect (this fires the morning after); the reflection step may prevent a repeat the following night if a specific cause is identified and addressed.",
+        "long_term": "If a recurring specific cause is found and addressed, expected to reduce restless-period frequency over subsequent weeks; untested as a rule in this app."
+      }
+    }
+  },
+  {
     "id": "creatine_daily_001",
     "title": "Daily Creatine Supplementation",
     "description": "Daily intake of creatine monohydrate to support cognitive function, muscle performance, and overall energy metabolism.",
@@ -2119,6 +3309,101 @@
         "url": "https://health.yahoo.com/wellness/nutrition/vitamins-supplements/articles/andrew-huberman-breaks-down-creatine-035557797.html"
       }
     ]
+  },
+  {
+    "id": "nsdr_recovery_signal_mild_001",
+    "title": "NSDR for Early Recovery Signal",
+    "description": "A light-touch NSDR nudge when sleep duration and HRV both dip modestly below your personal baseline — an early autonomic recovery signal, well short of a full recovery deficit. No training change is recommended at this tier.",
+    "category": "sleep",
+    "duration": "10-15 minutes",
+    "difficulty": "beginner",
+    "priority": 8,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (NSDR); product heuristic (trigger combination)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "sleep duration < 90% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "HRV < 90% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "Recovery deficit (mild)"
+    },
+    "conditional": {
+      "question": "Did last night's sleep and readiness look a bit off?",
+      "yesLabel": "Yes, add a short NSDR to today",
+      "noLabel": "No, I feel fine"
+    },
+    "actions": [
+      {
+        "action": "Short NSDR / Yoga Nidra session",
+        "duration": "10-15 minutes",
+        "frequency": "Once, as an optional nudge",
+        "timing": "Early afternoon or whenever a break is available",
+        "details": "A brief guided NSDR session to support parasympathetic recovery. Optional — this tier is a light nudge, not a strong signal that training or plans need to change."
+      }
+    ],
+    "benefits": [
+      "Supports early-stage autonomic recovery before it compounds",
+      "Low time cost, no disruption to planned training",
+      "Builds the habit of responding to small deviations before they become large ones"
+    ],
+    "science": "Mild simultaneous dips in sleep duration and HRV relative to one's own baseline are commonly used as early, low-confidence indicators of accumulating physiological strain. NSDR (Non-Sleep Deep Rest) protocols promote parasympathetic activation and are Huberman Lab's standard low-cost recommendation for supporting recovery without requiring behavior change elsewhere.",
+    "contraindications": [
+      "Not a substitute for addressing a real sleep debt",
+      "Do not use as justification to skip planned training at this tier alone — signal is weak"
+    ],
+    "estimated_impact": {
+      "stress_reduction": "Mild improvement",
+      "alertness": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "MILD_RECOVERY_DEFICIT",
+      "scientific_rationale": "Two-signal (sleep duration + HRV), both below 90% of personal rolling baseline for one night. Two independently-measured signals moving the same direction is a weaker but still meaningful early indicator of reduced recovery capacity, consistent with general autonomic-nervous-system-strain literature (lower HRV and reduced sleep duration both associate with elevated sympathetic tone).",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Huberman Lab directly and repeatedly recommends NSDR/Yoga Nidra as a general-purpose tool for supporting recovery and offsetting the effects of a poor night's sleep. This part of the recommendation (NSDR is a reasonable, low-risk response to reduced recovery) is well supported by the source material."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The specific choice of 90%/90% baseline-percentage thresholds, the two-metric combination, and the 1-night persistence window are NOT independently validated — they are a product heuristic chosen to catch early signal with low specificity while keeping the recommendation itself low-stakes (an optional relaxation nudge, not a training change). Should be tuned against real user outcome data once n-of-1 tracking exists."
+      },
+      "expected_effect": {
+        "short_term": "Modest reduction in subjective stress/fatigue same day; unlikely to be measurable on the ring itself within 24h.",
+        "long_term": "If used consistently at this tier, may reduce the frequency/severity of escalation to the high or severe recovery-deficit tiers below, though this is untested."
+      }
+    }
   },
   {
     "id": "stress_inoculation_001",
@@ -2337,6 +3622,103 @@
         "duration": "2 hours"
       }
     ]
+  },
+  {
+    "id": "hiit_readiness_confirmed_001",
+    "title": "Full Training Intensity Cleared",
+    "description": "Sleep duration, HRV, and resting heart rate all look at or above your personal baseline — a positive, multi-signal confirmation that today is a reasonable day for planned HIIT or max-effort training, with no recovery-based reason to downgrade intensity.",
+    "category": "fitness",
+    "duration": "N/A",
+    "difficulty": "beginner",
+    "priority": 9,
+    "importance": "supplemental",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (training/recovery balance); product heuristic (trigger combination)",
+    "last_updated": "2026-09-21",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "sleep_duration",
+              "operator": ">=",
+              "mode": "baseline_pct",
+              "threshold": 95,
+              "persistence": 1,
+              "label": "sleep duration >= 95% of rolling baseline"
+            },
+            {
+              "metric": "hrv",
+              "operator": ">=",
+              "mode": "baseline_pct",
+              "threshold": 100,
+              "persistence": 1,
+              "label": "HRV >= 100% of rolling baseline"
+            },
+            {
+              "metric": "resting_hr",
+              "operator": "<=",
+              "mode": "baseline_pct",
+              "threshold": 100,
+              "persistence": 1,
+              "label": "resting HR <= 100% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "product_heuristic",
+      "state_label": "HIIT readiness confirmed"
+    },
+    "conditional": {
+      "question": "Sleep, HRV, and resting heart rate all look good today — want confirmation you're clear for planned hard training?",
+      "yesLabel": "Yes, show me the confirmation",
+      "noLabel": "No thanks"
+    },
+    "actions": [
+      {
+        "action": "Proceed with planned training intensity",
+        "duration": "N/A",
+        "frequency": "Informational, once per triggering day",
+        "timing": "N/A",
+        "details": "No intensity downgrade is indicated by recovery signals today. This is a confirmation nudge, not a new action — proceed with whatever intensity was already planned."
+      }
+    ],
+    "benefits": [
+      "Prevents over-cautious training downgrades when recovery signals are genuinely good",
+      "Builds trust in the trigger system by surfacing positive signal, not only warnings",
+      "Reinforces that intensity decisions are being made on real data, not guesswork"
+    ],
+    "science": "The absence of any negative deviation across three independently-measured recovery signals (sleep duration, HRV, resting heart rate all at or better than personal baseline) is the inverse of the multi-signal recovery-deficit pattern, and is used here only as a confirmation signal rather than to drive any new behavior.",
+    "contraindications": [
+      "Not a substitute for subjective readiness (soreness, motivation, life stress) — a good ring reading does not override how the person actually feels",
+      "Does not account for local/muscle-group recovery (e.g. DOMS from a prior session) — Oura's whole-body signals cannot and should not be used to infer local muscle recovery status"
+    ],
+    "estimated_impact": {
+      "confidence_in_plan": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "HIIT_READINESS_CONFIRMED",
+      "scientific_rationale": "Three-signal AND requiring sleep duration >= 95% baseline, HRV >= 100% baseline, and resting HR <= 100% baseline, one night — the mirror image of the recovery-deficit/delay-hard-training pattern, used purely as a 'no downgrade needed' confirmation rather than a call to increase training beyond what was already planned.",
+      "evidence_for_protocol": {
+        "level": "product_heuristic",
+        "notes": "There is no direct Huberman Lab claim being surfaced here beyond 'if recovery signals are good, there's no recovery-based reason to hold back' — this protocol exists to counterbalance over-suppression risk (brief section on conflict rules) rather than to add a new scientific recommendation."
+      },
+      "evidence_for_trigger": {
+        "level": "product_heuristic",
+        "notes": "The 95%/100%/100% thresholds are an unvalidated, symmetric-ish mirror of the caution/delay tiers' downside thresholds, chosen so this only fires on genuinely strong across-the-board nights, not merely 'not bad' ones."
+      },
+      "expected_effect": {
+        "short_term": "No physiological effect intended — informational only, meant to reduce unnecessary training downgrades.",
+        "long_term": "If this under- or over-fires in practice, tune thresholds against real trigger co-occurrence and user feedback once outcome tracking exists."
+      }
+    }
   },
   {
     "id": "huberman-heat-daily",

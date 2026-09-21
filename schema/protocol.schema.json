@@ -18,16 +18,67 @@
     "source": { "type": "string" },
     "last_updated": { "type": "string" },
     "oura_triggers": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["metric", "operator", "threshold"],
-        "additionalProperties": false,
-        "properties": {
-          "metric": { "type": "string", "enum": ["sleep_score", "readiness_score", "hrv", "resting_hr", "activity_score", "temperature_deviation"] },
-          "operator": { "type": "string", "enum": ["<", ">", "<=", ">="] },
-          "threshold": { "type": "number" },
-          "label": { "type": "string" }
+      "description": "Legacy flat AND-array (v1) or structured OR-of-AND-groups object (v2, adds evidence_level/state_label/persistence/baseline_pct). Both are read by the app's trigger engine — see src/hooks/useOuraProtocolTriggers.ts.",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ouraCondition" }
+        },
+        {
+          "type": "object",
+          "required": ["groups", "evidence_level"],
+          "additionalProperties": false,
+          "properties": {
+            "groups": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["all"],
+                "additionalProperties": false,
+                "properties": {
+                  "all": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/ouraCondition" } }
+                }
+              }
+            },
+            "evidence_level": { "type": "string", "enum": ["direct_evidence", "evidence_informed", "product_heuristic", "experimental"] },
+            "state_label": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "evidence_metadata": {
+      "description": "Optional, non-app-facing documentation of the evidence basis for this protocol's oura_triggers rule. Not read by the app today — carried here so the distinction between 'evidence for the protocol itself' and 'evidence for this specific trigger threshold' isn't lost when a rule is authored. See PLAN-oura-evidence-engine-gap.md in huberman-protocol-pal for the rationale.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_state": { "type": "string" },
+        "scientific_rationale": { "type": "string" },
+        "evidence_for_protocol": {
+          "type": "object",
+          "required": ["level", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "level": { "type": "string", "enum": ["direct_evidence", "evidence_informed", "product_heuristic", "experimental"] },
+            "notes": { "type": "string" }
+          }
+        },
+        "evidence_for_trigger": {
+          "type": "object",
+          "required": ["level", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "level": { "type": "string", "enum": ["direct_evidence", "evidence_informed", "product_heuristic", "experimental"] },
+            "notes": { "type": "string" }
+          }
+        },
+        "expected_effect": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "short_term": { "type": "string" },
+            "long_term": { "type": "string" }
+          }
         }
       }
     },
@@ -82,6 +133,27 @@
           "url": { "type": "string" },
           "duration": { "type": "string" }
         }
+      }
+    }
+  },
+  "definitions": {
+    "ouraCondition": {
+      "type": "object",
+      "required": ["metric", "operator", "threshold"],
+      "additionalProperties": false,
+      "properties": {
+        "metric": {
+          "type": "string",
+          "enum": [
+            "sleep_score", "readiness_score", "hrv", "resting_hr", "activity_score", "temperature_deviation",
+            "sleep_latency", "sleep_efficiency", "respiratory_rate", "restless_periods", "sleep_duration"
+          ]
+        },
+        "operator": { "type": "string", "enum": ["<", ">", "<=", ">="] },
+        "mode": { "type": "string", "enum": ["absolute", "baseline_pct"] },
+        "threshold": { "type": "number" },
+        "persistence": { "type": "number", "minimum": 1 },
+        "label": { "type": "string" }
       }
     }
   }

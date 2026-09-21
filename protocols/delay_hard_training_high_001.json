@@ -1,0 +1,110 @@
+{
+  "id": "delay_hard_training_high_001",
+  "title": "Delay Hard Training Today",
+  "description": "Sleep duration, HRV, and resting heart rate have all moved meaningfully against your personal baseline in the same night — the same three-signal pattern as a high recovery deficit, framed specifically around today's training decision. Recommends postponing HIIT/max-effort work and swapping in aerobic or mobility work instead.",
+  "category": "fitness",
+  "duration": "20-40 minutes",
+  "difficulty": "beginner",
+  "priority": 4,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (training/recovery balance); evidence-informed trigger combination",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 85,
+            "persistence": 1,
+            "label": "sleep duration < 85% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 85,
+            "persistence": 1,
+            "label": "HRV < 85% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "resting HR > 105% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Delay hard training (high intensity)"
+  },
+  "conditional": {
+    "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — should today's hard training wait?",
+    "yesLabel": "Yes, swap today's session for something easier",
+    "noLabel": "No, I feel normal, keep today's plan"
+  },
+  "actions": [
+    {
+      "action": "Postpone HIIT / max-effort / heavy-load training",
+      "duration": "For the day",
+      "frequency": "Once, on the day this triggers",
+      "timing": "All day",
+      "details": "Move any planned intervals, max lifts, or high-intensity conditioning to a later day when the three signals have recovered. Reassess against the next night's data before resuming full intensity."
+    },
+    {
+      "action": "Swap in aerobic or mobility work",
+      "duration": "20-40 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Whenever training was planned",
+      "details": "Easy Zone 1/2 cardio, a walk, or a mobility/stretching session in place of the planned hard session, so the training habit continues without adding further sympathetic/cardiovascular load."
+    }
+  ],
+  "benefits": [
+    "Avoids stacking hard training on top of a genuine, three-signal-confirmed recovery deficit",
+    "Reduces injury and illness risk associated with training through significant autonomic strain",
+    "Keeps the recommendation specifically actionable for today's training plan rather than general rest advice"
+  ],
+  "science": "Concurrent reductions in sleep duration and HRV alongside an elevated resting heart rate are well-established markers of unresolved autonomic/sympathetic strain. Training at high intensity while all three are depressed is associated with elevated injury and illness risk and blunted training adaptation, so postponing the hardest-effort work (rather than training volume broadly) is the targeted response for this specific decision.",
+  "contraindications": [
+    "Not a reason to skip all training — the recommendation is to postpone the hardest-effort portion, not stop training entirely",
+    "If this state persists for multiple consecutive days, treat as a stronger signal to reduce training volume more broadly and consider consulting a coach or physician"
+  ],
+  "estimated_impact": {
+    "injury_risk_reduction": "Moderate improvement",
+    "recovery_support": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Foundations of Fitness: Structuring Workouts Optimally — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/foundations-of-fitness-structuring-workouts-optimally-for-health"
+    },
+    {
+      "title": "How to Improve Endurance and Cardiovascular Health — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/how-to-improve-endurance-and-cardiovascular-health"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "DELAY_HARD_TRAINING",
+    "scientific_rationale": "Same three-signal pattern (sleep duration < 85% baseline, HRV < 85% baseline, resting HR > 105% baseline, 1 night) as the recovery-deficit 'high' tier in docs/oura-rules/recovery-deficit.json. Deliberately kept at identical thresholds rather than invented separately, since these are meant to represent the same underlying physiological state (high recovery deficit) viewed through a training-decision lens rather than a competing definition of it.",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Avoiding hard/high-intensity training during genuine multi-signal autonomic strain, in favor of easier aerobic or mobility work, is directly and repeatedly supported by Huberman Lab training-and-recovery content. This is the training-decision framing of the same recommendation already present as an action inside the recovery-deficit high tier ('reduce high-intensity training')."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "Thresholds are copied intentionally from the recovery-deficit high tier's worked example rather than independently derived, so this rule is a companion/alternate framing of that same state, not a new validated threshold set."
+    },
+    "expected_effect": {
+      "short_term": "Reduced same-day sympathetic/cardiovascular training load; HRV/RHR are not expected to normalize same-day.",
+      "long_term": "Consistently deferring hard training during genuine 3-signal recovery deficits should reduce cumulative strain and lower overtraining/illness risk, though untested as a rule."
+    }
+  }
+}

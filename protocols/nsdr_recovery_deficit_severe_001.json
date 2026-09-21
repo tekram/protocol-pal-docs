@@ -1,0 +1,111 @@
+{
+  "id": "nsdr_recovery_deficit_severe_001",
+  "title": "NSDR for Severe Recovery Deficit",
+  "description": "Sleep duration, HRV, and resting heart rate have all moved sharply against your personal baseline — a severe, high-confidence recovery deficit. Recommends an extended NSDR session and postponing intense training for the day.",
+  "category": "sleep",
+  "duration": "30-60 minutes",
+  "difficulty": "beginner",
+  "priority": 1,
+  "importance": "foundation",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (NSDR); evidence-informed trigger combination",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 80,
+            "persistence": 1,
+            "label": "sleep duration < 80% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 80,
+            "persistence": 1,
+            "label": "HRV < 80% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 110,
+            "persistence": 1,
+            "label": "resting HR > 110% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Recovery deficit (severe)"
+  },
+  "conditional": {
+    "question": "Your sleep, HRV, and resting heart rate all look significantly off from your baseline today — is that accurate?",
+    "yesLabel": "Yes, help me recover today",
+    "noLabel": "No, I feel normal"
+  },
+  "actions": [
+    {
+      "action": "Extended NSDR / Yoga Nidra session",
+      "duration": "30-60 minutes",
+      "frequency": "Once, on the day this triggers (repeat if it persists)",
+      "timing": "Morning, with an optional second short session in the evening",
+      "details": "A longer guided NSDR or Yoga Nidra session, potentially split across the day, to maximize parasympathetic recovery support given the severity of the signal."
+    },
+    {
+      "action": "Postpone intense training",
+      "duration": "For the day",
+      "frequency": "Once, on the day this triggers",
+      "timing": "All day",
+      "details": "Postpone planned high-intensity, heavy-load, or long-duration training. Prefer full rest or very light activity (short walk, gentle mobility). Reassess against the next night's data before resuming normal intensity."
+    }
+  ],
+  "benefits": [
+    "Avoids training through a severe, multi-signal-confirmed autonomic strain state",
+    "Reduces risk of illness, injury, or prolonged recovery debt from pushing through this state",
+    "Extended NSDR provides a larger relative recovery benefit at this severity than the high-tier dose"
+  ],
+  "science": "This tier uses the same three-signal logic as the high-recovery-deficit rule (sleep duration, HRV, resting heart rate all deviating from personal baseline in the same night) but at tighter thresholds, reflecting a more severe deviation. The wider gap from baseline across all three concurrently-monitored systems increases confidence that this represents genuine, not noise-driven, autonomic strain.",
+  "contraindications": [
+    "If this state recurs on consecutive days, this is a stronger signal to consult a physician or coach rather than repeatedly self-managing with NSDR alone",
+    "Not a diagnosis of illness — if accompanied by other symptoms (fever, sore throat, unusual fatigue), treat as a possible early illness signal and prioritize rest/medical guidance over training decisions"
+  ],
+  "estimated_impact": {
+    "stress_reduction": "High improvement",
+    "recovery_support": "High improvement",
+    "injury_illness_risk_reduction": "High improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "SEVERE_RECOVERY_DEFICIT",
+    "scientific_rationale": "Same three-signal design as the high tier (sleep duration, HRV, resting HR vs. personal baseline, 1 night), with tighter thresholds (80%/80%/110%) intended to isolate a more severe subset of recovery-deficit nights that warrant postponing rather than merely reducing training.",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Same as the high tier: NSDR as a recovery-support tool and avoiding intense training during genuine autonomic strain are both directly supported by Huberman Lab source material."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The tightened 80%/80%/110% thresholds are a product heuristic — a reasonable escalation from the high tier's 85%/85%/105% but not derived from any cited study establishing that these specific cutoffs mark a qualitatively different (rather than merely quantitatively worse) state. Persistence is kept at 1 night to match the brief's worked example exactly; an alternative design worth testing later is requiring persistence >= 2 nights before recommending postponing training outright, since a single severe night could still be one-off noise (illness onset, travel, alcohol, etc.) rather than accumulated strain — flagged here rather than implemented, to avoid silently diverging from the brief's spec."
+    },
+    "expected_effect": {
+      "short_term": "Meaningfully reduced same-day physiological load; NSDR dose is larger than the high tier to match the larger deficit.",
+      "long_term": "Intended to prevent the worst-case outcome of training through severe strain (illness, injury, prolonged recovery), though, like the high tier, this exact rule has not been outcome-tested."
+    }
+  }
+}

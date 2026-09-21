@@ -1,0 +1,110 @@
+{
+  "id": "sleep_quality_efficiency_latency_001",
+  "title": "Address Poor Sleep Quality (Low Efficiency + Slow Onset)",
+  "description": "Sleep efficiency has dropped below your personal baseline at the same time sleep latency has risen above it — a combined signal of poor sleep quality (slow to fall asleep, then a larger share of time in bed spent awake) that can occur even when total time in bed looks adequate. Recommends the same behavioral first-line response as elevated sleep latency, with added emphasis on stress/arousal management.",
+  "category": "sleep",
+  "duration": "Ongoing (evening + morning routine change)",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (caffeine timing, light exposure, NSDR); product heuristic (trigger combination)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_efficiency",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "sleep efficiency < 90% of rolling baseline"
+          },
+          {
+            "metric": "sleep_latency",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 120,
+            "persistence": 1,
+            "label": "sleep latency > 120% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Poor sleep quality (low efficiency, slow onset)"
+  },
+  "conditional": {
+    "question": "Did last night feel like it took a while to fall asleep, and like you spent more time awake in bed than usual?",
+    "yesLabel": "Yes, help me improve tonight's sleep quality",
+    "noLabel": "No, that doesn't match how I slept"
+  },
+  "actions": [
+    {
+      "action": "Push caffeine intake earlier and add a firm cutoff",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "Delay first caffeine 90-120 minutes after waking; no caffeine within 8-10 hours of target bedtime",
+      "details": "Same first-line adjustment as elevated sleep latency alone — residual caffeine can both delay sleep onset and reduce sleep efficiency by causing more awakenings."
+    },
+    {
+      "action": "Reduce evening bright/blue light and pre-sleep arousal",
+      "duration": "1-2 hours before bed",
+      "frequency": "Daily",
+      "timing": "Evening",
+      "details": "Dim lighting and lower-stimulation activity in the hour or two before bed. When both onset and efficiency are affected together, elevated pre-sleep physiological/cognitive arousal is a more likely shared driver than either issue in isolation."
+    },
+    {
+      "action": "NSDR or brief relaxation practice before bed",
+      "duration": "10-15 minutes",
+      "frequency": "As needed",
+      "timing": "Before bed",
+      "details": "Given the combined onset-and-efficiency signal (suggesting broader pre-sleep arousal, not just a single environmental factor), a short NSDR session is elevated to a primary-tier suggestion here, unlike the fragmentation-only rule above."
+    }
+  ],
+  "benefits": [
+    "Targets the shared arousal-related driver when both onset and efficiency are affected together, rather than treating them as separate issues",
+    "Behavioral-first, no supplements",
+    "Distinguishes this state from simple short-duration recovery deficit, which calls for a different response"
+  ],
+  "science": "Sleep efficiency (time asleep as a share of time in bed) and sleep latency are both markers of how readily the nervous system transitions into and stays in sleep. When both move unfavorably together, it more often reflects elevated general pre-sleep arousal (stress, stimulant load, irregular timing) than a single isolated cause, which is why this rule elevates broader arousal-reduction actions (light hygiene, NSDR) alongside the caffeine-timing response used for sleep latency alone.",
+  "contraindications": [
+    "Not a diagnosis or treatment for insomnia or another sleep disorder",
+    "If this combined pattern persists most nights over several weeks despite consistent behavioral changes, consider discussing with a physician or sleep specialist"
+  ],
+  "estimated_impact": {
+    "sleep_onset": "Moderate improvement",
+    "sleep_quality": "Moderate improvement",
+    "stress_reduction": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+    },
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "POOR_SLEEP_QUALITY_EFFICIENCY_ONSET",
+    "scientific_rationale": "Two-signal combination: sleep_efficiency < 90% of baseline AND sleep_latency > 120% of baseline, both for one night. Distinct from the recovery-deficit family (which keys on sleep_duration + HRV + RHR) because total time asleep can look normal here — the deficit is in sleep quality/continuity, not quantity, which calls for a different response (arousal reduction, not training/NSDR-for-recovery).",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Each individual action (caffeine timing, evening light reduction, NSDR) is directly and repeatedly recommended by Huberman Lab. The judgment that a combined efficiency+latency signal specifically warrants elevating NSDR to a primary-tier action (rather than secondary, as in the fragmentation rule) is this app's own evidence-informed synthesis, not a direct single-source citation."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The 90%/120% thresholds and requiring both signals together (rather than either alone) are unvalidated product heuristics. Chosen as an AND rather than OR specifically so this rule doesn't overlap/double-fire with the single-signal elevated-sleep-latency rule above on nights where only latency, not efficiency, is affected."
+    },
+    "expected_effect": {
+      "short_term": "No same-night effect; targets the following night's onset and efficiency.",
+      "long_term": "Consistent arousal-reduction behavior change is expected to improve both metrics over weeks; this specific two-signal combination has not been outcome-tested in this app."
+    }
+  }
+}

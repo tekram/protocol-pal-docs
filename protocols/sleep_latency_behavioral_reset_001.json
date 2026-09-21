@@ -1,0 +1,101 @@
+{
+  "id": "sleep_latency_behavioral_reset_001",
+  "title": "Behavioral Reset for Elevated Sleep Latency",
+  "description": "Time-to-fall-asleep has moved meaningfully above your personal baseline for at least one night — a signal of elevated pre-sleep arousal (caffeine still active, late bright/blue light exposure, irregular bedtime) rather than a sleep disorder. Recommends behavioral adjustments first, not supplements.",
+  "category": "sleep",
+  "duration": "Ongoing (evening + morning routine change)",
+  "difficulty": "beginner",
+  "priority": 6,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (caffeine timing, light exposure, sleep regularity); product heuristic (trigger threshold)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_latency",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 130,
+            "persistence": 1,
+            "label": "sleep latency > 130% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Elevated sleep latency"
+  },
+  "conditional": {
+    "question": "Did it take longer than usual to fall asleep last night?",
+    "yesLabel": "Yes, help me adjust my evening routine",
+    "noLabel": "No, that seems off"
+  },
+  "actions": [
+    {
+      "action": "Push caffeine intake earlier and add a firm cutoff",
+      "duration": "Ongoing",
+      "frequency": "Daily",
+      "timing": "Delay first caffeine 90-120 minutes after waking; no caffeine within 8-10 hours of your target bedtime",
+      "details": "Caffeine has a long half-life and can extend sleep latency even when a person does not subjectively feel 'wired.' Delaying the first dose and setting a cutoff time are Huberman Lab's standard first-line adjustments before considering anything else."
+    },
+    {
+      "action": "Reduce evening bright/blue light exposure",
+      "duration": "1-2 hours before bed",
+      "frequency": "Daily",
+      "timing": "Evening",
+      "details": "Dim overhead lights and reduce screen brightness (or use night-mode/warm-light settings) in the 1-2 hours before bed. Bright, especially blue-enriched, light in the evening suppresses melatonin onset and delays the body's sleep-readiness signal."
+    },
+    {
+      "action": "Anchor a consistent bed and wake time",
+      "duration": "Ongoing",
+      "frequency": "Daily, including weekends",
+      "timing": "Fixed times",
+      "details": "Keep bed and wake times within about a 30-minute window daily. Irregular sleep timing desynchronizes the circadian drive for sleep, which can independently lengthen how long it takes to fall asleep even when total sleep opportunity is adequate."
+    }
+  ],
+  "benefits": [
+    "Addresses the most common behavioral drivers of elevated sleep latency before assuming anything is medically wrong",
+    "No supplements or medication involved — lowest-risk first response",
+    "Builds sleep-onset consistency over time rather than treating a single bad night in isolation"
+  ],
+  "science": "Sleep latency (time to fall asleep) is a well-established, easily measured marker of pre-sleep physiological and cognitive arousal. Elevated caffeine load at bedtime, late bright/blue light exposure, and irregular sleep timing are among the most consistently documented behavioral contributors to prolonged sleep latency in the sleep science literature, and are the standard first-line targets before considering supplements or clinical evaluation.",
+  "contraindications": [
+    "Not a diagnosis or treatment for insomnia or another sleep disorder",
+    "If elevated sleep latency persists most nights over several weeks despite consistent behavioral changes, consider discussing with a physician or sleep specialist rather than continuing to self-manage indefinitely"
+  ],
+  "estimated_impact": {
+    "sleep_onset": "Moderate improvement (over days to weeks of consistent behavior change)",
+    "sleep_quality": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Using Light for Health — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/using-light-for-health"
+    },
+    {
+      "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "ELEVATED_SLEEP_LATENCY",
+    "scientific_rationale": "Single-signal (sleep_latency), above 130% of personal rolling baseline for one night. Sleep latency as a signal of pre-sleep arousal/circadian misalignment is well established in the sleep literature; the specific 130%-of-baseline cutoff used to fire this rule is not independently validated.",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Caffeine-timing, evening light reduction, and consistent sleep/wake timing are all directly and repeatedly recommended by Huberman Lab specifically as first-line, non-supplement responses to trouble falling asleep."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The 130%-of-baseline threshold and 1-night persistence window are a product heuristic, not derived from a cited study. Sleep latency naturally has higher night-to-night variance than metrics like HRV, so this threshold may need tuning (likely upward, to reduce false positives) once real outcome data exists. Deliberately single-signal (no AND with another metric) because sleep latency alone is already a fairly specific, low-stakes-to-be-wrong-about trigger — the recommended actions are safe even if the trigger is noise."
+    },
+    "expected_effect": {
+      "short_term": "Unlikely to change same night; the recommended actions target the following evening's sleep latency, not the night that triggered the rule.",
+      "long_term": "Consistent caffeine-timing, light-hygiene, and schedule-regularity changes are associated with reduced average sleep latency over weeks, though this exact rule/threshold combination has not been outcome-tested in this app."
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "nsdr_recovery_deficit_high_001",
+  "title": "NSDR for High Recovery Deficit",
+  "description": "Sleep duration, HRV, and resting heart rate have all moved meaningfully against your personal baseline in the same night — a three-signal, high-confidence recovery deficit. Recommends a longer NSDR session and reducing high-intensity training for the day.",
+  "category": "sleep",
+  "duration": "20-30 minutes",
+  "difficulty": "beginner",
+  "priority": 3,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (NSDR); evidence-informed trigger combination",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_duration",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 85,
+            "persistence": 1,
+            "label": "sleep duration < 85% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 85,
+            "persistence": 1,
+            "label": "HRV < 85% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "resting HR > 105% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "evidence_informed",
+    "state_label": "Recovery deficit"
+  },
+  "conditional": {
+    "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — is that accurate?",
+    "yesLabel": "Yes, add recovery support to today",
+    "noLabel": "No, I feel normal"
+  },
+  "actions": [
+    {
+      "action": "Extended NSDR / Yoga Nidra session",
+      "duration": "20-30 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Morning or early afternoon",
+      "details": "A longer guided NSDR session to support parasympathetic recovery and partially offset the dopamine/alertness deficit from a poor recovery night."
+    },
+    {
+      "action": "Reduce high-intensity training",
+      "duration": "For the day",
+      "frequency": "Once, on the day this triggers",
+      "timing": "All day",
+      "details": "Swap planned high-intensity or heavy-load training for light-to-moderate activity (easy cardio, mobility, walking). Avoid adding further sympathetic/cardiovascular load on top of an already-elevated resting heart rate and depressed HRV."
+    }
+  ],
+  "benefits": [
+    "Avoids compounding strain by adding hard training on top of a genuine multi-signal recovery deficit",
+    "Supports faster return to baseline HRV/RHR",
+    "Reduces injury and illness risk associated with training through significant autonomic strain"
+  ],
+  "science": "HRV suppression and resting-heart-rate elevation are well-established markers of unresolved autonomic/sympathetic strain, and short sleep duration compounds both. When all three move against baseline together, the combined signal is substantially more specific for genuine reduced recovery capacity than any single metric alone, which is why this rule requires all three rather than any one.",
+  "contraindications": [
+    "Should not replace addressing the underlying cause of poor sleep if it recurs",
+    "If this state persists for multiple consecutive days, treat as a stronger signal to scale back training volume, not just intensity, and consider consulting a coach or physician"
+  ],
+  "estimated_impact": {
+    "stress_reduction": "High improvement",
+    "recovery_support": "High improvement",
+    "injury_risk_reduction": "Moderate improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "RECOVERY_DEFICIT_HIGH",
+    "scientific_rationale": "Three concurrent signals — sleep duration < 85% baseline, HRV < 85% baseline, resting HR > 105% baseline, for 1 night — matches the tiered recovery-deficit rule specified in the source research brief. Requiring all three (AND, not OR) is the key design choice: it trades sensitivity for specificity, avoiding false triggers from any single noisy metric (Oura HRV/RHR readings can vary night-to-night for reasons unrelated to true recovery state).",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "NSDR-for-poor-recovery and reducing training intensity after poor recovery are both directly and repeatedly discussed by Huberman Lab as reasonable, low-risk responses. This is the same underlying recommendation as the existing legacy protocols nsdr_for_poor_sleep_001 and (inversely) hiit_after_poor_sleep_001, just gated on a stronger, multi-signal condition."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The specific 85%/85%/105% baseline-percentage thresholds and the 3-signal AND combination come directly from the research brief's worked example, but the brief itself did not cite a validated study establishing these exact cutoffs — they are a reasonable, evidence-informed design (grounded in the general HRV/RHR-as-autonomic-strain-marker literature) rather than independently validated thresholds. Tag this rule's evidence_level as evidence_informed at the combination-design level, while treating the exact numbers as unvalidated until tuned against real outcome data."
+    },
+    "expected_effect": {
+      "short_term": "Reduced same-day training load and an NSDR session should reduce further sympathetic loading; HRV/RHR are not expected to normalize same-day.",
+      "long_term": "Consistently avoiding hard training during genuine 3-signal recovery deficits should reduce cumulative strain and lower risk of overtraining or illness, though this specific rule combination has not been outcome-tested in this app."
+    }
+  }
+}

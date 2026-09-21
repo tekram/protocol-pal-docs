@@ -10,14 +10,22 @@
   "frequency_type": "conditional",
   "source": "Huberman Lab; Dexa.ai / FoundMyFitness",
   "last_updated": "2025-09-14",
-  "oura_triggers": [
-    {
-      "metric": "sleep_score",
-      "operator": "<",
-      "threshold": 75,
-      "label": "sleep < 75"
-    }
-  ],
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "sleep_score",
+            "operator": "<",
+            "threshold": 75,
+            "label": "sleep < 75"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "Brief HIIT for mild sleep loss (intensity)"
+  },
   "conditional": {
     "question": "Did you sleep poorly last night?",
     "yesLabel": "Yes, add to today's tasks",

@@ -1,0 +1,109 @@
+{
+  "id": "sleep_fragmentation_investigate_001",
+  "title": "Investigate Sleep Fragmentation Despite Adequate Duration",
+  "description": "Restless periods are elevated above your personal baseline while total sleep duration looks roughly normal — a pattern suggesting fragmented, lower-quality sleep rather than insufficient sleep. Recommends investigating likely causes rather than simply sleeping more, with relaxation practice as a secondary support.",
+  "category": "sleep",
+  "duration": "One-time reflection + ongoing evening adjustment",
+  "difficulty": "beginner",
+  "priority": 7,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Product heuristic (trigger combination); Huberman Lab (NSDR, secondary)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "restless_periods",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 130,
+            "persistence": 1,
+            "label": "restless periods > 130% of rolling baseline"
+          },
+          {
+            "metric": "sleep_duration",
+            "operator": ">=",
+            "mode": "baseline_pct",
+            "threshold": 95,
+            "persistence": 1,
+            "label": "sleep duration >= 95% of rolling baseline (total sleep roughly normal)"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "Sleep fragmentation (adequate duration)"
+  },
+  "conditional": {
+    "question": "Did you sleep a normal amount but feel like your sleep was restless or broken up?",
+    "yesLabel": "Yes, help me look into possible causes",
+    "noLabel": "No, that doesn't match how I slept"
+  },
+  "actions": [
+    {
+      "action": "Review likely fragmentation triggers from the previous evening",
+      "duration": "5 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Anytime",
+      "details": "Restlessness with otherwise-adequate sleep duration is more often explained by something specific the evening before than by a chronic problem: late alcohol (even one drink fragments sleep architecture), caffeine still active at bedtime, an unusually warm/noisy/bright bedroom, a late large meal, or elevated evening stress/screen stimulation. Reviewing the prior evening against this list is a lower-cost first step than assuming a persistent issue."
+    },
+    {
+      "action": "Adjust the sleep environment and evening stimulation",
+      "duration": "Ongoing",
+      "frequency": "As needed, based on what the review above surfaces",
+      "timing": "Evening / bedroom setup",
+      "details": "If a specific cause is identified (room temperature, light, noise, alcohol or caffeine timing, late high-stimulation screen use), address that specific factor rather than a generic 'sleep more' response, since total sleep time in this pattern is not the deficit."
+    },
+    {
+      "action": "NSDR or brief relaxation practice before bed (secondary)",
+      "duration": "10-15 minutes",
+      "frequency": "Optional, as a secondary support",
+      "timing": "Before bed",
+      "details": "A short NSDR or relaxation session before bed can support parasympathetic wind-down, but this is a secondary suggestion here, not the primary response — it does not address an identifiable environmental or timing cause if one exists."
+    }
+  ],
+  "benefits": [
+    "Directs attention to specific, fixable causes instead of a generic 'get more sleep' response that doesn't match this pattern",
+    "Avoids over-recommending relaxation practices as a first-line fix when a concrete environmental or timing cause is more likely",
+    "Low-cost reflection step before considering anything more involved"
+  ],
+  "science": "Fragmented sleep (frequent restless/wake periods) with roughly preserved total sleep duration is a distinct pattern from short sleep, and is commonly associated with identifiable proximate causes — alcohol, late caffeine, an unfavorable sleep environment, or elevated pre-sleep arousal — rather than a chronic sleep-need deficit. Addressing the specific cause, where identifiable, is a more targeted response than increasing sleep opportunity, which this pattern does not actually lack.",
+  "contraindications": [
+    "This is not a sleep disorder diagnosis. If restless/fragmented sleep of this kind recurs frequently (e.g. most nights over several weeks) despite addressing obvious environmental and timing factors, consider discussing with a physician, since conditions such as sleep apnea or periodic limb movements can present this way and require clinical evaluation",
+    "Not a substitute for addressing a real total-sleep-duration deficit if one is also present — check this rule alongside duration/recovery signals, not in isolation"
+  ],
+  "estimated_impact": {
+    "sleep_quality": "Mild to moderate improvement (dependent on identifying and addressing the actual cause)",
+    "next_day_alertness": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "Master Your Sleep & Be More Alert When Awake — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/master-your-sleep-and-be-more-alert-when-awake"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "SLEEP_FRAGMENTATION_ADEQUATE_DURATION",
+    "scientific_rationale": "Two-signal combination: restless_periods > 130% of baseline AND sleep_duration >= 95% of baseline, both for one night. The combination is designed specifically to distinguish 'fragmented but long-enough' sleep from 'short' sleep, since the two call for different responses (investigate a cause vs. sleep more) and the recovery-deficit rule family already covers the short-sleep case.",
+    "evidence_for_protocol": {
+      "level": "evidence_informed",
+      "notes": "That fragmented sleep commonly traces to identifiable proximate causes (alcohol, late caffeine, environment, pre-sleep arousal) is well supported in the general sleep science literature, though this specific app does not cite a Huberman Lab episode that frames 'restlessness with adequate duration' as its own category the way it does for NSDR or light timing. The NSDR fallback action is direct_evidence on its own (see recovery-deficit.json); the 'investigate causes' framing as the primary action is evidence-informed rather than a direct single-source citation."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The 130%-of-baseline restlessness threshold, the 95%-of-baseline duration floor, and the AND combination are all product heuristics chosen to approximate 'duration is fine but sleep felt broken up' — none are independently validated cutoffs. The duration floor in particular is a judgment call (95% was chosen to mean 'not meaningfully short,' not 'exactly average') that should be tuned against real outcome and self-report data once available."
+    },
+    "expected_effect": {
+      "short_term": "No same-night effect (this fires the morning after); the reflection step may prevent a repeat the following night if a specific cause is identified and addressed.",
+      "long_term": "If a recurring specific cause is found and addressed, expected to reduce restless-period frequency over subsequent weeks; untested as a rule in this app."
+    }
+  }
+}

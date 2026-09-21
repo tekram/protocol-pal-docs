@@ -1,0 +1,210 @@
+{
+  "id": "possible_strain_moderate_001",
+  "title": "Lighter Day Nudge for Possible Physiological Strain",
+  "description": "At least two of your overnight signals (skin temperature, respiratory rate, resting heart rate, HRV) moved against your personal baseline together last night. This is not a diagnosis of anything — it's a gentle nudge to consider an easier day while your body's data settles.",
+  "category": "recovery",
+  "duration": "10-20 minutes",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "supplemental",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (rest/recovery principles); product heuristic (multi-signal combination)",
+  "last_updated": "2026-09-21",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 1,
+            "label": "skin temperature > +0.3°C from personal baseline"
+          },
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "respiratory rate > 105% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 1,
+            "label": "skin temperature > +0.3°C from personal baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "resting HR > 105% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "temperature_deviation",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 0.3,
+            "persistence": 1,
+            "label": "skin temperature > +0.3°C from personal baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "HRV < 90% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "respiratory rate > 105% of rolling baseline"
+          },
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "resting HR > 105% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "respiratory_rate",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "respiratory rate > 105% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "HRV < 90% of rolling baseline"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "resting_hr",
+            "operator": ">",
+            "mode": "baseline_pct",
+            "threshold": 105,
+            "persistence": 1,
+            "label": "resting HR > 105% of rolling baseline"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "HRV < 90% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "product_heuristic",
+    "state_label": "Possible physiological strain (moderate)"
+  },
+  "conditional": {
+    "question": "A couple of your overnight signals (temperature, breathing rate, heart rate, or HRV) look a bit different than usual — want to plan an easier day just in case?",
+    "yesLabel": "Yes, take it easier today",
+    "noLabel": "No, I feel normal"
+  },
+  "actions": [
+    {
+      "action": "Reduce planned training intensity",
+      "duration": "For the day",
+      "frequency": "Once, on the day this triggers",
+      "timing": "All day",
+      "details": "Swap planned high-intensity or heavy-load training for light-to-moderate activity (easy cardio, mobility, walking). A precaution, not a requirement — your data may simply reflect normal night-to-night variation."
+    },
+    {
+      "action": "Prioritize sleep tonight",
+      "duration": "Full night",
+      "frequency": "Once, the night after this triggers",
+      "timing": "Evening",
+      "details": "Protect an on-time, full-length sleep opportunity tonight to give your body's normal recovery processes room to work."
+    },
+    {
+      "action": "Optional NSDR / Yoga Nidra session",
+      "duration": "10-20 minutes",
+      "frequency": "Once, as an optional nudge",
+      "timing": "Whenever convenient",
+      "details": "A brief guided NSDR session to support parasympathetic recovery, if you'd like an active way to rest."
+    }
+  ],
+  "benefits": [
+    "Gives your body a lower-demand day while multiple signals are showing mild, correlated deviation from your own baseline",
+    "May reduce the chance of a mild deviation compounding into a more significant one",
+    "Low cost if the signal turns out to be noise — worst case is one easier training day"
+  ],
+  "science": "Elevated skin temperature, elevated respiratory rate, elevated resting heart rate, and suppressed HRV are each, individually, general markers that have been associated in the literature with increased physiological/autonomic load, including (but not limited to) early immune activation. None of these signals, alone, reliably indicates anything specific — each is noisy night-to-night for reasons unrelated to illness (sleeping position, room temperature, alcohol, late exercise, travel, menstrual cycle phase, sensor variance). Requiring at least two of the four to move together, on the same night, is intended to reduce the chance this nudge fires on ordinary single-metric noise, while still catching a pattern early and at low stakes. This rule does not identify a cause and is not intended to.",
+  "contraindications": [
+    "This is not a diagnosis of illness, infection, or any medical condition, and should never be interpreted as one",
+    "Do not use this signal, alone, to decide to skip medical care you would otherwise seek — if you feel unwell, trust how you feel over what the ring says",
+    "A single moderate-tier day is a weak signal on its own; treat it as a suggestion to take it easier, not a directive to stop activity entirely"
+  ],
+  "estimated_impact": {
+    "recovery_support": "Mild improvement",
+    "illness_risk_reduction": "Unclear — not established for this specific rule"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "POSSIBLE_PHYSIOLOGICAL_STRAIN_MODERATE",
+    "scientific_rationale": "Any 2 of 4 signals (temperature_deviation ↑, respiratory_rate ↑ vs. baseline, resting_hr ↑ vs. baseline, hrv ↓ vs. baseline) moving together for one night. Modeled as an OR of all 6 pairwise AND-combinations of the 4 signals, since the engine's OuraTriggerV2 shape expresses 'any N of M' as an OR-of-AND-groups. Explicitly excludes any single-signal condition — no group here has fewer than 2 conditions — per the brief's requirement that a lone respiratory-rate (or any single metric) blip must never fire this rule alone.",
+    "evidence_for_protocol": {
+      "level": "evidence_informed",
+      "notes": "Reducing training load and prioritizing sleep/rest when the body shows signs of elevated physiological/autonomic load is a general, well-supported recovery principle (and is the same underlying recommendation as the recovery-deficit family). NSDR as a low-cost parasympathetic-support tool is direct_evidence from Huberman Lab. The general relationship between elevated resting HR / suppressed HRV / elevated temperature / elevated respiratory rate and increased physiological load or early immune activation is evidence_informed — supported by a body of sleep/wearable literature, but this app does not cite a specific validated study and does not claim to detect illness."
+    },
+    "evidence_for_trigger": {
+      "level": "product_heuristic",
+      "notes": "The specific thresholds (+0.3°C absolute for temperature_deviation; 105%/105%/90% baseline_pct for respiratory_rate/resting_hr/hrv), the '2 of 4' combination rule, and the 1-night persistence window are a product heuristic, not independently validated. KNOWN ENGINE GAP, confirmed in src/hooks/useOuraProtocolTriggers.ts: temperature_deviation is NOT present in BASELINE_FIELD_BY_METRIC even though src/services/oura/bleBaseline.ts now computes a real tempBaseline (30-day mean of DailyReadiness.temperature_deviation) — baseline_pct mode would fail closed for this metric today. Worked around here by using mode: 'absolute' for temperature_deviation instead, which is defensible because Oura's temperature_deviation value is itself already expressed as a deviation from the wearer's own personal baseline (in °C), so an absolute threshold on it is still a personalized comparison, just not scaled by the engine's baseline_pct machinery. If temperature_deviation is later added to BASELINE_FIELD_BY_METRIC, this condition could be revisited to use baseline_pct for consistency with the other three signals, but is not blocked on that landing. This is the same category of gap the recovery-deficit family flagged for sleep_duration — noting it here rather than silently working around it without disclosure, and NOT fixing useOuraProtocolTriggers.ts directly per scope."
+    },
+    "expected_effect": {
+      "short_term": "Possibly reduced same-day training strain and slightly better sleep protection; the underlying signals are not expected to normalize same-day.",
+      "long_term": "If the pattern is genuinely early strain, an easier day here may reduce the chance of escalation to the persistent tier. If the pattern is noise, the cost is one unnecessarily easy training day. Untested against real outcome data."
+    }
+  }
+}
