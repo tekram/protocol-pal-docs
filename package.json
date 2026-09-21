@@ -1,0 +1,18 @@
+{
+  "name": "@protocol-pal/protocols",
+  "version": "1.0.0",
+  "description": "Open-source health protocol definitions — community-editable JSON consumed by Protocol Pal",
+  "main": "dist/index.json",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "node scripts/build.js"
+  },
+  "files": ["dist/", "schema/"],
+  "keywords": ["health", "protocols", "sleep", "fitness", "wellness"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/tekram/protocol-pal-docs.git" },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

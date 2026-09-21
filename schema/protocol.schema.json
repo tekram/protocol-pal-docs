@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/tekram/protocol-pal-docs/main/schema/protocol.schema.json",
+  "title": "Protocol",
+  "type": "object",
+  "required": ["id", "title", "frequency_type"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "category": { "type": "string" },
+    "duration": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["beginner", "intermediate", "advanced"] },
+    "priority": { "type": "number" },
+    "importance": { "type": "string", "enum": ["foundation", "high-impact", "supplemental"] },
+    "frequency_type": { "type": "string", "enum": ["daily", "weekly", "conditional"] },
+    "source": { "type": "string" },
+    "last_updated": { "type": "string" },
+    "oura_triggers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["metric", "operator", "threshold"],
+        "additionalProperties": false,
+        "properties": {
+          "metric": { "type": "string", "enum": ["sleep_score", "readiness_score", "hrv", "resting_hr", "activity_score", "temperature_deviation"] },
+          "operator": { "type": "string", "enum": ["<", ">", "<=", ">="] },
+          "threshold": { "type": "number" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "weekly_frequency": {
+      "type": "object",
+      "required": ["times_per_week"],
+      "additionalProperties": false,
+      "properties": {
+        "times_per_week": { "type": "number", "minimum": 1, "maximum": 7 },
+        "preferred_days": { "type": "array", "items": { "type": "string", "enum": ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"] } },
+        "min_rest_days": { "type": "number", "minimum": 0 }
+      }
+    },
+    "conditional": {
+      "type": "object",
+      "required": ["question"],
+      "additionalProperties": false,
+      "properties": {
+        "question": { "type": "string" },
+        "yesLabel": { "type": "string" },
+        "noLabel": { "type": "string" }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "duration", "frequency", "timing", "details"],
+        "additionalProperties": false,
+        "properties": {
+          "action": { "type": "string" },
+          "duration": { "type": "string" },
+          "frequency": { "type": "string" },
+          "timing": { "type": "string" },
+          "details": { "type": "string" }
+        }
+      }
+    },
+    "benefits": { "type": "array", "items": { "type": "string" } },
+    "science": { "type": "string" },
+    "contraindications": { "type": "array", "items": { "type": "string" } },
+    "estimated_impact": { "type": "object", "additionalProperties": { "type": "string" } },
+    "learning_resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "type", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string" },
+          "type": { "type": "string", "enum": ["video", "webpage", "article"] },
+          "url": { "type": "string" },
+          "duration": { "type": "string" }
+        }
+      }
+    }
+  }
+}
