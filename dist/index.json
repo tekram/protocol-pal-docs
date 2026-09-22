@@ -96,7 +96,9 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Recovery deficit (severe)"
+      "state_label": "Recovery deficit (severe)",
+      "state_family": "recovery_deficit",
+      "severity_rank": 3
     },
     "conditional": {
       "question": "Your sleep, HRV, and resting heart rate all look significantly off from your baseline today — is that accurate?",
@@ -876,7 +878,9 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Possible physiological strain (persistent)"
+      "state_label": "Possible physiological strain (persistent)",
+      "state_family": "physiological_strain",
+      "severity_rank": 2
     },
     "conditional": {
       "question": "The same combination of signals (temperature, breathing rate, heart rate, or HRV) has looked off for two nights in a row now — want help prioritizing rest today?",
@@ -1002,7 +1006,9 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Recovery deficit"
+      "state_label": "Recovery deficit",
+      "state_family": "recovery_deficit",
+      "severity_rank": 2
     },
     "conditional": {
       "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — is that accurate?",
@@ -1230,7 +1236,12 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Delay hard training (high intensity)"
+      "state_label": "Delay hard training (high intensity)",
+      "state_family": "training_intensity",
+      "severity_rank": 2,
+      "suppressed_by_family": [
+        "recovery_deficit"
+      ]
     },
     "conditional": {
       "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — should today's hard training wait?",
@@ -1462,7 +1473,9 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Poor sleep quality (low efficiency, slow onset)"
+      "state_label": "Poor sleep quality (low efficiency, slow onset)",
+      "state_family": "sleep_onset_quality",
+      "severity_rank": 2
     },
     "conditional": {
       "question": "Did last night feel like it took a while to fall asleep, and like you spent more time awake in bed than usual?",
@@ -1703,7 +1716,9 @@
         }
       ],
       "evidence_level": "evidence_informed",
-      "state_label": "Elevated sleep latency"
+      "state_label": "Elevated sleep latency",
+      "state_family": "sleep_onset_quality",
+      "severity_rank": 1
     },
     "conditional": {
       "question": "Did it take longer than usual to fall asleep last night?",
@@ -2499,7 +2514,9 @@
         }
       ],
       "evidence_level": "product_heuristic",
-      "state_label": "Possible physiological strain (moderate)"
+      "state_label": "Possible physiological strain (moderate)",
+      "state_family": "physiological_strain",
+      "severity_rank": 1
     },
     "conditional": {
       "question": "A couple of your overnight signals (temperature, breathing rate, heart rate, or HRV) look a bit different than usual — want to plan an easier day just in case?",
@@ -2697,7 +2714,9 @@
         }
       ],
       "evidence_level": "product_heuristic",
-      "state_label": "Training caution"
+      "state_label": "Training caution",
+      "state_family": "training_intensity",
+      "severity_rank": 1
     },
     "conditional": {
       "question": "Is your recovery looking a little off today (sleep or HRV slightly down)?",
@@ -2930,7 +2949,10 @@
         }
       ],
       "evidence_level": "product_heuristic",
-      "state_label": "Brief HIIT for mild sleep loss (intensity)"
+      "state_label": "Brief HIIT for mild sleep loss",
+      "suppressed_by_family": [
+        "recovery_deficit"
+      ]
     },
     "conditional": {
       "question": "Did you sleep poorly last night?",
@@ -3346,7 +3368,9 @@
         }
       ],
       "evidence_level": "product_heuristic",
-      "state_label": "Recovery deficit (mild)"
+      "state_label": "Recovery deficit (mild)",
+      "state_family": "recovery_deficit",
+      "severity_rank": 1
     },
     "conditional": {
       "question": "Did last night's sleep and readiness look a bit off?",
@@ -3667,7 +3691,9 @@
         }
       ],
       "evidence_level": "product_heuristic",
-      "state_label": "HIIT readiness confirmed"
+      "state_label": "HIIT readiness confirmed",
+      "state_family": "training_intensity",
+      "severity_rank": 0
     },
     "conditional": {
       "question": "Sleep, HRV, and resting heart rate all look good today — want confirmation you're clear for planned hard training?",

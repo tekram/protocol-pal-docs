@@ -134,7 +134,9 @@
       }
     ],
     "evidence_level": "product_heuristic",
-    "state_label": "Possible physiological strain (moderate)"
+    "state_label": "Possible physiological strain (moderate)",
+    "state_family": "physiological_strain",
+    "severity_rank": 1
   },
   "conditional": {
     "question": "A couple of your overnight signals (temperature, breathing rate, heart rate, or HRV) look a bit different than usual — want to plan an easier day just in case?",

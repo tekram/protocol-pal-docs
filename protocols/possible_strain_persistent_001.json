@@ -134,7 +134,9 @@
       }
     ],
     "evidence_level": "evidence_informed",
-    "state_label": "Possible physiological strain (persistent)"
+    "state_label": "Possible physiological strain (persistent)",
+    "state_family": "physiological_strain",
+    "severity_rank": 2
   },
   "conditional": {
     "question": "The same combination of signals (temperature, breathing rate, heart rate, or HRV) has looked off for two nights in a row now — want help prioritizing rest today?",

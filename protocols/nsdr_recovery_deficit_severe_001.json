@@ -42,7 +42,9 @@
       }
     ],
     "evidence_level": "evidence_informed",
-    "state_label": "Recovery deficit (severe)"
+    "state_label": "Recovery deficit (severe)",
+    "state_family": "recovery_deficit",
+    "severity_rank": 3
   },
   "conditional": {
     "question": "Your sleep, HRV, and resting heart rate all look significantly off from your baseline today — is that accurate?",

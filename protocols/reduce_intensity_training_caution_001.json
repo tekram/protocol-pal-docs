@@ -46,7 +46,9 @@
       }
     ],
     "evidence_level": "product_heuristic",
-    "state_label": "Training caution"
+    "state_label": "Training caution",
+    "state_family": "training_intensity",
+    "severity_rank": 1
   },
   "conditional": {
     "question": "Is your recovery looking a little off today (sleep or HRV slightly down)?",

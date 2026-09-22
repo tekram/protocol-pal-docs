@@ -42,7 +42,9 @@
       }
     ],
     "evidence_level": "product_heuristic",
-    "state_label": "HIIT readiness confirmed"
+    "state_label": "HIIT readiness confirmed",
+    "state_family": "training_intensity",
+    "severity_rank": 0
   },
   "conditional": {
     "question": "Sleep, HRV, and resting heart rate all look good today — want confirmation you're clear for planned hard training?",

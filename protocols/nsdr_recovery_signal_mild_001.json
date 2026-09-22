@@ -34,7 +34,9 @@
       }
     ],
     "evidence_level": "product_heuristic",
-    "state_label": "Recovery deficit (mild)"
+    "state_label": "Recovery deficit (mild)",
+    "state_family": "recovery_deficit",
+    "severity_rank": 1
   },
   "conditional": {
     "question": "Did last night's sleep and readiness look a bit off?",

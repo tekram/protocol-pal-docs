@@ -42,7 +42,12 @@
       }
     ],
     "evidence_level": "evidence_informed",
-    "state_label": "Delay hard training (high intensity)"
+    "state_label": "Delay hard training (high intensity)",
+    "state_family": "training_intensity",
+    "severity_rank": 2,
+    "suppressed_by_family": [
+      "recovery_deficit"
+    ]
   },
   "conditional": {
     "question": "Your sleep, HRV, and resting heart rate all look off from your baseline today — should today's hard training wait?",

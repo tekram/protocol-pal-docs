@@ -34,7 +34,9 @@
       }
     ],
     "evidence_level": "evidence_informed",
-    "state_label": "Poor sleep quality (low efficiency, slow onset)"
+    "state_label": "Poor sleep quality (low efficiency, slow onset)",
+    "state_family": "sleep_onset_quality",
+    "severity_rank": 2
   },
   "conditional": {
     "question": "Did last night feel like it took a while to fall asleep, and like you spent more time awake in bed than usual?",

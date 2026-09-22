@@ -42,7 +42,20 @@
               }
             },
             "evidence_level": { "type": "string", "enum": ["direct_evidence", "evidence_informed", "product_heuristic", "experimental"] },
-            "state_label": { "type": "string" }
+            "state_label": { "type": "string" },
+            "state_family": {
+              "type": "string",
+              "description": "Groups tiers of the same underlying state (e.g. 'recovery_deficit' for mild/high/severe). When multiple protocols in the same family fire the same day, only the highest severity_rank is kept."
+            },
+            "severity_rank": {
+              "type": "number",
+              "description": "Higher wins within the same state_family when more than one fires the same day. Not meaningful without state_family."
+            },
+            "suppressed_by_family": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "This protocol is dropped if any protocol from one of these state_families also fired today."
+            }
           }
         }
       ]
