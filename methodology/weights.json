@@ -1,0 +1,30 @@
+{
+  "_comment": "Manually mirrored from huberman-protocol-pal's src/services/oura/bleScoring.ts DEFAULT_*_WEIGHTS constants. Not auto-synced — update by hand after a real recalibration.",
+  "sourceCommit": "e5642dd5cd938c0be0ee594f619808d4bae2b730",
+  "sourceDate": "2026-09-28",
+  "sleep": {
+    "total_sleep": 26,
+    "efficiency": 10,
+    "restfulness": 14,
+    "rem_sleep": 15,
+    "deep_sleep": 9,
+    "latency": 16,
+    "timing": 10
+  },
+  "readiness": {
+    "previous_night": 35,
+    "sleep_balance": 10,
+    "resting_hr": 10,
+    "hrv_balance": 25,
+    "body_temperature": 10,
+    "recovery_index": 5,
+    "activity_balance": 5
+  },
+  "activity": {
+    "meet_daily_targets": 20,
+    "stay_active": 22,
+    "move_every_hour": 35,
+    "training_frequency": 4,
+    "training_volume": 19
+  }
+}
