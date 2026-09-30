@@ -1308,6 +1308,114 @@
     }
   },
   {
+    "id": "easy_day_after_high_load_001",
+    "title": "Go Easier After a High-Load Day",
+    "description": "Yesterday's training load was very high and this morning your HRV is below your baseline. Swap today's hardest session for easier aerobic work or mobility so you recover instead of stacking strain.",
+    "category": "fitness",
+    "duration": "20-45 minutes",
+    "difficulty": "beginner",
+    "priority": 4,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (training/recovery balance); experimental training-load trigger",
+    "last_updated": "2026-09-30",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "training_load_prev_day",
+              "operator": ">",
+              "mode": "absolute",
+              "threshold": 150,
+              "persistence": 1,
+              "label": "yesterday's training load was very high (phone-estimated, over 150 points)"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 95,
+              "persistence": 1,
+              "label": "HRV < 95% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "experimental",
+      "state_label": "High load, low HRV",
+      "state_family": "training_intensity",
+      "severity_rank": 1,
+      "suppressed_by_family": [
+        "recovery_deficit"
+      ]
+    },
+    "conditional": {
+      "question": "You trained hard yesterday and your HRV is lower than usual this morning. Does your body feel like it needs an easier day?",
+      "yesLabel": "Yes, go easier today",
+      "noLabel": "No, I feel ready"
+    },
+    "actions": [
+      {
+        "action": "Swap hard training for Zone 1/2 cardio, walking, or mobility",
+        "duration": "20-45 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Whenever training was planned",
+        "details": "Replace planned intervals, max lifts, or heavy conditioning with easy aerobic work you can hold a conversation during, a walk, or a mobility session. This keeps the habit going without adding more strain on top of yesterday."
+      },
+      {
+        "action": "Protect tonight's sleep",
+        "duration": "Evening",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Evening",
+        "details": "Keep a consistent bedtime and wind down on time. Sleep is where most of the recovery from a hard training day happens."
+      }
+    ],
+    "benefits": [
+      "Avoids stacking a hard session on top of unrecovered strain",
+      "Keeps training consistent while letting HRV recover",
+      "Lowers injury and overreaching risk"
+    ],
+    "science": "Training load above what the body has recovered from tends to suppress HRV and blunt adaptation, and alternating hard days with easier ones is a core principle in the training programs Huberman Lab discusses. This rule is experimental: the training load is a phone-computed estimate from ring movement and logged workouts, and the 150-point cutoff has not been tuned on real data.",
+    "contraindications": [
+      "If your HRV stays low for several days, treat it as a signal to reduce volume and consider talking to a coach or doctor",
+      "The load estimate can be off when the ring misses movement or workouts were not logged",
+      "This is general guidance and does not replace advice for a medical or injury condition"
+    ],
+    "estimated_impact": {
+      "recovery_support": "Moderate improvement",
+      "injury_risk_reduction": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Foundational Fitness Protocol — Huberman Lab Newsletter",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
+      },
+      {
+        "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/dr-andy-galpin-optimize-your-training-program-for-fitness-and-longevity"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "HIGH_LOAD_LOW_HRV",
+      "scientific_rationale": "A very high training load the day before combined with an HRV below baseline is a two-signal indication that recovery has not caught up. Using yesterday's load (not today's partial load) makes it a true morning decision.",
+      "evidence_for_protocol": {
+        "level": "evidence_informed",
+        "notes": "Swapping to easier aerobic work after hard training is the same guidance given by the existing delay-hard-training and reduce-intensity protocols."
+      },
+      "evidence_for_trigger": {
+        "level": "experimental",
+        "notes": "The 150-point load cutoff and the 95 percent HRV cutoff are first-pass guesses and have not been validated. Training load here is an estimate (movement intensity minutes plus logged workouts), not a measured internal load."
+      },
+      "expected_effect": {
+        "short_term": "Less added strain today and a better chance HRV returns toward baseline tomorrow.",
+        "long_term": "Not outcome-tested for this specific trigger."
+      }
+    }
+  },
+  {
     "id": "cold_exposure_001",
     "title": "Deliberate Cold Exposure",
     "description": "Deliberate cold water immersion to boost dopamine, norepinephrine, and resilience. Huberman recommends 11 minutes total per week across 2-4 sessions for lasting neurochemical benefits.",
@@ -1546,6 +1654,228 @@
       "expected_effect": {
         "short_term": "No same-night effect; targets the following night's onset and efficiency.",
         "long_term": "Consistent arousal-reduction behavior change is expected to improve both metrics over weeks; this specific two-signal combination has not been outcome-tested in this app."
+      }
+    }
+  },
+  {
+    "id": "stress_nsdr_afternoon_001",
+    "title": "NSDR for a High-Stress Day",
+    "description": "Your ring shows two hours or more of stillness with a raised heart rate today and very little calm time. A longer NSDR session can help the body come back down.",
+    "category": "mood",
+    "duration": "10-20 minutes",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (NSDR); experimental daytime-stress trigger",
+    "last_updated": "2026-09-30",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "daytime_stress_minutes",
+              "operator": ">=",
+              "mode": "absolute",
+              "threshold": 120,
+              "persistence": 1,
+              "label": "120+ minutes of stillness with a raised heart rate today (phone-estimated)"
+            },
+            {
+              "metric": "daytime_recovery_minutes",
+              "operator": "<",
+              "mode": "absolute",
+              "threshold": 30,
+              "persistence": 1,
+              "label": "under 30 minutes of calm recovery today (phone-estimated)"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "experimental",
+      "state_label": "High daytime stress",
+      "state_family": "daytime_stress",
+      "severity_rank": 2
+    },
+    "conditional": {
+      "question": "Your ring shows a long stretch of raised heart rate with little calm time today. Does that fit how your day has gone?",
+      "yesLabel": "Yes, add a recovery session",
+      "noLabel": "No, today is fine"
+    },
+    "actions": [
+      {
+        "action": "NSDR / Yoga Nidra session",
+        "duration": "10-20 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Early to mid afternoon, or whenever you can lie down undisturbed",
+        "details": "Follow a guided NSDR recording lying down with eyes closed. It is designed to shift the body toward parasympathetic rest and restore alertness without sleeping."
+      },
+      {
+        "action": "Hold off on adding extra stimulation",
+        "duration": "Rest of the afternoon",
+        "frequency": "Once, on the day this triggers",
+        "timing": "After the session",
+        "details": "Skip extra caffeine and heavy news or social media for the rest of the afternoon so the session is not immediately undone."
+      }
+    ],
+    "benefits": [
+      "Gives a concrete recovery step on a day with a long stretch of arousal",
+      "Short NSDR sessions are associated with lower stress and improved alertness",
+      "Protects evening wind-down and sleep"
+    ],
+    "science": "NSDR protocols such as Yoga Nidra have been associated with reduced stress and better recovery, and Huberman recommends them as a way to restore calm and energy during the day. This rule is experimental: the stress estimate is computed on your phone from heart rate relative to your resting rate while still, and has not been validated as a measure of stress.",
+    "contraindications": [
+      "Do not use in place of medical care if you feel unwell",
+      "The estimate can be raised by caffeine, illness, or dehydration as well as stress",
+      "Avoid lying down for NSDR if you are drowsy and need to drive or operate machinery"
+    ],
+    "estimated_impact": {
+      "stress_reduction": "Moderate improvement",
+      "recovery_support": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/nsdr"
+      },
+      {
+        "title": "NSDR Protocol by Huberman Lab",
+        "type": "webpage",
+        "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "DAYTIME_STRESS_HIGH",
+      "scientific_rationale": "A long stretch of raised heart rate during stillness with almost no calm time suggests the day has had little autonomic recovery. Requiring both signals separates a stressful day from one that just has a single tense stretch.",
+      "evidence_for_protocol": {
+        "level": "evidence_informed",
+        "notes": "NSDR / Yoga Nidra is a standard Huberman Lab recommendation for restoring calm and energy, and is the same tool used by the existing recovery-deficit protocols."
+      },
+      "evidence_for_trigger": {
+        "level": "experimental",
+        "notes": "The 120 and 30 minute cutoffs are first-pass guesses, untuned on a full day of real ring data. Treat as unvalidated until tuned."
+      },
+      "expected_effect": {
+        "short_term": "Lower subjective tension and a calmer heart rate after the session.",
+        "long_term": "Not outcome-tested for this specific trigger."
+      }
+    }
+  },
+  {
+    "id": "stress_reset_breathing_001",
+    "title": "Stress Reset: Physiological Sighs",
+    "description": "Your ring has spent a large part of today with an elevated heart rate while you were sitting still, which is a pattern that often goes with stress. A few minutes of physiological sighs is a fast, low-effort way to bring arousal back down.",
+    "category": "breathing",
+    "duration": "1-5 minutes, up to 3 times",
+    "difficulty": "beginner",
+    "priority": 5,
+    "importance": "high-impact",
+    "frequency_type": "conditional",
+    "source": "Huberman Lab (physiological sigh / cyclic sighing); Balban et al. 2023, Cell Reports Medicine; experimental daytime-stress trigger",
+    "last_updated": "2026-09-30",
+    "oura_triggers": {
+      "groups": [
+        {
+          "all": [
+            {
+              "metric": "daytime_stress_minutes",
+              "operator": ">=",
+              "mode": "absolute",
+              "threshold": 60,
+              "persistence": 1,
+              "label": "60+ minutes of stillness with a raised heart rate today (phone-estimated)"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "metric": "daytime_stress_minutes",
+              "operator": ">=",
+              "mode": "absolute",
+              "threshold": 45,
+              "persistence": 1,
+              "label": "45+ minutes of stillness with a raised heart rate today (phone-estimated)"
+            },
+            {
+              "metric": "hrv",
+              "operator": "<",
+              "mode": "baseline_pct",
+              "threshold": 90,
+              "persistence": 1,
+              "label": "last night's HRV < 90% of rolling baseline"
+            }
+          ]
+        }
+      ],
+      "evidence_level": "experimental",
+      "state_label": "Elevated daytime stress",
+      "state_family": "daytime_stress",
+      "severity_rank": 1
+    },
+    "conditional": {
+      "question": "Your ring shows a lot of time today with a raised heart rate while you were still. Does that match how today has felt?",
+      "yesLabel": "Yes, add a stress reset",
+      "noLabel": "No, I feel fine"
+    },
+    "actions": [
+      {
+        "action": "Physiological sigh reset",
+        "duration": "1-5 minutes",
+        "frequency": "Up to 3 times today, when tension is highest",
+        "timing": "Whenever you notice tension; good before a meeting or after a stressful exchange",
+        "details": "Inhale deeply through the nose, then take a second short sniff on top to fully inflate the lungs, then exhale slowly and completely through the mouth. Repeat for 1-5 minutes. The long exhale is the part that slows the heart rate."
+      },
+      {
+        "action": "Step outside for a short walk",
+        "duration": "10 minutes",
+        "frequency": "Once, on the day this triggers",
+        "timing": "Any time, ideally away from screens",
+        "details": "Walk at an easy pace and let your gaze rest on the horizon instead of a screen. Low-intensity movement with a wide visual field is a simple way to lower arousal without adding training stress."
+      }
+    ],
+    "benefits": [
+      "Quickly lowers physiological arousal without needing equipment or time set aside",
+      "Breathing with an emphasis on the exhale is associated with a calmer heart rate and better mood",
+      "Gives a concrete response to a stress signal instead of just noticing it"
+    ],
+    "science": "A controlled study found that five minutes a day of cyclic sighing (long-exhale breathing) improved mood and reduced resting respiratory rate more than mindfulness meditation over a month, and Huberman describes the physiological sigh as the fastest real-time tool for lowering stress. This rule is experimental: the stress estimate comes from heart rate relative to your own resting rate while you are still, and is computed on your phone rather than being a validated measure of stress.",
+    "contraindications": [
+      "Stop and breathe normally if you feel lightheaded",
+      "The stress estimate is approximate and can be raised by caffeine, illness, or dehydration as well as stress",
+      "If you feel persistently anxious or unwell, talk to a doctor or mental health professional rather than relying on an app estimate"
+    ],
+    "estimated_impact": {
+      "stress_reduction": "Moderate improvement",
+      "mood_improvement": "Mild improvement"
+    },
+    "learning_resources": [
+      {
+        "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+      },
+      {
+        "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance — Huberman Lab",
+        "type": "webpage",
+        "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance"
+      }
+    ],
+    "evidence_metadata": {
+      "target_state": "DAYTIME_STRESS_ELEVATED",
+      "scientific_rationale": "Heart rate elevated above the personal resting rate during stillness, sustained for an hour, is a reasonable proxy for sympathetic arousal without physical cause. The second group adds a low overnight HRV as corroboration so the lower 45-minute threshold still requires a second signal.",
+      "evidence_for_protocol": {
+        "level": "direct_evidence",
+        "notes": "Cyclic sighing for five minutes a day reduced anxiety and improved mood in a randomized study (Balban et al., Cell Reports Medicine, 2023), and the physiological sigh is a standard Huberman Lab stress tool."
+      },
+      "evidence_for_trigger": {
+        "level": "experimental",
+        "notes": "The 60 and 45 minute cutoffs and the +15 bpm above-resting definition are first-pass guesses and have not been tuned on a full day of real ring data. Coverage is limited because the ring only reports clean heartbeats when you are still. Treat as unvalidated until tuned against real outcomes."
+      },
+      "expected_effect": {
+        "short_term": "A few minutes of long-exhale breathing should lower heart rate and subjective tension within the session.",
+        "long_term": "Responding to early stress signals with a brief reset may reduce accumulated daytime arousal, though this specific trigger has not been outcome-tested."
       }
     }
   },

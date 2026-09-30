@@ -1,0 +1,106 @@
+{
+  "id": "easy_day_after_high_load_001",
+  "title": "Go Easier After a High-Load Day",
+  "description": "Yesterday's training load was very high and this morning your HRV is below your baseline. Swap today's hardest session for easier aerobic work or mobility so you recover instead of stacking strain.",
+  "category": "fitness",
+  "duration": "20-45 minutes",
+  "difficulty": "beginner",
+  "priority": 4,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (training/recovery balance); experimental training-load trigger",
+  "last_updated": "2026-09-30",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "training_load_prev_day",
+            "operator": ">",
+            "mode": "absolute",
+            "threshold": 150,
+            "persistence": 1,
+            "label": "yesterday's training load was very high (phone-estimated, over 150 points)"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 95,
+            "persistence": 1,
+            "label": "HRV < 95% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "experimental",
+    "state_label": "High load, low HRV",
+    "state_family": "training_intensity",
+    "severity_rank": 1,
+    "suppressed_by_family": ["recovery_deficit"]
+  },
+  "conditional": {
+    "question": "You trained hard yesterday and your HRV is lower than usual this morning. Does your body feel like it needs an easier day?",
+    "yesLabel": "Yes, go easier today",
+    "noLabel": "No, I feel ready"
+  },
+  "actions": [
+    {
+      "action": "Swap hard training for Zone 1/2 cardio, walking, or mobility",
+      "duration": "20-45 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Whenever training was planned",
+      "details": "Replace planned intervals, max lifts, or heavy conditioning with easy aerobic work you can hold a conversation during, a walk, or a mobility session. This keeps the habit going without adding more strain on top of yesterday."
+    },
+    {
+      "action": "Protect tonight's sleep",
+      "duration": "Evening",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Evening",
+      "details": "Keep a consistent bedtime and wind down on time. Sleep is where most of the recovery from a hard training day happens."
+    }
+  ],
+  "benefits": [
+    "Avoids stacking a hard session on top of unrecovered strain",
+    "Keeps training consistent while letting HRV recover",
+    "Lowers injury and overreaching risk"
+  ],
+  "science": "Training load above what the body has recovered from tends to suppress HRV and blunt adaptation, and alternating hard days with easier ones is a core principle in the training programs Huberman Lab discusses. This rule is experimental: the training load is a phone-computed estimate from ring movement and logged workouts, and the 150-point cutoff has not been tuned on real data.",
+  "contraindications": [
+    "If your HRV stays low for several days, treat it as a signal to reduce volume and consider talking to a coach or doctor",
+    "The load estimate can be off when the ring misses movement or workouts were not logged",
+    "This is general guidance and does not replace advice for a medical or injury condition"
+  ],
+  "estimated_impact": {
+    "recovery_support": "Moderate improvement",
+    "injury_risk_reduction": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Foundational Fitness Protocol — Huberman Lab Newsletter",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/newsletter/foundational-fitness-protocol"
+    },
+    {
+      "title": "Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/dr-andy-galpin-optimize-your-training-program-for-fitness-and-longevity"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "HIGH_LOAD_LOW_HRV",
+    "scientific_rationale": "A very high training load the day before combined with an HRV below baseline is a two-signal indication that recovery has not caught up. Using yesterday's load (not today's partial load) makes it a true morning decision.",
+    "evidence_for_protocol": {
+      "level": "evidence_informed",
+      "notes": "Swapping to easier aerobic work after hard training is the same guidance given by the existing delay-hard-training and reduce-intensity protocols."
+    },
+    "evidence_for_trigger": {
+      "level": "experimental",
+      "notes": "The 150-point load cutoff and the 95 percent HRV cutoff are first-pass guesses and have not been validated. Training load here is an estimate (movement intensity minutes plus logged workouts), not a measured internal load."
+    },
+    "expected_effect": {
+      "short_term": "Less added strain today and a better chance HRV returns toward baseline tomorrow.",
+      "long_term": "Not outcome-tested for this specific trigger."
+    }
+  }
+}

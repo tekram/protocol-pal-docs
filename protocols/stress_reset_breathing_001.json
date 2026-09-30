@@ -1,0 +1,117 @@
+{
+  "id": "stress_reset_breathing_001",
+  "title": "Stress Reset: Physiological Sighs",
+  "description": "Your ring has spent a large part of today with an elevated heart rate while you were sitting still, which is a pattern that often goes with stress. A few minutes of physiological sighs is a fast, low-effort way to bring arousal back down.",
+  "category": "breathing",
+  "duration": "1-5 minutes, up to 3 times",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (physiological sigh / cyclic sighing); Balban et al. 2023, Cell Reports Medicine; experimental daytime-stress trigger",
+  "last_updated": "2026-09-30",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "daytime_stress_minutes",
+            "operator": ">=",
+            "mode": "absolute",
+            "threshold": 60,
+            "persistence": 1,
+            "label": "60+ minutes of stillness with a raised heart rate today (phone-estimated)"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "metric": "daytime_stress_minutes",
+            "operator": ">=",
+            "mode": "absolute",
+            "threshold": 45,
+            "persistence": 1,
+            "label": "45+ minutes of stillness with a raised heart rate today (phone-estimated)"
+          },
+          {
+            "metric": "hrv",
+            "operator": "<",
+            "mode": "baseline_pct",
+            "threshold": 90,
+            "persistence": 1,
+            "label": "last night's HRV < 90% of rolling baseline"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "experimental",
+    "state_label": "Elevated daytime stress",
+    "state_family": "daytime_stress",
+    "severity_rank": 1
+  },
+  "conditional": {
+    "question": "Your ring shows a lot of time today with a raised heart rate while you were still. Does that match how today has felt?",
+    "yesLabel": "Yes, add a stress reset",
+    "noLabel": "No, I feel fine"
+  },
+  "actions": [
+    {
+      "action": "Physiological sigh reset",
+      "duration": "1-5 minutes",
+      "frequency": "Up to 3 times today, when tension is highest",
+      "timing": "Whenever you notice tension; good before a meeting or after a stressful exchange",
+      "details": "Inhale deeply through the nose, then take a second short sniff on top to fully inflate the lungs, then exhale slowly and completely through the mouth. Repeat for 1-5 minutes. The long exhale is the part that slows the heart rate."
+    },
+    {
+      "action": "Step outside for a short walk",
+      "duration": "10 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Any time, ideally away from screens",
+      "details": "Walk at an easy pace and let your gaze rest on the horizon instead of a screen. Low-intensity movement with a wide visual field is a simple way to lower arousal without adding training stress."
+    }
+  ],
+  "benefits": [
+    "Quickly lowers physiological arousal without needing equipment or time set aside",
+    "Breathing with an emphasis on the exhale is associated with a calmer heart rate and better mood",
+    "Gives a concrete response to a stress signal instead of just noticing it"
+  ],
+  "science": "A controlled study found that five minutes a day of cyclic sighing (long-exhale breathing) improved mood and reduced resting respiratory rate more than mindfulness meditation over a month, and Huberman describes the physiological sigh as the fastest real-time tool for lowering stress. This rule is experimental: the stress estimate comes from heart rate relative to your own resting rate while you are still, and is computed on your phone rather than being a validated measure of stress.",
+  "contraindications": [
+    "Stop and breathe normally if you feel lightheaded",
+    "The stress estimate is approximate and can be raised by caffeine, illness, or dehydration as well as stress",
+    "If you feel persistently anxious or unwell, talk to a doctor or mental health professional rather than relying on an app estimate"
+  ],
+  "estimated_impact": {
+    "stress_reduction": "Moderate improvement",
+    "mood_improvement": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Tools for Managing Stress & Anxiety — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/tools-for-managing-stress-and-anxiety"
+    },
+    {
+      "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance — Huberman Lab",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/episode/how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "DAYTIME_STRESS_ELEVATED",
+    "scientific_rationale": "Heart rate elevated above the personal resting rate during stillness, sustained for an hour, is a reasonable proxy for sympathetic arousal without physical cause. The second group adds a low overnight HRV as corroboration so the lower 45-minute threshold still requires a second signal.",
+    "evidence_for_protocol": {
+      "level": "direct_evidence",
+      "notes": "Cyclic sighing for five minutes a day reduced anxiety and improved mood in a randomized study (Balban et al., Cell Reports Medicine, 2023), and the physiological sigh is a standard Huberman Lab stress tool."
+    },
+    "evidence_for_trigger": {
+      "level": "experimental",
+      "notes": "The 60 and 45 minute cutoffs and the +15 bpm above-resting definition are first-pass guesses and have not been tuned on a full day of real ring data. Coverage is limited because the ring only reports clean heartbeats when you are still. Treat as unvalidated until tuned against real outcomes."
+    },
+    "expected_effect": {
+      "short_term": "A few minutes of long-exhale breathing should lower heart rate and subjective tension within the session.",
+      "long_term": "Responding to early stress signals with a brief reset may reduce accumulated daytime arousal, though this specific trigger has not been outcome-tested."
+    }
+  }
+}

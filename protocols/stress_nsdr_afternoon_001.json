@@ -1,0 +1,105 @@
+{
+  "id": "stress_nsdr_afternoon_001",
+  "title": "NSDR for a High-Stress Day",
+  "description": "Your ring shows two hours or more of stillness with a raised heart rate today and very little calm time. A longer NSDR session can help the body come back down.",
+  "category": "mood",
+  "duration": "10-20 minutes",
+  "difficulty": "beginner",
+  "priority": 5,
+  "importance": "high-impact",
+  "frequency_type": "conditional",
+  "source": "Huberman Lab (NSDR); experimental daytime-stress trigger",
+  "last_updated": "2026-09-30",
+  "oura_triggers": {
+    "groups": [
+      {
+        "all": [
+          {
+            "metric": "daytime_stress_minutes",
+            "operator": ">=",
+            "mode": "absolute",
+            "threshold": 120,
+            "persistence": 1,
+            "label": "120+ minutes of stillness with a raised heart rate today (phone-estimated)"
+          },
+          {
+            "metric": "daytime_recovery_minutes",
+            "operator": "<",
+            "mode": "absolute",
+            "threshold": 30,
+            "persistence": 1,
+            "label": "under 30 minutes of calm recovery today (phone-estimated)"
+          }
+        ]
+      }
+    ],
+    "evidence_level": "experimental",
+    "state_label": "High daytime stress",
+    "state_family": "daytime_stress",
+    "severity_rank": 2
+  },
+  "conditional": {
+    "question": "Your ring shows a long stretch of raised heart rate with little calm time today. Does that fit how your day has gone?",
+    "yesLabel": "Yes, add a recovery session",
+    "noLabel": "No, today is fine"
+  },
+  "actions": [
+    {
+      "action": "NSDR / Yoga Nidra session",
+      "duration": "10-20 minutes",
+      "frequency": "Once, on the day this triggers",
+      "timing": "Early to mid afternoon, or whenever you can lie down undisturbed",
+      "details": "Follow a guided NSDR recording lying down with eyes closed. It is designed to shift the body toward parasympathetic rest and restore alertness without sleeping."
+    },
+    {
+      "action": "Hold off on adding extra stimulation",
+      "duration": "Rest of the afternoon",
+      "frequency": "Once, on the day this triggers",
+      "timing": "After the session",
+      "details": "Skip extra caffeine and heavy news or social media for the rest of the afternoon so the session is not immediately undone."
+    }
+  ],
+  "benefits": [
+    "Gives a concrete recovery step on a day with a long stretch of arousal",
+    "Short NSDR sessions are associated with lower stress and improved alertness",
+    "Protects evening wind-down and sleep"
+  ],
+  "science": "NSDR protocols such as Yoga Nidra have been associated with reduced stress and better recovery, and Huberman recommends them as a way to restore calm and energy during the day. This rule is experimental: the stress estimate is computed on your phone from heart rate relative to your resting rate while still, and has not been validated as a measure of stress.",
+  "contraindications": [
+    "Do not use in place of medical care if you feel unwell",
+    "The estimate can be raised by caffeine, illness, or dehydration as well as stress",
+    "Avoid lying down for NSDR if you are drowsy and need to drive or operate machinery"
+  ],
+  "estimated_impact": {
+    "stress_reduction": "Moderate improvement",
+    "recovery_support": "Mild improvement"
+  },
+  "learning_resources": [
+    {
+      "title": "Non-Sleep Deep Rest (NSDR) — Huberman Lab official page",
+      "type": "webpage",
+      "url": "https://www.hubermanlab.com/nsdr"
+    },
+    {
+      "title": "NSDR Protocol by Huberman Lab",
+      "type": "webpage",
+      "url": "https://ai.hubermanlab.com/s/mUZwWStP"
+    }
+  ],
+  "evidence_metadata": {
+    "target_state": "DAYTIME_STRESS_HIGH",
+    "scientific_rationale": "A long stretch of raised heart rate during stillness with almost no calm time suggests the day has had little autonomic recovery. Requiring both signals separates a stressful day from one that just has a single tense stretch.",
+    "evidence_for_protocol": {
+      "level": "evidence_informed",
+      "notes": "NSDR / Yoga Nidra is a standard Huberman Lab recommendation for restoring calm and energy, and is the same tool used by the existing recovery-deficit protocols."
+    },
+    "evidence_for_trigger": {
+      "level": "experimental",
+      "notes": "The 120 and 30 minute cutoffs are first-pass guesses, untuned on a full day of real ring data. Treat as unvalidated until tuned."
+    },
+    "expected_effect": {
+      "short_term": "Lower subjective tension and a calmer heart rate after the session.",
+      "long_term": "Not outcome-tested for this specific trigger."
+    }
+  }
+}

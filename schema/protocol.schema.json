@@ -159,7 +159,8 @@
           "type": "string",
           "enum": [
             "sleep_score", "readiness_score", "hrv", "resting_hr", "activity_score", "temperature_deviation",
-            "sleep_latency", "sleep_efficiency", "respiratory_rate", "restless_periods", "sleep_duration"
+            "sleep_latency", "sleep_efficiency", "respiratory_rate", "restless_periods", "sleep_duration",
+            "daytime_stress_minutes", "daytime_recovery_minutes", "training_load", "training_load_prev_day"
           ]
         },
         "operator": { "type": "string", "enum": ["<", ">", "<=", ">="] },
